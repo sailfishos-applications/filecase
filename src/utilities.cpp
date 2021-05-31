@@ -683,6 +683,8 @@ void Utilities::stopCopying()
 
 void Utilities::copyError(int id, QtFileCopier::Error error, bool stopped)
 {
+    Q_UNUSED(stopped)
+
     //qDebug() << id << error << stopped;
     QString file = fileCopier->destinationFilePath(id) + "/" + QFileInfo(fileCopier->sourceFilePath(id)).fileName();
     qDebug() << "Current file: " << file;

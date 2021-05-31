@@ -98,6 +98,8 @@ void CompressedFiles::loadZip(QString file)
 
 void CompressedFiles::unzipFinished(int res)
 {
+    Q_UNUSED(res)
+
     d->path = d->zipFileName;
     emit pathChanged();
     d->populateItems();
@@ -117,7 +119,7 @@ void CompressedFiles::CompressedFilesPrivate::populateItems()
     if (data.open(QFile::ReadOnly | QFile::Truncate))
     {
         int start=0;
-        int password = 0;
+        //int password = 0;
         int e_mydoc = 0;
 
         QTextStream out(&data);
@@ -135,7 +137,7 @@ void CompressedFiles::CompressedFilesPrivate::populateItems()
                     int ei = texto2.indexOf(" ");
                     line = line.trimmed();
                     texto2.remove ( ei, texto2.length()-ei );
-                    if ( line.indexOf("*") == 0 ) { line.remove(0,1); password=1; }
+                    if ( line.indexOf("*") == 0 ) { line.remove(0,1); /* password=1; */ }
                     if ( QString(texto2).toInt() > 0 ) texto += line.trimmed() + "\n";
                     if ( line != "" ) {
                         e_mydoc = e_mydoc + QString(texto2).toInt();

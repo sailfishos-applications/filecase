@@ -759,6 +759,8 @@ void WebDav::imageLoaded(QString filename)
 
 QString WebDav::getPreview(QString link, QString filename, QString mode)
 {
+    Q_UNUSED(link)
+
     QString preview = "";
     if (mode=="download")
     {
@@ -873,6 +875,8 @@ void WebDav::removeAccount()
 
 void WebDav::setUploadFolder(QString name)
 {
+    Q_UNUSED(name)
+
     QSettings settings("cepiperez","fileboxplus");
     settings.setValue("WebDav-" + m_service + "/upload_folder", d->path);
     settings.sync();

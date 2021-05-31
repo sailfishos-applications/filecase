@@ -454,6 +454,8 @@ void SkyClient::handleNetworkReply(QNetworkReply *networkReply)
 
 void SkyClient::parseData(QString dir, QString data)
 {
+    Q_UNUSED(data)
+
     //qDebug() << dir;
     //qDebug() << data;
 
@@ -769,8 +771,7 @@ void SkyClient::moveFile(QString source)
     //qDebug() << url << params;
     disconnect(datos,0,0,0);
     connect(datos, SIGNAL(finished(QNetworkReply*)),this, SLOT(handleFileOps(QNetworkReply*)));
-    QNetworkReply *reply = datos->sendCustomRequest(networkRequest, "MOVE", query);
-
+    datos->sendCustomRequest(networkRequest, "MOVE", query);
 }
 
 void SkyClient::removeFile(QString path)
@@ -790,7 +791,6 @@ void SkyClient::removeFile(QString path)
     disconnect(datos,0,0,0);
     connect(datos, SIGNAL(finished(QNetworkReply*)),this, SLOT(handleFileOps(QNetworkReply*)));
     datos->deleteResource(networkRequest);
-
 }
 
 void SkyClient::copyFile(QString source)
@@ -818,8 +818,7 @@ void SkyClient::copyFile(QString source)
     //qDebug() << url << params;
     disconnect(datos,0,0,0);
     connect(datos, SIGNAL(finished(QNetworkReply*)),this, SLOT(handleFileOps(QNetworkReply*)));
-    QNetworkReply *reply = datos->sendCustomRequest(networkRequest, "COPY", query);
-
+    datos->sendCustomRequest(networkRequest, "COPY", query);
 }
 
 void SkyClient::imageLoaded(QString filename)

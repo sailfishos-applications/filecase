@@ -481,6 +481,8 @@ void BoxClient::handleNetworkReply(QNetworkReply *networkReply)
 
 void BoxClient::parseData(QString dir, QString data)
 {
+    Q_UNUSED(data)
+
     qDebug() << dir;
     //qDebug() << data;
 
