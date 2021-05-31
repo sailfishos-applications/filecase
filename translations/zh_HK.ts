@@ -162,12 +162,12 @@
 <context>
     <name>Browser</name>
     <message>
-        <location filename="../src/browser.cpp" line="637"/>
+        <location filename="../src/browser.cpp" line="638"/>
         <source>Delete process completed</source>
         <translation>完成刪除處理</translation>
     </message>
     <message>
-        <location filename="../src/browser.cpp" line="639"/>
+        <location filename="../src/browser.cpp" line="640"/>
         <source>There were errors deleting files!</source>
         <translation>刪除檔案時出現錯誤！</translation>
     </message>
@@ -276,44 +276,6 @@
         <location filename="../qml/pages/Drive.qml" line="394"/>
         <source>Folder is empty</source>
         <translation>資料夾已空</translation>
-    </message>
-</context>
-<context>
-    <name>DriveSettings</name>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="46"/>
-        <source>Settings</source>
-        <translation>設定</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="50"/>
-        <source>Account</source>
-        <translation>帳戶</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="93"/>
-        <source>Remove account</source>
-        <translation>刪除帳戶</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="105"/>
-        <source>Storage</source>
-        <translation>存儲</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="152"/>
-        <source>Transfers</source>
-        <translation>傳輸</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="157"/>
-        <source>Download folder</source>
-        <translation>下載資料夾</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="166"/>
-        <source>Upload folder</source>
-        <translation>上載資料夾</translation>
     </message>
 </context>
 <context>
@@ -561,14 +523,14 @@
         <translation>複製鏈接</translation>
     </message>
     <message>
-        <location filename="../src/fileinfo.cpp" line="42"/>
-        <location filename="../src/fileinfo.cpp" line="87"/>
-        <location filename="../src/fileinfo.cpp" line="114"/>
+        <location filename="../src/fileinfo.cpp" line="43"/>
+        <location filename="../src/fileinfo.cpp" line="88"/>
+        <location filename="../src/fileinfo.cpp" line="115"/>
         <source>(loading)</source>
         <translation>(處理中)</translation>
     </message>
     <message>
-        <location filename="../src/fileinfo.cpp" line="85"/>
+        <location filename="../src/fileinfo.cpp" line="86"/>
         <source>items</source>
         <translation>項目</translation>
     </message>
@@ -770,27 +732,27 @@
 <context>
     <name>Search</name>
     <message>
-        <location filename="../src/search.cpp" line="279"/>
+        <location filename="../src/search.cpp" line="280"/>
         <source>Delete process completed</source>
         <translation>完成刪除處理</translation>
     </message>
     <message>
-        <location filename="../src/search.cpp" line="281"/>
+        <location filename="../src/search.cpp" line="282"/>
         <source>There were errors deleting files!</source>
         <translation>刪除檔案時出現錯誤！</translation>
     </message>
     <message>
-        <location filename="../src/search.cpp" line="292"/>
-        <source>You can&apos;t share files outside nemo folder</source>
+        <location filename="../src/search.cpp" line="293"/>
+        <source>You can&apos;t share files outside home folder</source>
         <translation>你無法分享 nemo 以外的檔案</translation>
     </message>
     <message>
-        <location filename="../src/search.cpp" line="412"/>
+        <location filename="../src/search.cpp" line="413"/>
         <source>Search canceled</source>
         <translation>搜尋已取消</translation>
     </message>
     <message>
-        <location filename="../src/search.cpp" line="414"/>
+        <location filename="../src/search.cpp" line="415"/>
         <source>Search completed</source>
         <translation>完成搜尋</translation>
     </message>
@@ -1194,64 +1156,64 @@
 <context>
     <name>Utilities</name>
     <message>
-        <location filename="../src/utilities.cpp" line="357"/>
+        <location filename="../src/utilities.cpp" line="358"/>
         <source>All transfers have been completed</source>
         <translation>完成所有傳輸</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="377"/>
-        <location filename="../src/utilities.cpp" line="555"/>
+        <location filename="../src/utilities.cpp" line="378"/>
+        <location filename="../src/utilities.cpp" line="556"/>
         <source>You don&apos;t have permissions to proceed</source>
         <translation>你沒有權限處理</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="444"/>
-        <location filename="../src/utilities.cpp" line="468"/>
+        <location filename="../src/utilities.cpp" line="445"/>
+        <location filename="../src/utilities.cpp" line="469"/>
         <source>Extracting process canceled</source>
         <translation>解壓指令已取消</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="448"/>
+        <location filename="../src/utilities.cpp" line="449"/>
         <source>Extraction error: incorrect password</source>
         <translation>解壓：密碼輸入錯誤</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="450"/>
+        <location filename="../src/utilities.cpp" line="451"/>
         <source>Extraction completed</source>
         <translation>完成解壓</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="456"/>
+        <location filename="../src/utilities.cpp" line="457"/>
         <source>Compressing process canceled</source>
         <translation>壓縮指令已取消</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="458"/>
+        <location filename="../src/utilities.cpp" line="459"/>
         <source>Compression completed</source>
         <translation>完成壓縮</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="576"/>
+        <location filename="../src/utilities.cpp" line="577"/>
         <source>There&apos;s no enough space to proceed</source>
         <translation>這裡沒有足夠空位處理所需</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="585"/>
+        <location filename="../src/utilities.cpp" line="586"/>
         <source>Cannot create symlinks in destination path</source>
         <translation>無法在目的地創建符號連接</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="654"/>
+        <location filename="../src/utilities.cpp" line="655"/>
         <source>There were errors copying files!</source>
         <translation>複製檔案出現錯誤！</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="656"/>
+        <location filename="../src/utilities.cpp" line="657"/>
         <source>Copying process is completed</source>
         <translation>完成複製處理</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="680"/>
+        <location filename="../src/utilities.cpp" line="681"/>
         <source>Copying process canceled</source>
         <translation>複製處理已取消</translation>
     </message>

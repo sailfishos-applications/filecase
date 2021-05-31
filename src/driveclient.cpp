@@ -2,6 +2,8 @@
 #include "drive/jsonparser.h"
 #include "drive/json.h"
 
+#include "config.h"
+
 #include "sys/vfs.h"
 #include "utils.h"
 
@@ -132,9 +134,9 @@ void DriveClient::DriveClientPrivate::populateItems()
         {
             item->exten = GetExtension( item->name.toLower() );
 
-            if ( ! QFileInfo("/home/nemo/.thumbnails/filecase").exists() ) {
+            if ( ! QFileInfo(Config::getHome() + "/.thumbnails/filecase").exists() ) {
                 QDir dir;
-                dir.mkdir("/home/nemo/.thumbnails/filecase");
+                dir.mkdir(Config::getHome() + "/.thumbnails/filecase");
             }
 
             if (settings.value("ShowThumbnails","false")=="true")
@@ -153,7 +155,7 @@ void DriveClient::DriveClientPrivate::populateItems()
                     QString file = "Google Drive/" + item->dlink;
                     file.replace("//","/");
                     md.addData(file.toUtf8());
-                    QString tf = "/home/nemo/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ef;
+                    QString tf = Config::getHome() + "/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ef;
                     if ( QFileInfo(tf).exists() ) {
                         item->exten = tf;
                     } else if ( misarchivos[i].value("thumb","").toString() != "" ) {
@@ -818,7 +820,7 @@ QString DriveClient::getPreview(QString link, QString filename, QString mode)
         md.addData(file.toUtf8());
         QString ef = ".jpg";
         if (filename.endsWith(".png")) ef = ".png";
-        QString tf = "/home/nemo/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ef;
+        QString tf = Config::getHome() + "/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ef;
         if (QFileInfo(tf).exists())
             preview = tf;
         else

@@ -24,16 +24,16 @@ Page {
 
 
     property var deviceModel: [
-        { name: qsTr("Phone memory"), folder: "/home/nemo", icon: "image://theme/icon-m-phone" } ,
+        { name: qsTr("Phone memory"), folder: config.getHome(), icon: "image://theme/icon-m-phone" } ,
         { name: qsTr("SD Card"), folder: sdfolder, icon: "file:///usr/share/filecase/icons/toolbar-sdcard.png" }
     ]
 
     property var placesModel: [
-        { name: qsTr("Documents"), folder: "/home/nemo/Documents", icon: "image://theme/icon-m-document" },
-        { name: qsTr("Downloads"), folder: "/home/nemo/Downloads", icon: "image://theme/icon-m-cloud-download" },
-        { name: qsTr("Music"), folder: "/home/nemo/Music", icon: "image://theme/icon-m-sounds" },
-        { name: qsTr("Videos"), folder: "/home/nemo/Videos", icon: "image://theme/icon-m-media" },
-        { name: qsTr("Pictures"), folder: "/home/nemo/Pictures", icon: "image://theme/icon-m-image" }
+        { name: qsTr("Documents"), folder: config.getHome() + "/Documents", icon: "image://theme/icon-m-document" },
+        { name: qsTr("Downloads"), folder: config.getHome() + "/Downloads", icon: "image://theme/icon-m-cloud-download" },
+        { name: qsTr("Music"), folder: config.getHome() + "/Music", icon: "image://theme/icon-m-sounds" },
+        { name: qsTr("Videos"), folder: config.getHome() + "/Videos", icon: "image://theme/icon-m-media" },
+        { name: qsTr("Pictures"), folder: config.getHome() + "/Pictures", icon: "image://theme/icon-m-image" }
     ]
 
 

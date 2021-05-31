@@ -26,3 +26,8 @@ void Config::removeConfig(QString data1)
     sets.remove(data1);
     sets.sync();
 }
+
+QString Config::getHome()
+{
+    return readConfig("home", "/home/defaultuser");
+}

@@ -87,7 +87,7 @@ Dialog {
 
             title: model.name
             description: model.modified + " - " + model.size
-            imgsource: model.exten.indexOf("/home/nemo")===-1? "/usr/share/filecase/icons/" + model.exten + ".png" : model.exten
+            imgsource: model.exten.indexOf(config.getHome())===-1? "/usr/share/filecase/icons/" + model.exten + ".png" : model.exten
             mime: "image/png"
 
             onClicked: {

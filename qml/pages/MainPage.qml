@@ -48,8 +48,8 @@ Page {
 
                 if (!showRootFiles) {
                     console.log("Root files hidden. index = " + nextFolder.indexOf(sdfolder))
-                    if (nextFolder.indexOf(sdfolder)===-1 && nextFolder.indexOf("/home/nemo")===-1)
-                        nextFolder = "/home/nemo"
+                    if (nextFolder.indexOf(sdfolder)===-1 && nextFolder.indexOf(config.getHome())===-1)
+                        nextFolder = config.getHome()
                 }
 
                 //console.log("Destination Folder = "+nextFolder)
@@ -88,7 +88,7 @@ Page {
     }
 
     function checkRoot() {
-        if ((!showRootFiles && (browser.path=="/home/nemo" || browser.path==sdfolder)) || browser.path=="/")
+        if ((!showRootFiles && (browser.path==config.getHome() || browser.path==sdfolder)) || browser.path=="/")
             backNavigation = false
         else
             backNavigation = true
@@ -239,7 +239,7 @@ Page {
 
         /*IconButton {
             id: upBtn
-            //enabled: browser.path!=="/" || (showRootFiles && browser.path=="/home/nemo")
+            //enabled: browser.path!=="/" || (showRootFiles && browser.path==config.getHome())
             anchors.verticalCenter: header.verticalCenter
             anchors.left: parent.left
             anchors.leftMargin: Theme.paddingMedium

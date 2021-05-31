@@ -15,7 +15,7 @@ Page {
 
     onStatusChanged: {
         if (status === PageStatus.Activating) {
-            downloadValue.value = getName(config.readConfig("Dropbox/download_folder", "/home/nemo/Downloads"))
+            downloadValue.value = getName(config.readConfig("Dropbox/download_folder", config.getHome() + "/Downloads"))
             uploadValue.value = getName(config.readConfig("Dropbox/upload_folder","/||root"))
         }
     }
@@ -156,7 +156,7 @@ Page {
             ValueButton {
                 id: downloadValue
                 label: qsTr("Download folder")
-                value: getName(config.readConfig("Dropbox/download_folder", "/home/nemo/Downloads"))
+                value: getName(config.readConfig("Dropbox/download_folder", config.getHome() + "/Downloads"))
                 onClicked: {
                     pageStack.push("SelDownloadFolder.qml")
                 }

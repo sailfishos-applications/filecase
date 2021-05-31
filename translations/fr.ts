@@ -162,12 +162,12 @@
 <context>
     <name>Browser</name>
     <message>
-        <location filename="../src/browser.cpp" line="637"/>
+        <location filename="../src/browser.cpp" line="638"/>
         <source>Delete process completed</source>
         <translation>Suppression terminée</translation>
     </message>
     <message>
-        <location filename="../src/browser.cpp" line="639"/>
+        <location filename="../src/browser.cpp" line="640"/>
         <source>There were errors deleting files!</source>
         <translation>Il y a eu des erreurs lors de la suppression des fichiers !</translation>
     </message>
@@ -276,44 +276,6 @@
         <location filename="../qml/pages/Drive.qml" line="394"/>
         <source>Folder is empty</source>
         <translation>Dossier vide</translation>
-    </message>
-</context>
-<context>
-    <name>DriveSettings</name>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="46"/>
-        <source>Settings</source>
-        <translation>Paramètres</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="50"/>
-        <source>Account</source>
-        <translation>Compte</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="93"/>
-        <source>Remove account</source>
-        <translation>Supprimer le compte</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="105"/>
-        <source>Storage</source>
-        <translation>Stockage</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="152"/>
-        <source>Transfers</source>
-        <translation>Transferts</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="157"/>
-        <source>Download folder</source>
-        <translation>Dossier de téléchargement</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="166"/>
-        <source>Upload folder</source>
-        <translation>Dossier d&apos;upload</translation>
     </message>
 </context>
 <context>
@@ -561,14 +523,14 @@
         <translation>Copier le lien</translation>
     </message>
     <message>
-        <location filename="../src/fileinfo.cpp" line="42"/>
-        <location filename="../src/fileinfo.cpp" line="87"/>
-        <location filename="../src/fileinfo.cpp" line="114"/>
+        <location filename="../src/fileinfo.cpp" line="43"/>
+        <location filename="../src/fileinfo.cpp" line="88"/>
+        <location filename="../src/fileinfo.cpp" line="115"/>
         <source>(loading)</source>
         <translation>(chargement)</translation>
     </message>
     <message>
-        <location filename="../src/fileinfo.cpp" line="85"/>
+        <location filename="../src/fileinfo.cpp" line="86"/>
         <source>items</source>
         <translation>éléments</translation>
     </message>
@@ -770,27 +732,27 @@
 <context>
     <name>Search</name>
     <message>
-        <location filename="../src/search.cpp" line="279"/>
+        <location filename="../src/search.cpp" line="280"/>
         <source>Delete process completed</source>
         <translation>Suppression terminée</translation>
     </message>
     <message>
-        <location filename="../src/search.cpp" line="281"/>
+        <location filename="../src/search.cpp" line="282"/>
         <source>There were errors deleting files!</source>
         <translation>Il y a eu des erreurs lors de la suppression des fichiers !</translation>
     </message>
     <message>
-        <location filename="../src/search.cpp" line="292"/>
-        <source>You can&apos;t share files outside nemo folder</source>
+        <location filename="../src/search.cpp" line="293"/>
+        <source>You can&apos;t share files outside home folder</source>
         <translation>Vous ne pouvez pas partager de fichiers hors dossier nemo</translation>
     </message>
     <message>
-        <location filename="../src/search.cpp" line="412"/>
+        <location filename="../src/search.cpp" line="413"/>
         <source>Search canceled</source>
         <translation>Recherche annulée</translation>
     </message>
     <message>
-        <location filename="../src/search.cpp" line="414"/>
+        <location filename="../src/search.cpp" line="415"/>
         <source>Search completed</source>
         <translation>Recherche terminée</translation>
     </message>
@@ -1194,64 +1156,64 @@
 <context>
     <name>Utilities</name>
     <message>
-        <location filename="../src/utilities.cpp" line="357"/>
+        <location filename="../src/utilities.cpp" line="358"/>
         <source>All transfers have been completed</source>
         <translation>Tous transferts terminés</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="377"/>
-        <location filename="../src/utilities.cpp" line="555"/>
+        <location filename="../src/utilities.cpp" line="378"/>
+        <location filename="../src/utilities.cpp" line="556"/>
         <source>You don&apos;t have permissions to proceed</source>
         <translation>Vous n’avez pas les permissions nécessaires</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="444"/>
-        <location filename="../src/utilities.cpp" line="468"/>
+        <location filename="../src/utilities.cpp" line="445"/>
+        <location filename="../src/utilities.cpp" line="469"/>
         <source>Extracting process canceled</source>
         <translation>Extraction annulée</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="448"/>
+        <location filename="../src/utilities.cpp" line="449"/>
         <source>Extraction error: incorrect password</source>
         <translation>Erreur d’extraction : mot de passe incorrect</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="450"/>
+        <location filename="../src/utilities.cpp" line="451"/>
         <source>Extraction completed</source>
         <translation>Extraction terminée</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="456"/>
+        <location filename="../src/utilities.cpp" line="457"/>
         <source>Compressing process canceled</source>
         <translation>Compression annulée</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="458"/>
+        <location filename="../src/utilities.cpp" line="459"/>
         <source>Compression completed</source>
         <translation>Compression terminée</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="576"/>
+        <location filename="../src/utilities.cpp" line="577"/>
         <source>There&apos;s no enough space to proceed</source>
         <translation>Mémoire insuffisante pour continuer</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="585"/>
+        <location filename="../src/utilities.cpp" line="586"/>
         <source>Cannot create symlinks in destination path</source>
         <translation>Impossible de créer le lien dans le dossier de destination</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="654"/>
+        <location filename="../src/utilities.cpp" line="655"/>
         <source>There were errors copying files!</source>
         <translation>Il y a eu des erreurs lors de la copie des fichiers !</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="656"/>
+        <location filename="../src/utilities.cpp" line="657"/>
         <source>Copying process is completed</source>
         <translation>Copie terminée</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="680"/>
+        <location filename="../src/utilities.cpp" line="681"/>
         <source>Copying process canceled</source>
         <translation>Copie annulée</translation>
     </message>

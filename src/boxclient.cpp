@@ -2,6 +2,7 @@
 
 #include "sys/vfs.h"
 #include "utils.h"
+#include "config.h"
 
 #include <QDesktopServices>
 #include <QDir>
@@ -120,9 +121,9 @@ void BoxClient::BoxClientPrivate::populateItems()
         {
             item->exten = GetExtension( item->name.toLower() );
 
-            if ( ! QFileInfo("/home/nemo/.thumbnails/filecase").exists() ) {
+            if ( ! QFileInfo(Config::getHome() + "/.thumbnails/filecase").exists() ) {
                 QDir dir;
-                dir.mkdir("/home/nemo/.thumbnails/filecase");
+                dir.mkdir(Config::getHome() + "/.thumbnails/filecase");
             }
 
             if (settings.value("ShowThumbnails","false")=="true")
@@ -136,7 +137,7 @@ void BoxClient::BoxClientPrivate::populateItems()
                     QString file = "Box/" + item->fid;
                     file.replace("//","/");
                     md.addData(file.toUtf8());
-                    QString tf = "/home/nemo/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ".png";
+                    QString tf = Config::getHome() + "/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ".png";
                     if ( QFileInfo(tf).exists() ) {
                         item->exten = tf;
                     } else {

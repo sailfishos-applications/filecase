@@ -1,3 +1,4 @@
+#include "config.h"
 #include "thumbgenerator.h"
 #include <QCryptographicHash>
 #include <QUrl>
@@ -51,7 +52,7 @@ void ThumbGenerator::generate(QString filename)
         file.replace(" ","%20");
         file = "file://"+file;
         md.addData(file.toUtf8());
-        QString tf = "/home/nemo/.thumbnails/whatsup/"+ QString(md.result().toHex().constData()) + ".jpeg";
+        QString tf = Config::getHome() + "/.thumbnails/whatsup/" + QString(md.result().toHex().constData()) + ".jpeg";
         thumb = tf;
 
         if ( !QFileInfo(tf).exists() )
@@ -95,7 +96,7 @@ void ThumbGenerator::generate(QString filename)
         file.replace(" ","%20");
         file = "file://"+file;
         md.addData(file.toUtf8());
-        QString tf = "/home/nemo/.thumbnails/whatsup/"+ QString(md.result().toHex().constData()) + ".jpeg";
+        QString tf = Config::getHome() + "/.thumbnails/whatsup/"+ QString(md.result().toHex().constData()) + ".jpeg";
         thumb = tf;
 
         if ( !QFileInfo(tf).exists() )

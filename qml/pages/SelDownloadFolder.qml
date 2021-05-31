@@ -25,18 +25,18 @@ Dialog {
             console.log("CURRENT LOCATION: " + currentLocation)
 
             if (currentLocation=="device")
-                browser.setPath( config.readConfig("StartupFolder", "/home/nemo") )
+                browser.setPath( config.readConfig("StartupFolder", config.getHome()) )
             else if (currentLocation=="extract")
-                browser.setPath( config.readConfig("ExtractFolder", "/home/nemo") )
+                browser.setPath( config.readConfig("ExtractFolder", config.getHome()) )
             else
-                browser.setPath( config.readConfig(currentLocation + "/download_folder", "/home/nemo/Downloads") )
+                browser.setPath( config.readConfig(currentLocation + "/download_folder", config.getHome() + "/Downloads") )
         }
     }
 
     canAccept: !loadingFolder
 
     function checkRoot() {
-        if (browser.path==="/home/nemo" || browser.path===sdfolder)
+        if (browser.path===config.getHome() || browser.path===sdfolder)
             upBtn.enabled = false
         else
             upBtn.enabled = true
@@ -69,12 +69,12 @@ Dialog {
         PullDownMenu {
             visible: sdfolder!==""
             MenuItem {
-                text: browser.path.indexOf("/home/nemo")>-1? qsTr("SD Card") : qsTr("Phone memory")
+                text: browser.path.indexOf(config.getHome())>-1? qsTr("SD Card") : qsTr("Phone memory")
                 onClicked: {
-                    if (browser.path.indexOf("/home/nemo")>-1)
+                    if (browser.path.indexOf(config.getHome())>-1)
                         browser.setPath(sdfolder)
                     else
-                        browser.setPath("/home/nemo")
+                        browser.setPath(config.getHome())
                 }
             }
         }
@@ -92,7 +92,7 @@ Dialog {
 
         IconButton {
             id: upBtn
-            enabled: browser.path.indexOf("/home/nemo/")>-1
+            enabled: browser.path.indexOf(config.getHome() + "/")>-1
             anchors.verticalCenter: header2.verticalCenter
             anchors.left: parent.left
             anchors.leftMargin: Theme.paddingMedium
@@ -100,7 +100,7 @@ Dialog {
             onClicked: {
                 console.log("Current path: " + browser.path)
 
-                if (browser.path==="/home/nemo" || browser.path===sdfolder) {
+                if (browser.path===config.getHome() || browser.path===sdfolder) {
                     return
                 }
                 else
