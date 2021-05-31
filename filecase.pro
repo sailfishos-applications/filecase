@@ -14,8 +14,6 @@ TARGET = filecase
 
 CONFIG += sailfishapp
 
-PKGCONFIG += quillmetadata-qt5
-
 QT += core xml
 
 DEFINES += QWEBDAVITEM_EXTENDED_PROPERTIES DEBUG_WEBDAV
