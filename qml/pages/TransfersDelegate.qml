@@ -142,7 +142,7 @@ ListItem
         maximumValue: 100
         value: progress
         //indeterminate: progress<=0
-        _hasValueLabel: false
+        //_hasValueLabel: false
         height: descText.height
         leftMargin: 0
         rightMargin: 0

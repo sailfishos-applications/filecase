@@ -1,6 +1,7 @@
 #include "sys/vfs.h"
 #include "search.h"
 #include "utils.h"
+#include "config.h"
 
 #include <QDesktopServices>
 #include <QDir>
@@ -287,9 +288,9 @@ void Search::removeFile(const QString &file, bool start)
 
 void Search::shareFile(const QString &file)
 {
-    if ( !d->path.contains("/home/nemo") )
+    if ( !d->path.contains(Config::getHome()) )
     {
-        emit bannerChanged(tr("You can't share files outside nemo folder"), false);
+        emit bannerChanged(tr("You can't share files outside home folder"), false);
         return;
     }
 

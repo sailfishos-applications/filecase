@@ -2,6 +2,7 @@
 #include "utilities.h"
 #include "transfers.h"
 #include "utils.h"
+#include "config.h"
 
 #include <QSettings>
 #include <QFileInfo>
@@ -229,7 +230,7 @@ QString Utilities::getPreview(QString service, QString link, QString filename, Q
         md.addData(file.toUtf8());
         QString ef = ".jpg";
         if (filename.endsWith(".png") || service=="Box") ef = ".png";
-        QString tf = "/home/nemo/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ef;
+        QString tf = Config::getHome() + "/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ef;
         if (QFileInfo(tf).exists())
             preview = tf;
         else
@@ -362,7 +363,7 @@ void Utilities::extractFiles(QString file, QString password)
     emit utilWorking(true, "");
     QSettings settings("cepiperez","fileboxplus");
     zipFile = file;
-    zipBase = settings.value("ExtractFolder", "/home/nemo").toString();
+    zipBase = settings.value("ExtractFolder", Config::getHome()).toString();
     copyDest = zipBase;
     startExtracting(zipFile, zipBase, password);
 }
@@ -380,7 +381,7 @@ void Utilities::startExtracting(QString file1, QString base, QString password)
     }
     destFile.remove();
 
-    //QString base = settings.value("ExtractFolder","/home/nemo/Documents").toString();
+    //QString base = settings.value("ExtractFolder",Config::getHome() + "/Documents").toString();
     zipProc->setWorkingDirectory(base);
     zipcanceled = 0;
     zipProcCMD = "extract";
@@ -683,6 +684,8 @@ void Utilities::stopCopying()
 
 void Utilities::copyError(int id, QtFileCopier::Error error, bool stopped)
 {
+    Q_UNUSED(stopped)
+
     //qDebug() << id << error << stopped;
     QString file = fileCopier->destinationFilePath(id) + "/" + QFileInfo(fileCopier->sourceFilePath(id)).fileName();
     qDebug() << "Current file: " << file;

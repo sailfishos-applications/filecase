@@ -1,4 +1,5 @@
 #include "transfers.h"
+#include "config.h"
 
 #include "utils.h"
 
@@ -121,7 +122,7 @@ void Transfers::transferFile(QStringList file)
     if (file.at(1)=="download")
     {
         qDebug() << "DOWNLOADING FILE: " << file;
-        QString downloadPath = settings.value(file.at(0)+"/download_folder","/home/nemo/Downloads").toString();
+        QString downloadPath = settings.value(file.at(0)+"/download_folder",Config::getHome() + "/Downloads").toString();
 
         working = true;
         emit workingChanged(working);

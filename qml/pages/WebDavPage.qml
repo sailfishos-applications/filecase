@@ -184,7 +184,7 @@ Page {
                 title: model.name
                 description: model.modified + " - " + model.size
                 //size: model.size
-                imgsource: model.exten.indexOf("/home/nemo")===-1? "/usr/share/filecase/" + iconTheme + "/" + model.exten + ".png" : model.exten
+                imgsource: model.exten.indexOf(config.getHome())===-1? "/usr/share/filecase/" + iconTheme + "/" + model.exten + ".png" : model.exten
                 mime: "image/png"
                 //link: model.link
                 //type: model.type

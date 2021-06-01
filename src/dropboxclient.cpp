@@ -1,4 +1,5 @@
 #include "dropboxclient.h"
+#include "config.h"
 
 #include "sys/vfs.h"
 #include "utils.h"
@@ -117,9 +118,9 @@ void DropboxClient::DropboxClientPrivate::populateItems()
         {
             item->exten = GetExtension( item->name.toLower() );
 
-            if ( ! QFileInfo("/home/nemo/.thumbnails/filecase").exists() ) {
+            if ( ! QFileInfo(Config::getHome() + "/.thumbnails/filecase").exists() ) {
                 QDir dir;
-                dir.mkdir("/home/nemo/.thumbnails/filecase");
+                dir.mkdir(Config::getHome() + "/.thumbnails/filecase");
             }
 
             if (settings.value("ShowThumbnails","false")=="true")
@@ -136,7 +137,7 @@ void DropboxClient::DropboxClientPrivate::populateItems()
                     QString file = "Dropbox/" + path + "/" + item->name;
                     file.replace("//","/");
                     md.addData(file.toUtf8());
-                    QString tf = "/home/nemo/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ".jpg";
+                    QString tf = Config::getHome() + "/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ".jpg";
                     if ( QFileInfo(tf).exists() ) {
                         item->exten = tf;
                     } else {

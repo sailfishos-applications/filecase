@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="es_AR">
+<TS version="2.1" language="es_AR">
 <context>
     <name>AboutPage</name>
     <message>
@@ -223,37 +223,6 @@
     <message>
         <source>Error accessing folder</source>
         <translation>Error al acceder a la carpeta</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Configuración</translation>
-    </message>
-</context>
-<context>
-    <name>DriveSettings</name>
-    <message>
-        <source>Account</source>
-        <translation>Cuenta</translation>
-    </message>
-    <message>
-        <source>Transfers</source>
-        <translation>Transferencias</translation>
-    </message>
-    <message>
-        <source>Download folder</source>
-        <translation>Carpeta de descarga</translation>
-    </message>
-    <message>
-        <source>Storage</source>
-        <translation>Almacenamiento</translation>
-    </message>
-    <message>
-        <source>Upload folder</source>
-        <translation>Carpeta de subida</translation>
-    </message>
-    <message>
-        <source>Remove account</source>
-        <translation>Eliminar cuenta</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -639,7 +608,7 @@
         <translation>Proceso de eliminación completado</translation>
     </message>
     <message>
-        <source>You can&apos;t share files outside nemo folder</source>
+        <source>You can&apos;t share files outside home folder</source>
         <translation>No se puede compartir archivos fuera de la carpeta nemo</translation>
     </message>
     <message>

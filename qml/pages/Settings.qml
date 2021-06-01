@@ -14,7 +14,7 @@ Page {
         if (status === PageStatus.Activating) {
             loaded = false
             orientationMenu.currentIndex = savedorientation==="auto"? 0 : (savedorientation==="portrait"? 1 : 2)
-            startupFolder.value = getName(config.readConfig("StartupFolder","/home/nemo"))
+            startupFolder.value = getName(config.readConfig("StartupFolder",config.getHome()))
             hiddenFilesMenu.checked = config.readConfig("ShowHiddenFiles", "false")==="true"
             thumbnailsMenu.checked = config.readConfig("ShowThumbnails", "false")==="true"
             dateFormatMenu.currentIndex = config.readConfig("DateFormat","dd/mm/yyyy")==="dd/mm/yyyy"? 0 : 1
@@ -139,7 +139,7 @@ Page {
             ValueButton {
                 id: startupFolder
                 label: qsTr("Startup folder")
-                value: config.readConfig("StartupFolder", "/home/nemo")
+                value: config.readConfig("StartupFolder", config.getHome())
                 onClicked: {
                     pageStack.push("SelDownloadFolder.qml")
                 }

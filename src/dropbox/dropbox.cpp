@@ -170,6 +170,8 @@ QUrl Dropbox::apiToUrl(Dropbox::Api api)
             );
         break;
     }
+
+    return QUrl();
 }
 
 Dropbox::Api Dropbox::urlToApi(QUrl url)
@@ -254,6 +256,8 @@ Dropbox::Api Dropbox::urlToApi(QUrl url)
                 return Dropbox::THUMBNAILS;
         }
     }
+
+    return Dropbox::INVALID;
 }
 
 QString Dropbox::metaDataPathFromUrl(QUrl url)

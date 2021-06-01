@@ -14,7 +14,7 @@ ApplicationWindow
     property int pagesOrientations: savedorientation==="auto"? (Orientation.Portrait | Orientation.Landscape) :
                                     (savedorientation==="landscape"? Orientation.Landscape : Orientation.Portrait)
 
-    initialPage: MainPage { id: mainPage; startFolder: "/"; nextFolder: config.readConfig("StartupFolder", "/home/nemo") }
+    initialPage: MainPage { id: mainPage; startFolder: "/"; nextFolder: config.readConfig("StartupFolder", config.getHome()) }
     cover: coverPage
 
     property bool loadingFolder: false
@@ -28,7 +28,7 @@ ApplicationWindow
 
 
     CoverPage { id: coverPage }
-    //MainPage { id: mainPage; startFolder: "/"; nextFolder: config.readConfig("StartupFolder", "/home/nemo") }
+    //MainPage { id: mainPage; startFolder: "/"; nextFolder: config.readConfig("StartupFolder", config.getHome()) }
     Config { id: config }
     //Browser { id: browser }
     Utilities { id: utilities }

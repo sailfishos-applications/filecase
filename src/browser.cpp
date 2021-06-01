@@ -4,6 +4,7 @@
 #include "qtfilecopier.h"
 #include "filedeleter.h"
 #include "utils.h"
+#include "config.h"
 
 //#include <gconf/2/gconf/gconf.h>
 //#include <gconf/2/gconf/gconf-client.h>
@@ -467,8 +468,8 @@ void Browser::goUp()
 void Browser::showRootFiles(bool show)
 {
     showRootFileSystem = show;
-    if ( !d->path.contains("/home/nemo") && show==false )
-        setPath("/home/nemo");
+    if ( !d->path.contains(Config::getHome()) && show==false )
+        setPath(Config::getHome());
 }
 
 void Browser::showHidden(bool show)
@@ -782,7 +783,7 @@ void Browser::cleanCache()
 {
     d->cleaningCache = 1;
     qDebug() << "CLEANING THUMBNAILS CACHE";
-    removeFile("/home/nemo/.thumbnails/filecase");
+    removeFile(Config::getHome() + "/.thumbnails/filecase");
     d->cleaningCache = 0;
     //d->iface->call("Cleanup");
 }

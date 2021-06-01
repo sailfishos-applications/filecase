@@ -1,5 +1,6 @@
 #include "fileinfo.h"
 #include "utils.h"
+#include "config.h"
 
 #include <QMimeDatabase>
 #include <QCryptographicHash>
@@ -131,8 +132,8 @@ QVariantMap FileInfo::data() const
 QString FileInfo::getFilePreview(QString filename)
 {
     QDir dir;
-    if (!QFileInfo("/home/nemo/.thumbnails/whatsup").exists())
-        dir.mkdir("/home/nemo/.thumbnails/whatsup");
+    if (!QFileInfo(Config::getHome() + "/.thumbnails/whatsup").exists())
+        dir.mkdir(Config::getHome() + "/.thumbnails/whatsup");
 
     filename.remove("file://");
     QCryptographicHash md(QCryptographicHash::Md5);
@@ -142,7 +143,7 @@ QString FileInfo::getFilePreview(QString filename)
     file.replace(" ","%20");
     file = "file://"+file;
     md.addData(file.toUtf8());
-    QString tf = "/home/nemo/.thumbnails/whatsup/"+ QString(md.result().toHex().constData()) + ".jpeg";
+    QString tf = Config::getHome() + "/.thumbnails/whatsup/"+ QString(md.result().toHex().constData()) + ".jpeg";
     if (QFileInfo(tf).exists())
         return "file://" + tf;
     else {

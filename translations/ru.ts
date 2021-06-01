@@ -162,12 +162,12 @@
 <context>
     <name>Browser</name>
     <message>
-        <location filename="../src/browser.cpp" line="637"/>
+        <location filename="../src/browser.cpp" line="638"/>
         <source>Delete process completed</source>
         <translation>Удаление завершено</translation>
     </message>
     <message>
-        <location filename="../src/browser.cpp" line="639"/>
+        <location filename="../src/browser.cpp" line="640"/>
         <source>There were errors deleting files!</source>
         <translation>Ошибки при удалении!</translation>
     </message>
@@ -276,44 +276,6 @@
         <location filename="../qml/pages/Drive.qml" line="394"/>
         <source>Folder is empty</source>
         <translation>Каталог пуст</translation>
-    </message>
-</context>
-<context>
-    <name>DriveSettings</name>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="46"/>
-        <source>Settings</source>
-        <translation>Настройки</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="50"/>
-        <source>Account</source>
-        <translation>Учетная запись</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="93"/>
-        <source>Remove account</source>
-        <translation>Удалить учетную запись</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="105"/>
-        <source>Storage</source>
-        <translation>Хранилище</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="152"/>
-        <source>Transfers</source>
-        <translation>Передачи</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="157"/>
-        <source>Download folder</source>
-        <translation>Каталог загрузки</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DriveSettings.qml" line="166"/>
-        <source>Upload folder</source>
-        <translation>Каталог выгрузки</translation>
     </message>
 </context>
 <context>
@@ -561,14 +523,14 @@
         <translation>Копировать ссылку</translation>
     </message>
     <message>
-        <location filename="../src/fileinfo.cpp" line="42"/>
-        <location filename="../src/fileinfo.cpp" line="87"/>
-        <location filename="../src/fileinfo.cpp" line="114"/>
+        <location filename="../src/fileinfo.cpp" line="43"/>
+        <location filename="../src/fileinfo.cpp" line="88"/>
+        <location filename="../src/fileinfo.cpp" line="115"/>
         <source>(loading)</source>
         <translation>(загрузка)</translation>
     </message>
     <message>
-        <location filename="../src/fileinfo.cpp" line="85"/>
+        <location filename="../src/fileinfo.cpp" line="86"/>
         <source>items</source>
         <translation>элементы</translation>
     </message>
@@ -770,27 +732,27 @@
 <context>
     <name>Search</name>
     <message>
-        <location filename="../src/search.cpp" line="279"/>
+        <location filename="../src/search.cpp" line="280"/>
         <source>Delete process completed</source>
         <translation>Удаление завершено</translation>
     </message>
     <message>
-        <location filename="../src/search.cpp" line="281"/>
+        <location filename="../src/search.cpp" line="282"/>
         <source>There were errors deleting files!</source>
         <translation>При удалении произошла ошибка!</translation>
     </message>
     <message>
-        <location filename="../src/search.cpp" line="292"/>
-        <source>You can&apos;t share files outside nemo folder</source>
+        <location filename="../src/search.cpp" line="293"/>
+        <source>You can&apos;t share files outside home folder</source>
         <translation>Нельзя передать файл вне папки nemo</translation>
     </message>
     <message>
-        <location filename="../src/search.cpp" line="412"/>
+        <location filename="../src/search.cpp" line="413"/>
         <source>Search canceled</source>
         <translation>Поиск отменен</translation>
     </message>
     <message>
-        <location filename="../src/search.cpp" line="414"/>
+        <location filename="../src/search.cpp" line="415"/>
         <source>Search completed</source>
         <translation>Поиск завершен</translation>
     </message>
@@ -1194,64 +1156,64 @@
 <context>
     <name>Utilities</name>
     <message>
-        <location filename="../src/utilities.cpp" line="357"/>
+        <location filename="../src/utilities.cpp" line="358"/>
         <source>All transfers have been completed</source>
         <translation>Все передачи закончены</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="377"/>
-        <location filename="../src/utilities.cpp" line="555"/>
+        <location filename="../src/utilities.cpp" line="378"/>
+        <location filename="../src/utilities.cpp" line="556"/>
         <source>You don&apos;t have permissions to proceed</source>
         <translation>Нет прав для продолжения</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="444"/>
-        <location filename="../src/utilities.cpp" line="468"/>
+        <location filename="../src/utilities.cpp" line="445"/>
+        <location filename="../src/utilities.cpp" line="469"/>
         <source>Extracting process canceled</source>
         <translation>Извлечение отменено</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="448"/>
+        <location filename="../src/utilities.cpp" line="449"/>
         <source>Extraction error: incorrect password</source>
         <translation>Ошибка распаковки: неправильный пароль</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="450"/>
+        <location filename="../src/utilities.cpp" line="451"/>
         <source>Extraction completed</source>
         <translation>Извлечение завершено</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="456"/>
+        <location filename="../src/utilities.cpp" line="457"/>
         <source>Compressing process canceled</source>
         <translation>Архивирование отменено</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="458"/>
+        <location filename="../src/utilities.cpp" line="459"/>
         <source>Compression completed</source>
         <translation>Архивирование завершено</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="576"/>
+        <location filename="../src/utilities.cpp" line="577"/>
         <source>There&apos;s no enough space to proceed</source>
         <translation>Недостаточно места для продолжения</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="585"/>
+        <location filename="../src/utilities.cpp" line="586"/>
         <source>Cannot create symlinks in destination path</source>
         <translation>Невозможно создать ссылки в пути назначения</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="654"/>
+        <location filename="../src/utilities.cpp" line="655"/>
         <source>There were errors copying files!</source>
         <translation>Ошибки при копировании!</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="656"/>
+        <location filename="../src/utilities.cpp" line="657"/>
         <source>Copying process is completed</source>
         <translation>Копирование завершено</translation>
     </message>
     <message>
-        <location filename="../src/utilities.cpp" line="680"/>
+        <location filename="../src/utilities.cpp" line="681"/>
         <source>Copying process canceled</source>
         <translation>Копирование отменено</translation>
     </message>

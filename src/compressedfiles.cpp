@@ -2,6 +2,7 @@
 #include "compressedfiles.h"
 #include "loader.h"
 #include "utils.h"
+#include "config.h"
 
 #include <QDesktopServices>
 #include <QDir>
@@ -71,8 +72,8 @@ void CompressedFiles::loadZip(QString file)
     else
         d->compresor = "tar";
 
-    if (QFileInfo().exists("/home/nemo/.config/cepiperez/.tempfile"))
-        QFile::remove("/home/nemo/.config/cepiperez/.tempfile");
+    if (QFileInfo().exists(Config::getHome() + "/.config/cepiperez/.tempfile"))
+        QFile::remove(Config::getHome() + "/.config/cepiperez/.tempfile");
 
     QString ttt1;
     if ( exten.endsWith(".zip") || exten.endsWith(".apk") )
@@ -86,7 +87,7 @@ void CompressedFiles::loadZip(QString file)
     else if ( exten.endsWith(".tar.bz2") )
         ttt1 = "tar -tjvf \"" + file + "\" | awk '{gsub($1,\"\")gsub($4,\"\")gsub($3,\"\")gsub($1,\"\")}; 1'";
 
-    ttt1 += " > /home/nemo/.config/cepiperez/.tempfile";
+    ttt1 += " > " + Config::getHome() + "/.config/cepiperez/.tempfile";
 
     system(ttt1.toUtf8());
 
@@ -98,6 +99,8 @@ void CompressedFiles::loadZip(QString file)
 
 void CompressedFiles::unzipFinished(int res)
 {
+    Q_UNUSED(res)
+
     d->path = d->zipFileName;
     emit pathChanged();
     d->populateItems();
@@ -113,11 +116,11 @@ void CompressedFiles::CompressedFilesPrivate::populateItems()
     QString line; int linea=0;
     QString texto, texto2;
 
-    QFile data( "/home/nemo/.config/cepiperez/.tempfile" );
+    QFile data( Config::getHome() + "/.config/cepiperez/.tempfile" );
     if (data.open(QFile::ReadOnly | QFile::Truncate))
     {
         int start=0;
-        int password = 0;
+        //int password = 0;
         int e_mydoc = 0;
 
         QTextStream out(&data);
@@ -135,7 +138,7 @@ void CompressedFiles::CompressedFilesPrivate::populateItems()
                     int ei = texto2.indexOf(" ");
                     line = line.trimmed();
                     texto2.remove ( ei, texto2.length()-ei );
-                    if ( line.indexOf("*") == 0 ) { line.remove(0,1); password=1; }
+                    if ( line.indexOf("*") == 0 ) { line.remove(0,1); /* password=1; */ }
                     if ( QString(texto2).toInt() > 0 ) texto += line.trimmed() + "\n";
                     if ( line != "" ) {
                         e_mydoc = e_mydoc + QString(texto2).toInt();

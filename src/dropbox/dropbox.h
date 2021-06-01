@@ -36,6 +36,7 @@ class Dropbox
 public:
     enum Api
     {
+        INVALID = -1,
         OAUTH_AUTHORIZE,
         OAUTH_REQUESTTOKEN,
         OAUTH_ACCESSTOKEN,

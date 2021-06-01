@@ -1,6 +1,8 @@
+#include "config.h"
 #include "thumbgenerator.h"
 #include <QCryptographicHash>
 #include <QUrl>
+#include <QImageReader>
 #include <qstring.h>
 #include <qfileinfo.h>
 #include <qdir.h>
@@ -8,7 +10,6 @@
 #include <QSettings>
 #include <QDebug>
 
-#include <quillmetadata-qt5/QuillMetadata>
 #include <QLibrary>
 
 typedef QImage (*CreateThumbnailFunc)(const QString &fileName, const QSize &requestedSize, bool crop);
@@ -51,14 +52,16 @@ void ThumbGenerator::generate(QString filename)
         file.replace(" ","%20");
         file = "file://"+file;
         md.addData(file.toUtf8());
-        QString tf = "/home/nemo/.thumbnails/whatsup/"+ QString(md.result().toHex().constData()) + ".jpeg";
+        QString tf = Config::getHome() + "/.thumbnails/whatsup/" + QString(md.result().toHex().constData()) + ".jpeg";
         thumb = tf;
 
         if ( !QFileInfo(tf).exists() )
         {
             //Utilities::logData("Generating thumbnail for " + fileInfo.absoluteFilePath());
             QImage result;
-            QImage img(fileInfo.absoluteFilePath());
+            QImageReader reader(fileInfo.absoluteFilePath());
+            reader.setAutoTransform(true);
+            QImage img = reader.read();
             if ( img.height() > img.width() ) {
                 result = img.scaledToWidth(480,Qt::SmoothTransformation);
                 //result = result.copy(0,result.height()/2-90,180,180);
@@ -77,17 +80,6 @@ void ThumbGenerator::generate(QString filename)
             {
                 result = img;
             }
-
-            if (fileInfo.absoluteFilePath().endsWith(".jpg")) {
-                QuillMetadata metadata(fileInfo.absoluteFilePath());
-                if (metadata.entry(QuillMetadata::Tag_Orientation).toInt()==6)
-                {
-                    QTransform rot;
-                    rot.rotate(90);
-                    result = result.transformed(rot, Qt::SmoothTransformation);
-                }
-            }
-
             result.save( tf, "JPEG" );
 
         }
@@ -104,7 +96,7 @@ void ThumbGenerator::generate(QString filename)
         file.replace(" ","%20");
         file = "file://"+file;
         md.addData(file.toUtf8());
-        QString tf = "/home/nemo/.thumbnails/whatsup/"+ QString(md.result().toHex().constData()) + ".jpeg";
+        QString tf = Config::getHome() + "/.thumbnails/whatsup/"+ QString(md.result().toHex().constData()) + ".jpeg";
         thumb = tf;
 
         if ( !QFileInfo(tf).exists() )

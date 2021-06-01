@@ -1,4 +1,5 @@
 #include "skyclient.h"
+#include "config.h"
 
 #include "sys/vfs.h"
 #include "utils.h"
@@ -135,9 +136,9 @@ void SkyClient::SkyClientPrivate::populateItems()
         {
             item->exten = GetExtension( item->name.toLower() );
 
-            if ( ! QFileInfo("/home/nemo/.thumbnails/filecase").exists() ) {
+            if ( ! QFileInfo(Config::getHome() + "/.thumbnails/filecase").exists() ) {
                 QDir dir;
-                dir.mkdir("/home/nemo/.thumbnails/filecase");
+                dir.mkdir(Config::getHome() + "/.thumbnails/filecase");
             }
 
             if (settings.value("ShowThumbnails","false")=="true")
@@ -153,7 +154,7 @@ void SkyClient::SkyClientPrivate::populateItems()
                     QString file = "OneDrive/" + item->link;
                     file.replace("//","/");
                     md.addData(file.toUtf8());
-                    QString tf = "/home/nemo/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ".jpg";
+                    QString tf = Config::getHome() + "/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ".jpg";
                     if ( QFileInfo(tf).exists() ) {
                         item->exten = tf;
                     } else if (misarchivos[i].value("thumb","").toString()!="" ) {
@@ -454,6 +455,8 @@ void SkyClient::handleNetworkReply(QNetworkReply *networkReply)
 
 void SkyClient::parseData(QString dir, QString data)
 {
+    Q_UNUSED(data)
+
     //qDebug() << dir;
     //qDebug() << data;
 
@@ -769,8 +772,7 @@ void SkyClient::moveFile(QString source)
     //qDebug() << url << params;
     disconnect(datos,0,0,0);
     connect(datos, SIGNAL(finished(QNetworkReply*)),this, SLOT(handleFileOps(QNetworkReply*)));
-    QNetworkReply *reply = datos->sendCustomRequest(networkRequest, "MOVE", query);
-
+    datos->sendCustomRequest(networkRequest, "MOVE", query);
 }
 
 void SkyClient::removeFile(QString path)
@@ -790,7 +792,6 @@ void SkyClient::removeFile(QString path)
     disconnect(datos,0,0,0);
     connect(datos, SIGNAL(finished(QNetworkReply*)),this, SLOT(handleFileOps(QNetworkReply*)));
     datos->deleteResource(networkRequest);
-
 }
 
 void SkyClient::copyFile(QString source)
@@ -818,8 +819,7 @@ void SkyClient::copyFile(QString source)
     //qDebug() << url << params;
     disconnect(datos,0,0,0);
     connect(datos, SIGNAL(finished(QNetworkReply*)),this, SLOT(handleFileOps(QNetworkReply*)));
-    QNetworkReply *reply = datos->sendCustomRequest(networkRequest, "COPY", query);
-
+    datos->sendCustomRequest(networkRequest, "COPY", query);
 }
 
 void SkyClient::imageLoaded(QString filename)

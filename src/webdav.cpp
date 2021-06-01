@@ -1,4 +1,5 @@
 #include "webdav.h"
+#include "config.h"
 
 #include "sys/vfs.h"
 #include "utils.h"
@@ -124,9 +125,9 @@ void WebDav::WebDavPrivate::populateItems()
         {
             item->exten = GetExtension( item->name.toLower() );
 
-            if ( ! QFileInfo("/home/nemo/.thumbnails/filecase").exists() ) {
+            if ( ! QFileInfo(Config::getHome() + "/.thumbnails/filecase").exists() ) {
                 QDir dir;
-                dir.mkdir("/home/nemo/.thumbnails/filecase");
+                dir.mkdir(Config::getHome() + "/.thumbnails/filecase");
             }
 
             if (settings.value("ShowThumbnails","false")=="true")
@@ -142,7 +143,7 @@ void WebDav::WebDavPrivate::populateItems()
                     QString file = "WebDav-" + q->m_service + "/" + misarchivos[i].value("id","").toString();
                     file.replace("//","/");
                     md.addData(file.toUtf8());
-                    QString tf = "/home/nemo/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ".jpg";
+                    QString tf = Config::getHome() + "/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ".jpg";
                     if ( QFileInfo(tf).exists() ) {
                         item->exten = tf;
                     } else if (misarchivos[i].value("thumb","").toString()!="" ) {
@@ -759,6 +760,8 @@ void WebDav::imageLoaded(QString filename)
 
 QString WebDav::getPreview(QString link, QString filename, QString mode)
 {
+    Q_UNUSED(link)
+
     QString preview = "";
     if (mode=="download")
     {
@@ -768,7 +771,7 @@ QString WebDav::getPreview(QString link, QString filename, QString mode)
         md.addData(file.toUtf8());
         QString ef = ".jpg";
         if (filename.endsWith(".png")) ef = ".png";
-        QString tf = "/home/nemo/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ef;
+        QString tf = Config::getHome() + "/.thumbnails/filecase/"+ QString(md.result().toHex().constData()) + ef;
         if (QFileInfo(tf).exists())
             preview = tf;
         else
@@ -873,6 +876,8 @@ void WebDav::removeAccount()
 
 void WebDav::setUploadFolder(QString name)
 {
+    Q_UNUSED(name)
+
     QSettings settings("cepiperez","fileboxplus");
     settings.setValue("WebDav-" + m_service + "/upload_folder", d->path);
     settings.sync();

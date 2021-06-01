@@ -18,7 +18,7 @@ Dialog {
 
     onStatusChanged: {
         if (status===PageStatus.Activating)
-            startupFolder.value = getName(config.readConfig("ExtractFolder", "/home/nemo"))
+            startupFolder.value = getName(config.readConfig("ExtractFolder", config.getHome()))
     }
 
 
