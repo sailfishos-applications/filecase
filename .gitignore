@@ -28,6 +28,7 @@ Makefile*
 # QtCreator
 
 *.autosave
+*.list
 
 #QtCtreator Qml
 *.qmlproject.user
@@ -38,3 +39,10 @@ resources
 
 # Generated data
 qml/images
+
+# Translation
+translations/*.qm
+
+# Sailfish SDK binaries
+RPMS
+filecase
