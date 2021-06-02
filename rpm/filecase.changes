@@ -1,3 +1,9 @@
+* Wed Jun 02 2021 David Llewellyn-Jones <david@flypig.co.uk> 0.2.1
+- Fixed QML error in transfer code
+- Home folder defaults to /home/defaultuser rather than /home/nemo
+- Home folder is stored in settings file and can be changed
+- Removed dependency on quillmetadata-qt5 for rotation jpegs
+
 * Fri Nov 06 2015 Matias Perez <cepiperez@gmail.com> 0.0.1-9
 - Fixed notification banner orientation
 - Fixed removing cloud accounts
