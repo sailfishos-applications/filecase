@@ -7,7 +7,7 @@ ApplicationWindow
 {
     id: appWindow
 
-    property string appVersion: "0.1-9"
+    property string appVersion: "0.2-2"
 
     property string savedorientation: config.readConfig("Orientation", "auto")
 
