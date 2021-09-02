@@ -1,0 +1,65 @@
+on: [push]
+
+jobs:
+  build-armv7hl:
+    runs-on: ubuntu-latest
+    name: Build armv7hl
+    steps:
+    - uses: actions/checkout@v2
+
+    - id: build
+      uses: R1tschY/sailfish-build-rpm@v1
+      with:
+        arch: 'armv7hl'
+        release: '4.0.1.48'
+        fix-version: false
+        enable-debug: true
+        check: true
+
+    - name: Upload build result
+      uses: actions/upload-artifact@v2
+      with:
+        name: armv7hl
+        path: RPMS
+
+  build-i486:
+    runs-on: ubuntu-latest
+    name: Build i486
+    steps:
+    - uses: actions/checkout@v2
+
+    - id: build
+      uses: R1tschY/sailfish-build-rpm@v1
+      with:
+        arch: 'i486'
+        release: '4.0.1.48'
+        fix-version: false
+        enable-debug: true
+        check: true
+
+    - name: Upload build result
+      uses: actions/upload-artifact@v2
+      with:
+        name: i486
+        path: RPMS
+
+  build-aarch64:
+    runs-on: ubuntu-latest
+    name: Build aarch64
+    steps:
+    - uses: actions/checkout@v2
+
+    - id: build
+      uses: R1tschY/sailfish-build-rpm@v1
+      with:
+        arch: 'aarch64'
+        release: '4.0.1.48'
+        fix-version: false
+        enable-debug: true
+        check: true
+
+    - name: Upload build result
+      uses: actions/upload-artifact@v2
+      with:
+        name: aarch64
+        path: RPMS
