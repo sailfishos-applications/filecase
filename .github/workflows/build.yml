@@ -58,7 +58,7 @@ jobs:
         for asset in RPMS/*.rpm; do
           assets+=("-a" "$asset")
         done
-        tag_name="${{ github.event.release.tag_name }}"
-        hub release create "${assets[@]}" -m "$tag_name" "$tag_name"
+        tag_name=${{ github.ref }}
+        hub release create "${assets[@]}" -m "${github.ref }" 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
