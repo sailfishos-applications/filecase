@@ -14,7 +14,7 @@ jobs:
         release: '4.0.1.48'
         fix-version: false
         enable-debug: true
-        check: true
+        check: false
 
     - name: Upload build result
       uses: actions/upload-artifact@v2
@@ -35,7 +35,7 @@ jobs:
         release: '4.0.1.48'
         fix-version: false
         enable-debug: true
-        check: true
+        check: false
 
     - name: Upload build result
       uses: actions/upload-artifact@v2
@@ -56,7 +56,7 @@ jobs:
         release: '4.0.1.48'
         fix-version: false
         enable-debug: true
-        check: true
+        check: false
 
     - name: Upload build result
       uses: actions/upload-artifact@v2
