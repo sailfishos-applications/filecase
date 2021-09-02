@@ -45,11 +45,16 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: rpms
-        path: RPMS
+        path: RPMS   
         
-    - name: Get current time
-      id: date
-      run: echo "::set-output name=date::$(date +'%Y/%m/%d')"        
+    - name: Delete releases     
+      uses: dev-drprasad/delete-tag-and-release@v0.2.0
+      with:
+        delete_release: true # default: false
+        tag_name: v0.1.0 # tag name to delete
+        repo: <owner>/<repoName> # target repo (optional). defaults to repo running this action
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
 
     - name: Create release
       run: |
@@ -58,7 +63,7 @@ jobs:
         for asset in RPMS/*.rpm; do
           assets+=("-a" "$asset")
         done
-        tag_name=${{ github.ref }}
-        hub release create "${assets[@]}" -m "${github.ref }" 
+        tag_name="${GITHUB_REF##*/}"
+        hub release create "${assets[@]}" -m "$tag_name" "$tag_name"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
