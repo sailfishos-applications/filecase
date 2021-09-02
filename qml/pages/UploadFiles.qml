@@ -22,7 +22,6 @@ Page {
 
     SailfishTransferMethodsModel {
         id: transferMethodsModel
-        filter: fileInfo.data.mime
     }
 
     ListModel {

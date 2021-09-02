@@ -1113,42 +1113,42 @@
 <context>
     <name>UploadFiles</name>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="44"/>
         <source>Share</source>
         <translation>分享</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="46"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
         <source>Select service</source>
         <translation>选择服务</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
         <source>Location</source>
         <translation>位置</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
         <source>Target</source>
         <translation>目标</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="164"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="163"/>
         <source>Type</source>
         <translation>类型</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="170"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="169"/>
         <source>Size</source>
         <translation>大小</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="177"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="176"/>
         <source>Created</source>
         <translation>创建日期</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="184"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="183"/>
         <source>Last modified</source>
         <translation>最后修改日期</translation>
     </message>
