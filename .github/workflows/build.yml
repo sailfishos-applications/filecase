@@ -48,7 +48,6 @@ jobs:
         path: RPMS
 
     - name: Create release
-      if: contains(github.ref, 'release')
       run: |
         set -x
         assets=()
