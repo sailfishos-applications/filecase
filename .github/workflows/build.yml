@@ -52,7 +52,6 @@ jobs:
       with:
         delete_release: true # default: false
         tag_name: master # tag name to delete
-        repo: <owner>/<repoName> # target repo (optional). defaults to repo running this action
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
 
