@@ -9,70 +9,43 @@ on:
   pull_request:
     branches:
       - master
+
 jobs:
-  build-armv7hl:
+  build:
     runs-on: ubuntu-latest
-    name: Build armv7hl
+
     steps:
     - uses: actions/checkout@v2
 
-    - id: build
+    - name: Prepare
+      run: mkdir output
+
+    - name: Build armv7hl
+      id: build_armv7hl
       uses: R1tschY/sailfish-build-rpm@v1
       with:
-        arch: 'armv7hl'
-        release: '4.0.1.48'
-        fix-version: false
-        enable-debug: true
-        check: false
+        release: 4.0.1.48
 
-    - name: Upload build result
-      uses: actions/upload-artifact@v2
-      with:
-        name: armv7hl
-        path: RPMS
-
-  build-i486:
-    runs-on: ubuntu-latest
-    name: Build i486
-    steps:
-    - uses: actions/checkout@v2
-
-    - id: build
+    - name: Build i486
+      id: build_i486
       uses: R1tschY/sailfish-build-rpm@v1
       with:
-        arch: 'i486'
-        release: '4.0.1.48'
-        fix-version: false
-        enable-debug: true
-        check: false
-
-    - name: Upload build result
-      uses: actions/upload-artifact@v2
-      with:
-        name: i486
-        path: RPMS
-
-  build-aarch64:
-    runs-on: ubuntu-latest
-    name: Build aarch64
-    steps:
-    - uses: actions/checkout@v2
-
-    - id: build
-      uses: R1tschY/sailfish-build-rpm@v1
-      with:
-        arch: 'aarch64'
-        release: '4.0.1.48'
-        fix-version: false
-        enable-debug: true
-        check: false
-
-    - name: Upload build result
-      uses: actions/upload-artifact@v2
-      with:
-        name: aarch64
-        path: RPMS
+        release: 4.0.1.48
+        arch: i486
         
+    - name: Build aarch64
+      id: build_aarch64
+      uses: R1tschY/sailfish-build-rpm@v1
+      with:
+        release: 4.0.1.48
+        arch: aarch64        
+      
+    - name: Upload build result
+      uses: actions/upload-artifact@v2
+      with:
+        name: rpms
+        path: RPMS
+
     - name: Create release
       if: contains(github.ref, 'release')
       run: |
@@ -84,4 +57,4 @@ jobs:
         tag_name="${GITHUB_REF##*/}"
         hub release create "${assets[@]}" -m "$tag_name" "$tag_name"
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
