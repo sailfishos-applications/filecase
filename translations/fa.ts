@@ -1113,42 +1113,42 @@
 <context>
     <name>UploadFiles</name>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="44"/>
         <source>Share</source>
         <translation>اشتراک‌گذاری</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="46"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
         <source>Select service</source>
         <translation>انتخاب خدمات</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
         <source>Location</source>
         <translation>موقعیت</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
         <source>Target</source>
         <translation>هدف</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="164"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="163"/>
         <source>Type</source>
         <translation>نوع</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="170"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="169"/>
         <source>Size</source>
         <translation>اندازه</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="177"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="176"/>
         <source>Created</source>
         <translation>ساخته‌شده</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="184"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="183"/>
         <source>Last modified</source>
         <translation>آخرین ویرایش</translation>
     </message>

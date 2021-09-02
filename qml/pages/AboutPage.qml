@@ -57,7 +57,7 @@ Page {
 
             Label {
                 color: Theme.secondaryColor
-                text: "(C) 2015 Matias Perez (CepiPerez)"
+                text: "(C) 2015-2021 Matias Perez (CepiPerez)"
                 font.pixelSize: Theme.fontSizeSmall
             }
 

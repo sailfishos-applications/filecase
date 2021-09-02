@@ -1113,42 +1113,42 @@
 <context>
     <name>UploadFiles</name>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="44"/>
         <source>Share</source>
         <translation>Partager</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="46"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
         <source>Select service</source>
         <translation>Choisir un service</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
         <source>Location</source>
         <translation>Emplacement</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
         <source>Target</source>
         <translation>Destination</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="164"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="163"/>
         <source>Type</source>
         <translation>Type</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="170"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="169"/>
         <source>Size</source>
         <translation>Taille</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="177"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="176"/>
         <source>Created</source>
         <translation>Créé</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="184"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="183"/>
         <source>Last modified</source>
         <translation>Dernière modification</translation>
     </message>
