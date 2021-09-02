@@ -402,7 +402,7 @@ void DropboxClient::handleNetworkReply(QNetworkReply *networkReply)
 
         action = "authorize";
         QString url = Common::dropbox->apiToUrl(Dropbox::OAUTH_AUTHORIZE).toString();
-        url += "?oauth_token=" + requestUserData.token;
+        url += "?oauth2_token=" + requestUserData.token;
 
         qDebug() << "OPENING BROWSER...";
         emit d->q->openUrl(url);

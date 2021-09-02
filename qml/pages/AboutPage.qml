@@ -48,7 +48,7 @@ Page {
 
                     Label {
                         color: Theme.secondaryHighlightColor
-                        text: "version " + appVersion
+                        text: "Version " + appVersion
                         font.pixelSize: Theme.fontSizeSmall
                     }
                 }
@@ -57,7 +57,10 @@ Page {
 
             Label {
                 color: Theme.secondaryColor
-                text: "(C) 2015-2021 Matias Perez (CepiPerez)"
+                text: qsTr("(C) 2015-2021 Matias Perez (CepiPerez).") + "<br>" +
+                      "Contributeurs: " + "<br>" +
+                      "David Llewellyn-Jones (llewelld), " + "<br>" +
+                      "Rudi Timmermans."
                 font.pixelSize: Theme.fontSizeSmall
             }
 

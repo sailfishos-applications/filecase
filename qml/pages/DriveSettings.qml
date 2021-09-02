@@ -15,7 +15,7 @@ Page {
 
     onStatusChanged: {
         if (status === PageStatus.Activating) {
-            downloadValue.value = getName(config.readConfig("Google Drive/download_folder", config.getHome() "/Downloads"))
+            downloadValue.value = getName(config.readConfig("Google Drive/download_folder",config.getHome() "/Downloads"))
             uploadValue.value = getName(config.readConfig("Google Drive/upload_folder","/||root"))
         }
     }
