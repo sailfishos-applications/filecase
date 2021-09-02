@@ -46,6 +46,10 @@ jobs:
       with:
         name: rpms
         path: RPMS
+        
+    - name: Get current time
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y/%m/%d')"        
 
     - name: Create release
       run: |
@@ -54,7 +58,7 @@ jobs:
         for asset in RPMS/*.rpm; do
           assets+=("-a" "$asset")
         done
-        tag_name: ${{ github.ref }}
-        release_name: "Build ${{ steps.date.outputs.date }}"
+        tag_name="${GITHUB_REF##*/}"
+        hub release create "${assets[@]}" -m "Build ${{ steps.date.outputs.date }}"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
