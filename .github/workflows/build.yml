@@ -45,7 +45,15 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: rpms
-        path: RPMS
+        path: RPMS   
+        
+    - name: Delete releases     
+      uses: dev-drprasad/delete-tag-and-release@v0.2.0
+      with:
+        delete_release: true # default: false
+        tag_name: master # tag name to delete
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
 
     - name: Create release
       run: |
