@@ -54,5 +54,7 @@ jobs:
         for asset in RPMS/*.rpm; do
           assets+=("-a" "$asset")
         done
+        tag_name: ${{ github.ref }}
+        release_name: "Build ${{ steps.date.outputs.date }}"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
