@@ -25,6 +25,7 @@ jobs:
       uses: R1tschY/sailfish-build-rpm@v1
       with:
         release: 4.0.1.48
+        arch: armv7hl
 
     - name: Build i486
       id: build_i486
