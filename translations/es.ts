@@ -15,6 +15,10 @@
         <source>You can contribute to keep this project alive making a small donation</source>
         <translation>Usted puede contribuír para mantener este proyecto con una pequeña donación</translation>
     </message>
+    <message>
+        <source>(C) 2015-2021 Matias Perez (CepiPerez).</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AddAccount</name>

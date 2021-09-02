@@ -9,12 +9,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="70"/>
+        <location filename="../qml/pages/AboutPage.qml" line="60"/>
+        <source>(C) 2015-2021 Matias Perez (CepiPerez).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="73"/>
         <source>If your language is not available you can contribute here:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="86"/>
+        <location filename="../qml/pages/AboutPage.qml" line="89"/>
         <source>You can contribute to keep this project alive making a small donation</source>
         <translation type="unfinished"></translation>
     </message>
