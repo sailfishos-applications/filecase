@@ -16,7 +16,19 @@
         <translation>Usted puede contribuír para mantener este proyecto con una pequeña donación</translation>
     </message>
     <message>
-        <source>(C) 2015-2021 Matias Perez (CepiPerez).</source>
+        <source>Main Developer:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>(C) 2015 Matias Perez (CepiPerez).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Contributeurs:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>David Llewellyn-Jones (llewelld), </source>
         <translation type="unfinished"></translation>
     </message>
 </context>
