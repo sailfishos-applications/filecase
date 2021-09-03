@@ -57,9 +57,30 @@ Page {
 
             Label {
                 color: Theme.secondaryColor
-                text: qsTr("(C) 2015-2021 Matias Perez (CepiPerez).") + "<br>" +
-                      "Contributeurs: " + "<br>" +
-                      "David Llewellyn-Jones (llewelld), " + "<br>" +
+                text: qsTr("Main Developer:")
+                font.pixelSize: Theme.fontSizeSmall
+            }
+
+            Label {
+                color: Theme.secondaryColor
+                text: qsTr("(C) 2015 Matias Perez (CepiPerez).")
+                font.pixelSize: Theme.fontSizeSmall
+            }
+
+            Separator {
+                width: parent.width
+                color: Theme.secondaryColor
+            }
+
+            Label {
+                color: Theme.secondaryColor
+                text: qsTr("Contributeurs:")
+                font.pixelSize: Theme.fontSizeSmall
+            }
+
+            Label {
+                color: Theme.secondaryColor
+                text: qsTr("David Llewellyn-Jones (llewelld), ") + "<br>" +
                       "Rudi Timmermans."
                 font.pixelSize: Theme.fontSizeSmall
             }

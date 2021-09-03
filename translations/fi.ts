@@ -10,16 +10,31 @@
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="60"/>
-        <source>(C) 2015-2021 Matias Perez (CepiPerez).</source>
+        <source>Main Developer:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="73"/>
+        <location filename="../qml/pages/AboutPage.qml" line="66"/>
+        <source>(C) 2015 Matias Perez (CepiPerez).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="77"/>
+        <source>Contributeurs:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="83"/>
+        <source>David Llewellyn-Jones (llewelld), </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="94"/>
         <source>If your language is not available you can contribute here:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="89"/>
+        <location filename="../qml/pages/AboutPage.qml" line="110"/>
         <source>You can contribute to keep this project alive making a small donation</source>
         <translation type="unfinished"></translation>
     </message>
