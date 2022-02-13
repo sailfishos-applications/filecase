@@ -63,7 +63,7 @@ Page {
 
             Label {
                 color: Theme.secondaryColor
-                text: qsTr("(C) 2015 Matias Perez (CepiPerez).")
+                text: qsTr("(C) 2015 - 2022 Matias Perez (CepiPerez)")
                 font.pixelSize: Theme.fontSizeSmall
             }
 
@@ -74,14 +74,14 @@ Page {
 
             Label {
                 color: Theme.secondaryColor
-                text: qsTr("Contributeurs:")
+                text: qsTr("Contributors:")
                 font.pixelSize: Theme.fontSizeSmall
             }
 
             Label {
                 color: Theme.secondaryColor
-                text: qsTr("David Llewellyn-Jones (llewelld), ") + "<br>" +
-                      "Rudi Timmermans."
+                text: qsTr("David Llewellyn-Jones (llewelld / flypig), ") + "<br>" +
+                      "Rudi Timmermans (ruditimmer)"
                 font.pixelSize: Theme.fontSizeSmall
             }
 
@@ -129,6 +129,5 @@ Page {
         }
 
     }
-
 
 }
