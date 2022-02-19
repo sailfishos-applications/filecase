@@ -30,6 +30,11 @@ Makefile*
 *.autosave
 *.list
 
+# IDEs
+.vscode
+.buildconfig
+.mypy_cache
+
 # Conan
 conan.lock
 conanbuildinfo.pri
@@ -56,6 +61,16 @@ translations/*.qm
 # Sailfish SDK binaries
 RPMS
 filecase
+
+# Python
+__pycache__
+.venv*
+
+# RPM
+*.list
+/rpm/*.spec.*
+/rpmbuilddir*
+/RPMS
 
 # Build dirs
 /build*
