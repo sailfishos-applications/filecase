@@ -30,6 +30,16 @@ Makefile*
 *.autosave
 *.list
 
+# Conan
+conan.lock
+conanbuildinfo.pri
+conanbuildinfo.txt
+conanbuildinfo.cmake
+conaninfo.txt
+conan.lock
+graph_info.json
+.conan
+
 #QtCtreator Qml
 *.qmlproject.user
 *.qmlproject.user.*
@@ -46,3 +56,6 @@ translations/*.qm
 # Sailfish SDK binaries
 RPMS
 filecase
+
+# Build dirs
+/build*
