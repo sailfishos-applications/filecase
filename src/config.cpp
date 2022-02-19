@@ -29,5 +29,5 @@ void Config::removeConfig(QString data1)
 
 QString Config::getHome()
 {
-    return readConfig("PhoneMemoryFolder", "/home/defaultuser");
+    return readConfig("HomeFolder", "/home/defaultuser");
 }
