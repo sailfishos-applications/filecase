@@ -63,7 +63,7 @@ Page {
 
             Label {
                 color: Theme.secondaryColor
-                text: qsTr("(C) 2015 - 2022 Matias Perez (CepiPerez)")
+                text: "(C) 2015-2022 Matias Perez (CepiPerez)"
                 font.pixelSize: Theme.fontSizeSmall
             }
 
@@ -80,8 +80,9 @@ Page {
 
             Label {
                 color: Theme.secondaryColor
-                text: qsTr("David Llewellyn-Jones (llewelld / flypig), ") + "<br>" +
-                      "Rudi Timmermans (ruditimmer)"
+                text: "David Llewellyn-Jones (llewelld / flypig)" + "<br>" +
+                      "Rudi Timmermans (ruditimmer)" + "<br>" +
+                      "olf (Olf0)"
                 font.pixelSize: Theme.fontSizeSmall
             }
 

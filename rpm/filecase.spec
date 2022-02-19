@@ -38,68 +38,15 @@ Short description of my SailfishOS Application
 # << setup
 
 %build
+# >> build pre
+# << build pre
 
-VENV=.venv-conan-%{_target_cpu}
-export TARGET_CPU="%{_target_cpu}"
-export SAILFISHCONNECT_PACKAGE_VERSION="%{version}-%{release}"
+%qtc_qmake5 
 
-SOURCE_DIR=`readlink -f %{_sourcedir}/..`
+%qtc_make %{?_smp_mflags}
 
-if [ "$TARGET_CPU" == "i486" ] ; then  
-  GENERATOR="Unix Makefiles"
-else
-  GENERATOR="Ninja"
-fi
-
-if [ "$SAILFISH_SDK_FRONTEND" == "qtcreator" ] ; then  
-  CMAKE_BUILD_TYPE="Debug"
-else
-  CMAKE_BUILD_TYPE="RelWithDebInfo"
-fi
-
-if [ -f "CMakeLists.txt" ] ; then
-  BUILD_DIR="rpmbuilddir-%{_target_cpu}"
-else 
-  BUILD_DIR="."
-fi
-export CONAN_USER_HOME=${SOURCE_DIR}
-
-# install virtualenv
-if [ ! -f ~/.local/bin/virtualenv ] ; then
-  python3 -m pip install --no-warn-script-location --user virtualenv
-fi
-
-# create virtualenv and install conan
-if [ ! -f "$VENV/bin/conan" ] ; then
-  ~/.local/bin/virtualenv --python=python3 "$VENV"
-  source "$VENV/bin/activate"
-  pip install conan
-else
-  source "$VENV/bin/activate"
-fi
-
-# speed up conan remote add
-if ! grep -sq sailfishos "$CONAN_USER_HOME/.conan/remotes.json" ; then
-  conan remote add -f sailfishos https://gitlab.com/api/v4/projects/12208535/packages/conan
-fi
-
-mkdir -p "$BUILD_DIR"
-
-cd "$BUILD_DIR"
-conan install "$SOURCE_DIR" --build=missing --profile="$SOURCE_DIR/dev/profiles/%{_target_cpu}"
-conan remove -f "*" --builds --src --system-reqs
-
-cmake \
-  -DCMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE \
-  -DBUILD_SHARED_LIBS=OFF \
-  -DCMAKE_INSTALL_PREFIX=/usr \
-  -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
-  -DCONAN_DISABLE_CHECK_COMPILER=ON \
-  -DSAILFISHOS=ON \
-  -G "$GENERATOR" \
-  "$SOURCE_DIR"
-
-cmake --build . -- %{?_smp_mflags}
+# >> build post
+# << build post
 
 %install
 rm -rf %{buildroot}
