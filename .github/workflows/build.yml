@@ -1,68 +1,112 @@
-name: SailfishOS build
+name: SailfishFilecase build
 
 on:
   push:
     branches:
-      - master
-    tags:
       - '*'
   pull_request:
     branches:
-      - master
+      - '*'
+
+env:
+  RELEASE: 4.0.1.48
 
 jobs:
-  build:
+  build-armv7hl:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        submodules: recursive
 
-    - name: Prepare
-      run: mkdir output
+    - uses: actions/cache@v2
+      with:
+        path: .venv-conan-*
+        key: venv-cache4-armv7hl
 
-    - name: Build armv7hl
-      id: build_armv7hl
+    - uses: actions/cache@v2
+      with:
+        path: .conan/data
+        key: conan-cache2-4.0.1-armv7hl
+
+    - name: Check style
+      run: python3 scripts/bad-style.py bad-style.xml
+
+    - name: Build armv7hl RPMS
       uses: R1tschY/sailfish-build-rpm@v1
       with:
-        release: 4.0.1.48
-        arch: armv7hl
+        arch: 'armv7hl'
+        release: '4.0.1.48'
+        fix-version: false
+        enable-debug: true
 
-    - name: Build i486
-      id: build_i486
-      uses: R1tschY/sailfish-build-rpm@v1
-      with:
-        release: 4.0.1.48
-        arch: i486
-        
-    - name: Build aarch64
-      id: build_aarch64
-      uses: R1tschY/sailfish-build-rpm@v1
-      with:
-        release: 4.0.1.48
-        arch: aarch64        
-      
     - name: Upload build result
       uses: actions/upload-artifact@v2
       with:
-        name: rpms
-        path: RPMS   
-        
-    - uses: dev-drprasad/delete-older-releases@v0.2.0
-      with:
-        repo: CepiPerez/filecase-sailfish # defaults to current repo
-        keep_latest: 1
-        delete_tag_pattern: master # defaults to ""
-      env:
-       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
+        name: sailfishfilecase-armv7hl
+        path: RPMS
 
-    - name: Create release
-      run: |
-        set -x
-        assets=()
-        for asset in RPMS/*.rpm; do
-          assets+=("-a" "$asset")
-        done
-        tag_name="${GITHUB_REF##*/}"
-        hub release create "${assets[@]}" -m "$tag_name" "$tag_name"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  build-i486:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
+
+    - uses: actions/cache@v2
+      with:
+        path: .venv-conan-*
+        key: venv-cache4-i486
+
+    - uses: actions/cache@v2
+      with:
+        path: .conan/data
+        key: conan-cache2-4.0.1-i486
+
+    - name: Build i486 RPMS
+      uses: R1tschY/sailfish-build-rpm@v1
+      with:
+        arch: 'i486'
+        release: '4.0.1.48'
+        fix-version: false
+        enable-debug: true
+
+    - name: Upload build result
+      uses: actions/upload-artifact@v2
+      with:
+        name: sailfishfilecase-i486
+        path: RPMS
+
+  build-aarch64:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
+
+    - uses: actions/cache@v2
+      with:
+        path: .venv-conan-*
+        key: venv-cache4-aarch64
+
+    - uses: actions/cache@v2
+      with:
+        path: .conan/data
+        key: conan-cache2-4.0.1-aarch64
+
+    - name: Build aarch64 RPMS
+      uses: R1tschY/sailfish-build-rpm@v1
+      with:
+        arch: 'aarch64'
+        release: '4.0.1.48'
+        fix-version: false
+        enable-debug: true
+
+    - name: Upload build result
+      uses: actions/upload-artifact@v2
+      with:
+        name: sailfishfilecase-aarch64
+        path: RPMS
