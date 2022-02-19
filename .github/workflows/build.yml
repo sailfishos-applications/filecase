@@ -47,13 +47,13 @@ jobs:
         name: rpms
         path: RPMS   
         
-    - name: Delete releases     
-      uses: dev-drprasad/delete-tag-and-release@v0.2.0
+    - uses: dev-drprasad/delete-older-releases@v0.2.0
       with:
-        delete_release: true # default: false
-        tag_name: master # tag name to delete
+        repo: CepiPerez/filecase-sailfish # defaults to current repo
+        keep_latest: 1
+        delete_tag_pattern: master # defaults to ""
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
+       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
 
     - name: Create release
       run: |
