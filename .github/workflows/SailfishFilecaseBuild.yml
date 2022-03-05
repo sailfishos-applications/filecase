@@ -49,7 +49,6 @@ jobs:
         path: RPMS
 
     - name: Create release
-      if: contains(github.ref, 'v')
       run: |
         set -x
         assets=()
@@ -62,7 +61,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Create prerelease
-      if: contains(github.ref, 'pre')
       run: |
         set -x
         assets=()
