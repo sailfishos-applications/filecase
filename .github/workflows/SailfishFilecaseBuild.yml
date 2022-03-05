@@ -20,19 +20,24 @@ jobs:
     - name: Prepare
       run: mkdir output
 
-    - name: Build armv7hl
-      id: build_armv7hl
-      uses: coderus/github-sfos-build@master
+    - uses: R1tschY/sailfish-build-rpm@v1
       with:
-        release: 3.4.0.22
+        arch: "armv7hl"
+        release: "4.1.0.24"
+        fix-version: false
+        
+    - uses: R1tschY/sailfish-build-rpm@v1
+      with:
+        arch: "i486"
+        release: "4.1.0.24"
+        fix-version: false
+        
+    - uses: R1tschY/sailfish-build-rpm@v1
+      with:
+        arch: "aarch64"
+        release: "4.1.0.24"
+        fix-version: false        
 
-    - name: Build i486
-      id: build_i486
-      uses: coderus/github-sfos-build@master
-      with:
-        release: 3.4.0.22
-        arch: i486
-      
     - name: Upload build result
       uses: actions/upload-artifact@v2
       with:
