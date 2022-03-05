@@ -1,4 +1,4 @@
-name: SailfishOS build
+name: FileCase build
 
 on:
   push:
@@ -16,45 +16,40 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        submodules: 'true'
 
     - name: Prepare
       run: mkdir output
 
-    - uses: R1tschY/sailfish-build-rpm@v1
+    - name: Build armv7hl
+      id: build_armv7hl
+      uses: coderus/github-sfos-build@master
       with:
-        arch: "armv7hl"
-        release: "4.1.0.24"
-        fix-version: false
+        release: 4.2.0.21
         
-    - uses: R1tschY/sailfish-build-rpm@v1
+    - name: Build i486
+      id: build_i486
+      uses: coderus/github-sfos-build@master
       with:
-        arch: "i486"
-        release: "4.1.0.24"
-        fix-version: false
-        
-    - uses: R1tschY/sailfish-build-rpm@v1
-      with:
-        arch: "aarch64"
-        release: "4.1.0.24"
-        fix-version: false        
+        release: 4.2.0.21
+        arch: i486
 
+    - name: Build aarch64
+      id: build_aarch64
+      uses: coderus/github-sfos-build@master
+      with:
+        release: 4.2.0.21
+        arch: aarch64
+      
     - name: Upload build result
       uses: actions/upload-artifact@v2
       with:
-        name: rpms
+        name: rpm-build-result
         path: RPMS
-        
-    - name: Delete releases     
-      uses: dev-drprasad/delete-tag-and-release@v0.2.0
-      with:
-        delete_release: true # default: false
-        tag_name: master # tag name to delete
-        repo: <owner>/<repoName> # target repo (optional). defaults to repo running this action
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}         
 
     - name: Create release
-      if: contains(github.ref, 'release')
+      if: contains(github.ref, 'v')
       run: |
         set -x
         assets=()
@@ -63,5 +58,18 @@ jobs:
         done
         tag_name="${GITHUB_REF##*/}"
         hub release create "${assets[@]}" -m "$tag_name" "$tag_name"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Create prerelease
+      if: contains(github.ref, 'pre')
+      run: |
+        set -x
+        assets=()
+        for asset in RPMS/*.rpm; do
+          assets+=("-a" "$asset")
+        done
+        tag_name="${GITHUB_REF##*/}"
+        hub release create -p "${assets[@]}" -m "$tag_name" -m "This is a pre-release for testing purposes only. It may or may not be unstable." -m "Join the Telegram group to help out: https://github.com/Wunderfitz/harbour-fernschreiber/issues/162" "$tag_name"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
