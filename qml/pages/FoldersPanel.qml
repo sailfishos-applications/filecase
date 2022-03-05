@@ -25,7 +25,7 @@ Page {
 
     property var deviceModel: [
         { name: qsTr("Phone memory"), folder: config.getHome(), icon: "image://theme/icon-m-phone" } ,
-        { name: qsTr("SD Card"), folder: "/media/sdcard/", icon: "file:///usr/share/filecase/icons/toolbar-sdcard.png" }
+        { name: qsTr("SD Card"), "/media/sdcard/", icon: "file:///usr/share/filecase/icons/toolbar-sdcard.png" }
     ]
 
     property var placesModel: [
