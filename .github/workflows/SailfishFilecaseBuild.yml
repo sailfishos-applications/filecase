@@ -47,6 +47,13 @@ jobs:
       with:
         name: rpm-build-result
         path: RPMS
+        
+    - uses: dev-drprasad/delete-tag-and-release@v0.2.0
+      with:
+        delete_release: true # default: false
+        tag_name: master # tag name to delete
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
 
     - name: Create release
       run: |
@@ -57,18 +64,5 @@ jobs:
         done
         tag_name="${GITHUB_REF##*/}"
         hub release create "${assets[@]}" -m "$tag_name" "$tag_name"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
-    - name: Create prerelease
-      if: contains(github.ref, 'pre')
-      run: |
-        set -x
-        assets=()
-        for asset in RPMS/*.rpm; do
-          assets+=("-a" "$asset")
-        done
-        tag_name="${GITHUB_REF##*/}"
-        hub release create -p "${assets[@]}" -m "$tag_name" -m "This is a pre-release for testing purposes only. It may or may not be unstable." "$tag_name"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
