@@ -12,12 +12,12 @@ Name:       filecase
 %{!?qtc_qmake5:%define qtc_qmake5 %qmake5}
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
-Summary:    FileCase
+Summary:    An advanced file browser for Sailfish OS
 Version:    0.4
 Release:    2
 Group:      Qt/Qt
-License:    LICENSE
-URL:        http://example.org/
+License:    MPL-2.0
+URL:        https://github.com/CepiPerez/filecase-sailfish
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  filecase.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
@@ -28,7 +28,7 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
 
 %description
-Short description of my SailfishOS Application
+FileCase is an advanced, feature-rich file browser for Sailfish OS.
 
 
 %prep
