@@ -25,7 +25,8 @@ jobs:
       id: build_armv7hl
       uses: coderus/github-sfos-build@master
       with:
-        release: "$RELEASE"
+        release: 4.2.0.21
+        arch: armv7hl
 
     - name: Build i486
       id: build_i486
