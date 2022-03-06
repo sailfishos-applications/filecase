@@ -931,6 +931,8 @@ QString Browser::getSDcard()
 {
     if (QDir("/run/media/defaultuser").exists())
         return "/run/media/defaultuser";
+    else if (QDir("/run/media/nemo").exists())
+        return "/run/media/nemo";
     else if (QDir("/media/sdcard").exists())
         return "/media/sdcard";
     else
