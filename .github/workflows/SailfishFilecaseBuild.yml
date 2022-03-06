@@ -2,13 +2,14 @@ name: FileCase build
 
 on:
   push:
-    branches:
-      - master
     tags:
       - '*'
   pull_request:
     branches:
       - master
+
+env:
+  RELEASE: 4.2.0.21
 
 jobs:
   build:
@@ -16,30 +17,29 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-        submodules: 'true'
 
     - name: Prepare
-      run: mkdir output
+      run: mkdir RPMS
 
     - name: Build armv7hl
       id: build_armv7hl
       uses: coderus/github-sfos-build@master
       with:
-        release: 4.2.0.21
+        release: $RELEASE
+        arch: armv7hl
         
     - name: Build i486
       id: build_i486
       uses: coderus/github-sfos-build@master
       with:
-        release: 4.2.0.21
+        release: $RELEASE
         arch: i486
 
     - name: Build aarch64
       id: build_aarch64
       uses: coderus/github-sfos-build@master
       with:
-        release: 4.2.0.21
+        release: $RELEASE
         arch: aarch64
       
     - name: Upload build result
@@ -47,13 +47,6 @@ jobs:
       with:
         name: rpm-build-result
         path: RPMS
-        
-    - uses: dev-drprasad/delete-tag-and-release@v0.2.0
-      with:
-        delete_release: true # default: false
-        tag_name: master # tag name to delete
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
 
     - name: Create release
       run: |
