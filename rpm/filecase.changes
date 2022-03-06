@@ -8,10 +8,10 @@
 - Fixed notification banner orientation
 - Fixed removing cloud accounts
 
-* Thu Sep 26 2015 Matias Perez <cepiperez@gmail.com> 0.0.1-8
+* Sat Sep 26 2015 Matias Perez <cepiperez@gmail.com> 0.0.1-8
 - Fixed get correct sd card folder
 
-* Thu Sep 26 2015 Matias Perez <cepiperez@gmail.com> 0.0.1-7
+* Sat Sep 26 2015 Matias Perez <cepiperez@gmail.com> 0.0.1-7
 - Fixed get shared link for OneDrive and Google Drive
 - Fixed OneDrive transfers issue (auth error)
 - Fixed Dropbox upload folder
