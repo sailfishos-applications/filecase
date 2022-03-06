@@ -1,4 +1,4 @@
-name: FileCase build
+name: GitHub CI build
 
 on:
   push:
