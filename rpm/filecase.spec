@@ -30,7 +30,6 @@ BuildRequires:  desktop-file-utils
 %description
 FileCase is an advanced, feature-rich file browser for Sailfish OS.
 
-
 %prep
 %setup -q -n %{name}-%{version}
 
