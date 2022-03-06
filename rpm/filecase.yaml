@@ -1,18 +1,18 @@
 Name: filecase
-Summary: FileCase
-Version: 0.1
-Release: 1
+Summary: An advanced file browser for Sailfish OS
+Version: 0.4
+Release: 2
 # The contents of the Group field should be one of the groups listed here:
 # http://gitorious.org/meego-developer-tools/spectacle/blobs/master/data/GROUPS
 Group: Qt/Qt
-URL: http://example.org/
-License: LICENSE
+URL: https://github.com/CepiPerez/filecase-sailfish
+License: MPL-2.0
 # This must be generated before uploading a package to a remote build service.
 # Usually this line does not need to be modified.
 Sources:
 - '%{name}-%{version}.tar.bz2'
 Description: |
-  Short description of my SailfishOS Application
+  FileCase is an advanced, feature-rich file browser for Sailfish OS.
 Configure: none
 # The qtc5 builder inserts macros to allow QtCreator to have fine
 # control over qmake/make execution

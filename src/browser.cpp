@@ -929,8 +929,10 @@ QString Browser::manageList(QString action, QString list, QString items)
 
 QString Browser::getSDcard()
 {
-    if (QDir("/run/user/media/sdcard").exists())
-        return "/run/user/media/sdcard";
+    if (QDir("/run/media/defaultuser").exists())
+        return "/run/media/defaultuser";
+    else if (QDir("/run/media/nemo").exists())
+        return "/run/media/nemo";
     else if (QDir("/media/sdcard").exists())
         return "/media/sdcard";
     else

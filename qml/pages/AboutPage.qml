@@ -81,7 +81,7 @@ Page {
             Label {
                 color: Theme.secondaryColor
                 text: "David Llewellyn-Jones (llewelld / flypig)" + "<br>" +
-                      "Rudi Timmermans (ruditimmer)" + "<br>" +
+                      "Rudi Timmermans (ruditimmermans)" + "<br>" +
                       "olf (Olf0)"
                 font.pixelSize: Theme.fontSizeSmall
             }
