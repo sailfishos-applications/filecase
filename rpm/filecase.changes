@@ -1,3 +1,8 @@
+* Sun Mar 06 2022 olf (Olf0) 0.4.1
+- Add checks for recent SD card paths: `/run/media/nemo` and `/run/media/defaultuser`
+- Remove multiple superfluous recently added files
+- Fix changelog
+
 * Wed Jun 02 2021 David Llewellyn-Jones <david@flypig.co.uk> 0.2.1
 - Fixed QML error in transfer code
 - Home folder defaults to /home/defaultuser rather than /home/nemo
