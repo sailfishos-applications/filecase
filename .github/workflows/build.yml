@@ -1,4 +1,4 @@
-name: FileCase build
+name: GitHub CI build
 
 on:
   push:
@@ -7,9 +7,6 @@ on:
   pull_request:
     branches:
       - master
-
-env:
-  RELEASE: 4.2.0.21
 
 jobs:
   build:
@@ -22,23 +19,21 @@ jobs:
       run: mkdir RPMS
 
     - name: Build armv7hl
-      id: build_armv7hl
       uses: coderus/github-sfos-build@master
       with:
-        release: $RELEASE
+        release: 4.2.0.21
+        arch: armv7hl
 
     - name: Build i486
-      id: build_i486
       uses: coderus/github-sfos-build@master
       with:
-        release: $RELEASE
+        release: 4.2.0.21
         arch: i486
 
     - name: Build aarch64
-      id: build_aarch64
       uses: coderus/github-sfos-build@master
       with:
-        release: $RELEASE
+        release: 4.2.0.21
         arch: aarch64
 
     - name: Upload build result
@@ -48,6 +43,7 @@ jobs:
         path: RPMS
 
     - name: Create release
+      if: contains(github.ref, 'release')
       run: |
         set -x
         assets=()
