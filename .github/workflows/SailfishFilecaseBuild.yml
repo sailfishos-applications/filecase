@@ -26,8 +26,7 @@ jobs:
       uses: coderus/github-sfos-build@master
       with:
         release: $RELEASE
-        arch: armv7hl
-        
+
     - name: Build i486
       id: build_i486
       uses: coderus/github-sfos-build@master
@@ -41,7 +40,7 @@ jobs:
       with:
         release: $RELEASE
         arch: aarch64
-      
+
     - name: Upload build result
       uses: actions/upload-artifact@v2
       with:
