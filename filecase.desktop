@@ -5,4 +5,5 @@ Icon=filecase
 Exec=filecase
 Name=FileCase
 
-
+[X-Sailjail]
+Sandboxing=Disabled
