@@ -359,12 +359,19 @@ Exhibit A - Source Code Form License Notice
   License, v. 2.0. If a copy of the MPL was not distributed with this
   file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+Alternative, canonical links for th MPL-2.0:
+- https://opensource.org/licenses/MPL-2.0
+- https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html
+
 If it is not possible or desirable to put the notice in a particular
 file, then You may include the notice in a location (such as a LICENSE
 file in a relevant directory) where a recipient would be likely to look
 for such a notice.
 
-You may add additional accurate notices of copyright ownership.
+Additional accurate notices of copyright ownership:
+- (C) 2015-2016 Matias Perez (CepiPerez) <cepiperez@gmail.com>
+- (C) 2022 David Llewellyn-Jones (llewelld / flypig) <david@flypig.co.uk>
+- (C) 2022-2023 olf (Olf0) <Olf0@users.noreply.github.com>
 
 Exhibit B - "Incompatible With Secondary Licenses" Notice
 ---------------------------------------------------------
