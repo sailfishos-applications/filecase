@@ -22,6 +22,7 @@ Page {
 
     SailfishTransferMethodsModel {
         id: transferMethodsModel
+    //  filter: fileInfo.data.mime  // Debatable, if no filter is better, as it allows for all files
     }
 
     ListModel {
