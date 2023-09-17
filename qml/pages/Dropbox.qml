@@ -391,6 +391,7 @@ Page {
             anchors.topMargin: Theme.paddingLarge
             visible: emptyText.enabled && showError
             icon.source: "image://theme/icon-m-refresh"
+        //  anchors.horizontalCenter: parent.verticalCenter  // No idea why this was onc deleted, seems right
             onClicked: dropboxclient.logIn(startFolderLink)
         }
 
