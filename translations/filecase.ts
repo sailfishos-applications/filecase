@@ -6,32 +6,27 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="27"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>About</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="60"/>
         <source>Original author:</source>
-        <translation type="unfinished"></translation>
+        <translation>Original author:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="77"/>
-        <source>Maintainer:</source>
-        <translation type="unfinished"></translation>
+        <source>Contributors:</source>
+        <translation>Contributors:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="94"/>
-        <source>Contributors:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AboutPage.qml" line="111"/>
         <source>If you want to create a new translation or improve an extant one:</source>
-        <translation type="unfinished"></translation>
+        <translation>If you want to create a new translation or improve an extant one:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="127"/>
+        <location filename="../qml/pages/AboutPage.qml" line="109"/>
         <source>You can support the original author of Filecase by donating:</source>
-        <translation type="unfinished"></translation>
+        <translation>You can support the original author of Filecase by donating:</translation>
     </message>
 </context>
 <context>
@@ -67,7 +62,7 @@
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="104"/>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Port</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="116"/>
@@ -450,7 +445,7 @@
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="65"/>
         <source>Error getting info. Try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Error getting info. Try again later</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="79"/>
@@ -465,7 +460,7 @@
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="99"/>
         <source>View package files</source>
-        <translation type="unfinished"></translation>
+        <translation>View package files</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="109"/>
@@ -475,17 +470,17 @@
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="109"/>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Install</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="115"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Edit</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="121"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>View</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="132"/>
@@ -846,7 +841,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="47"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>About</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="61"/>
@@ -931,42 +926,42 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="198"/>
         <source>Sort items by</source>
-        <translation type="unfinished"></translation>
+        <translation>Sort items by</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="200"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Name</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="201"/>
         <source>Size</source>
-        <translation type="unfinished">Size</translation>
+        <translation>Size</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="202"/>
         <source>Date</source>
-        <translation type="unfinished"></translation>
+        <translation>Date</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="213"/>
         <source>Sort order</source>
-        <translation type="unfinished"></translation>
+        <translation>Sort order</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="215"/>
         <source>Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>Ascending</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="216"/>
         <source>Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>Descending</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="227"/>
         <source>Show folders first</source>
-        <translation type="unfinished"></translation>
+        <translation>Show folders first</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="236"/>
@@ -1086,7 +1081,7 @@
     <message>
         <location filename="../qml/pages/TextEditor.qml" line="35"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Save</translation>
     </message>
 </context>
 <context>
@@ -1094,7 +1089,7 @@
     <message>
         <location filename="../qml/pages/TextViewer.qml" line="37"/>
         <source>Copy text</source>
-        <translation type="unfinished"></translation>
+        <translation>Copy text</translation>
     </message>
 </context>
 <context>
@@ -1102,7 +1097,7 @@
     <message>
         <location filename="../qml/pages/TransfersPage.qml" line="20"/>
         <source>Clean completed transfers</source>
-        <translation type="unfinished"></translation>
+        <translation>Clean completed transfers</translation>
     </message>
     <message>
         <location filename="../qml/pages/TransfersPage.qml" line="29"/>
@@ -1179,58 +1174,58 @@
         <location filename="../src/utilities.cpp" line="378"/>
         <location filename="../src/utilities.cpp" line="556"/>
         <source>You don&apos;t have permissions to proceed</source>
-        <translation type="unfinished">You don&apos;t have permissions to proceed</translation>
+        <translation>You don&apos;t have permissions to proceed</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="445"/>
         <location filename="../src/utilities.cpp" line="469"/>
         <source>Extracting process canceled</source>
-        <translation type="unfinished">Extracting process canceled</translation>
+        <translation>Extracting process canceled</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="449"/>
         <source>Extraction error: incorrect password</source>
-        <translation type="unfinished">Extraction error: incorrect password</translation>
+        <translation>Extraction error: incorrect password</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="451"/>
         <source>Extraction completed</source>
-        <translation type="unfinished">Extraction completed</translation>
+        <translation>Extraction completed</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="457"/>
         <source>Compressing process canceled</source>
-        <translation type="unfinished">Compressing process canceled</translation>
+        <translation>Compressing process canceled</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="459"/>
         <source>Compression completed</source>
-        <translation type="unfinished">Compression completed</translation>
+        <translation>Compression completed</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="577"/>
         <source>There&apos;s no enough space to proceed</source>
-        <translation type="unfinished">There&apos;s no enough space to proceed</translation>
+        <translation>There&apos;s no enough space to proceed</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="586"/>
         <source>Cannot create symlinks in destination path</source>
-        <translation type="unfinished">Cannot create symlinks in destination path</translation>
+        <translation>Cannot create symlinks in destination path</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="655"/>
         <source>There were errors copying files!</source>
-        <translation type="unfinished">There were errors copying files!</translation>
+        <translation>There were errors copying files!</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="657"/>
         <source>Copying process is completed</source>
-        <translation type="unfinished">Copying process is completed</translation>
+        <translation>Copying process is completed</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="681"/>
         <source>Copying process canceled</source>
-        <translation type="unfinished">Copying process canceled</translation>
+        <translation>Copying process canceled</translation>
     </message>
 </context>
 <context>
@@ -1328,13 +1323,13 @@
         <location filename="../qml/filecase.qml" line="140"/>
         <location filename="../qml/filecase.qml" line="149"/>
         <source>Queued</source>
-        <translation type="unfinished"></translation>
+        <translation>Queued</translation>
     </message>
     <message>
         <location filename="../qml/filecase.qml" line="140"/>
         <location filename="../qml/filecase.qml" line="149"/>
         <source>Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Completed</translation>
     </message>
 </context>
 </TS>
