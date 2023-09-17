@@ -1,6 +1,6 @@
 ## Translating FileCase (l10n / i18n)
 
-If you want to translate FileCase to a language it does not support yet or improve an extant translation, please [read the translations-README](https:./translations#readme).
+If you want to translate FileCase to a language it does not support yet or improve an extant translation, please [read the translations-README](./translations#readme).
 
 ## Screenshots of FileCase
 
