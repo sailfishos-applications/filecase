@@ -929,14 +929,41 @@ QString Browser::manageList(QString action, QString list, QString items)
 
 QString Browser::getSDcard()
 {
+    QString folder = "";
+
+    /*v1: 
+    QDir dir ("/media/sdcard");
+    QFileInfoList entries = dir.entryInfoList(QDir::AllEntries | QDir::NoDotAndDotDot );
+    QListIterator<QFileInfo> entriesIterator (entries);
+    if (entriesIterator.hasNext()) {
+        QFileInfo fileInfo = entriesIterator.next();
+        folder = fileInfo.absoluteFilePath();
+    }*/
+
+    /*v2:
+    QProcess process;
+    process.start("cat /proc/mounts");
+    process.waitForFinished(-1);
+    QString stdout = process.readAllStandardOutput();
+    if (stdout.contains("/media/sdcard/")) {
+        int i = stdout.indexOf("/media/sdcard/");
+        stdout.remove(0, i);
+        i = stdout.indexOf(" ");
+        stdout = stdout.left(i);
+        folder = stdout;
+    }   
+    qDebug() << "SD Card:" << stdout;*/
+
+    //v3:
     if (QDir("/run/media/defaultuser").exists())
-        return "/run/media/defaultuser";
+        folder = "/run/media/defaultuser";
     else if (QDir("/run/media/nemo").exists())
-        return "/run/media/nemo";
+        folder = "/run/media/nemo";
     else if (QDir("/media/sdcard").exists())
-        return "/media/sdcard";
-    else
-        return "";
+        folder = "/media/sdcard";
+    
+    return folder;
+
 }
 
 void Browser::clearItems()
