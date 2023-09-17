@@ -63,25 +63,13 @@ Page {
 
             Label {
                 color: Theme.secondaryColor
-                text: "(C) 2015-2021 Matias Perez (CepiPerez)"
+                text: "(C) 2015-2016 Matias Perez (CepiPerez)"
                 font.pixelSize: Theme.fontSizeSmall
             }
 
             Separator {
                 width: parent.width
                 color: Theme.secondaryColor
-            }
-
-            Label {
-                color: Theme.secondaryColor
-                text: qsTr("Maintainer:")
-                font.pixelSize: Theme.fontSizeSmall
-            }
-
-            Label {
-                color: Theme.secondaryColor
-                text: "olf (Olf0)"
-                font.pixelSize: Theme.fontSizeSmall
             }
 
             Separator {
@@ -97,8 +85,8 @@ Page {
 
             Label {
                 color: Theme.secondaryColor
-                text: "David Llewellyn-Jones (llewelld / flypig)" + "<br />" +
-                      "olf (Olf0)"
+                text: "(C) 2022 David Llewellyn-Jones (llewelld / flypig)" + "<br />" +
+                      "(C) 2022-2023 olf (Olf0)"
                 font.pixelSize: Theme.fontSizeSmall
             }
 
