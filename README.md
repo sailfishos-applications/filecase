@@ -1,6 +1,6 @@
 ## Translating FileCase (l10n / i18n)
 
-If you want to translate Storeman to a language it does not support yet or enhance an existing translation, please [read the translations-README](https://github.com/storeman-developers/harbour-storeman/tree/master/translations#readme).
+If you want to translate FileCase to a language it does not support yet or improve an extant translation, please [read the translations-README](https://github.com/sailfishos-applications/filecase/tree/master/translations#readme).
 
 ## Screenshots of FileCase
 
