@@ -1,4 +1,4 @@
-Name:       harbour-filecase
+Name:       filecase
 
 # These macros should already be defined in the RPMbuild environment, see: rpm --showrc
 %{!?qtc_qmake:%define qtc_qmake %qmake}
