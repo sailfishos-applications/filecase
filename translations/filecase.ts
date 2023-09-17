@@ -10,32 +10,27 @@
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="60"/>
-        <source>Main Developer:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AboutPage.qml" line="66"/>
-        <source>(C) 2015 Matias Perez (CepiPerez).</source>
+        <source>Original author:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="77"/>
-        <source>Contributeurs:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AboutPage.qml" line="83"/>
-        <source>David Llewellyn-Jones (llewelld), </source>
+        <source>Maintainer:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="94"/>
-        <source>If your language is not available you can contribute here:</source>
+        <source>Contributors:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="110"/>
-        <source>You can contribute to keep this project alive making a small donation</source>
+        <location filename="../qml/pages/AboutPage.qml" line="111"/>
+        <source>If you want to create a new translation or improve an extant one:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="127"/>
+        <source>You can support the original author of Filecase by donating:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
