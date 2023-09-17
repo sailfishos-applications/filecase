@@ -47,15 +47,15 @@ Page {
                 }
             }
 
-            //FolderDelegate {
-                //icon: "file:///usr/share/filecase/icons/dropbox.png"
-                //enabled: config.readConfig("Dropbox/access_token", "")===""
-                //opacity: enabled? 1 : 0.5
-                //text: "Dropbox"
-                //onClicked: {
-                //    pageStack.replace("Dropbox.qml", {"newAccount":true})
-                //}
-            //}
+            FolderDelegate {
+                icon: "file:///usr/share/filecase/icons/dropbox.png"
+                enabled: config.readConfig("Dropbox/access_token", "")===""
+                opacity: enabled? 1 : 0.5
+                text: "Dropbox"
+                onClicked: {
+                    pageStack.replace("Dropbox.qml", {"newAccount":true})
+                }
+            }
 
             FolderDelegate {
                 icon: "file:///usr/share/filecase/icons/gdrive.png"
@@ -77,13 +77,13 @@ Page {
                 }
             }
 
-            //FolderDelegate {
-                //icon: "file:///usr/share/filecase/icons/webdav.png"
-                //text: "WebDAV"
-                //onClicked: {
-                //    pageStack.replace("AddWebDavAccount.qml")
-                //}
-            //}
+            FolderDelegate {
+                icon: "file:///usr/share/filecase/icons/webdav.png"
+                text: "WebDAV"
+                onClicked: {
+                    pageStack.replace("AddWebDavAccount.qml")
+                }
+            }
 
 
         }

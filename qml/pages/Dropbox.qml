@@ -391,6 +391,7 @@ Page {
             anchors.topMargin: Theme.paddingLarge
             visible: emptyText.enabled && showError
             icon.source: "image://theme/icon-m-refresh"
+        //  anchors.horizontalCenter: parent.verticalCenter  // Seems right, might be commented out due to cluelessness
             onClicked: dropboxclient.logIn(startFolderLink)
         }
 
