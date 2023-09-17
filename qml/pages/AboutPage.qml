@@ -72,11 +72,6 @@ Page {
                 color: Theme.secondaryColor
             }
 
-            Separator {
-                width: parent.width
-                color: Theme.secondaryColor
-            }
-
             Label {
                 color: Theme.secondaryColor
                 text: qsTr("Contributors:")
@@ -97,8 +92,7 @@ Page {
 
             Label {
                 text: colored + qsTr("If you want to create a new translation or improve an extant one:") + "<br>" +
-                      "<a href='https://app.transifex.com/fileboxn9/filebox/filecasets/'>" +
-                      "Transifex - FileCase Project</a>"
+                      "<a href='https://app.transifex.com/olf/filecase/'>" + "Transifex - FileCase</a>"
                 onLinkActivated: Qt.openUrlExternally(link)
                 font.pixelSize: Theme.fontSizeSmall
                 textFormat: Text.RichText
