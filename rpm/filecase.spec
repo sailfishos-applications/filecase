@@ -57,18 +57,28 @@ Categories:
  - System
  - Utility
  - Network
+ - Compression
  - FileManager
  - Filesystem
  - FileTools
  - FileTransfer
  - TextEditor
  - Viewer
-DeveloperName: Cepi Perez, olf (Olf0), David L.-J. (flypig)
+DeveloperName: Matias Perez (CepiPerez), olf (Olf0), David L.-J. (flypig)
 Custom:
   Repo: %{url}
 PackageIcon: %{url}/raw/master/icons/filecase3.png
 Screenshots:
- - %{url}/raw/master/.xdata/screenshots/
+ - %{url}/raw/master/.xdata/screenshots/screenshot-001.jpg
+ - %{url}/raw/master/.xdata/screenshots/screenshot-002.jpg
+ - %{url}/raw/master/.xdata/screenshots/screenshot-003.jpg
+ - %{url}/raw/master/.xdata/screenshots/screenshot-004.jpg
+ - %{url}/raw/master/.xdata/screenshots/screenshot-005.jpg
+ - %{url}/raw/master/.xdata/screenshots/screenshot-006.jpg
+ - %{url}/raw/master/.xdata/screenshots/screenshot-007.jpg
+ - %{url}/raw/master/.xdata/screenshots/screenshot-008.jpg
+ - %{url}/raw/master/.xdata/screenshots/screenshot-009.jpg
+ - %{url}/raw/master/.xdata/screenshots/screenshot-010.jpg
 Links:
   Homepage: https://openrepos.net/content/olf/filecase
   Help: %{url}/issues
