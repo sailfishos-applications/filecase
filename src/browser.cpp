@@ -963,7 +963,6 @@ QString Browser::getSDcard()
         folder = "/media/sdcard";
     
     return folder;
-
 }
 
 void Browser::clearItems()
