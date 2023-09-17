@@ -25,7 +25,7 @@ Release:    beta1
 # The Group tag should comprise one of the groups listed here:
 # https://github.com/mer-tools/spectacle/blob/master/data/GROUPS
 Group:      Applications/File
-License:    MPL-2.0
+License:    MPL-2.0-no-copyleft-exception
 URL:        https://github.com/sailfishos-apps/%{name}
 # Altering the `Vendor:` field breaks the update path on SailfishOS, see
 # https://en.opensuse.org/SDB:Vendor_change_update#Disabling_Vendor_stickiness
