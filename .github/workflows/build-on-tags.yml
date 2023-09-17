@@ -1,0 +1,214 @@
+name: CI on tags (aarch64,armv7hl,i486)
+
+on:
+  push:
+    tags:
+      # '**' also matches the slash ('/'), in contrast to '*',
+      # see https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
+      - '**'
+  # Allows to run this workflow manually from the Actions tab.
+  #workflow_dispatch:
+  # Rather set a new tag in the format N/X.Y.Z (e.g., 1/0.6.3) to build a release originally tagged with 0.6.3 again.
+
+defaults:
+  run:
+    # Note that 'bash' provides -o pipefail, in contrast to the default (i.e., unspecified, which also uses bash) or 'sh',
+    # see https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsshell
+    shell: sh
+
+# See, e.g.: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-only-cancel-in-progress-jobs-or-runs-for-the-current-workflow
+concurrency:
+  group: ci-${{ github.ref_name }}
+  # 'false' (default) allows for two concurrent runs, one executing and one freshly enqueued; 'true' for only one; no 'concurrency:' defined for multiple.
+  cancel-in-progress: true
+
+jobs:
+  SDK-220:
+    runs-on: ubuntu-22.04
+    env:
+      # For the available docker images, see https://github.com/CODeRUS/docker-sailfishos-platform-sdk
+      RELEASE: 2.2.0.29
+      # Do not wait up to the default of 10 minutes for network timeouts in a workflow which runs ca. 10 minutes.
+      SEGMENT_DOWNLOAD_TIMEOUT_MINS: 2
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    # Caching Docker images is not ready yet, see 
+    # https://github.com/storeman-developers/harbour-storeman-installer/blob/devel/cache-docker-images_github-ci.md
+    #- name: Cache Docker images of the Sailfish-SDK
+    #  id: cache-sdk
+    #  uses: actions/cache@v3
+    #  with:
+    #    path: $GITHUB_WORKSPACE/…
+    #    key: cache
+
+    - name: Prepare
+      run: mkdir RPMS
+
+    - name: Build aarch64 on ${{ env.RELEASE }}
+      uses: coderus/github-sfos-build@master
+      with:
+        release: ${{ env.RELEASE }}
+        arch: aarch64
+
+    - name: Build armv7hl on ${{ env.RELEASE }}
+      uses: coderus/github-sfos-build@master
+      with:
+        release: ${{ env.RELEASE }}
+        arch: armv7hl
+
+    - name: Build i486 on ${{ env.RELEASE }}
+      uses: coderus/github-sfos-build@master
+      with:
+        release: ${{ env.RELEASE }}
+        arch: i486
+
+    - name: Upload build results
+      uses: actions/upload-artifact@v3
+      with:
+        name: RPM-build-results_SFOS${{ env.RELEASE }}+
+        path: RPMS/
+
+
+  SDK-310:
+    runs-on: ubuntu-22.04
+    env:
+      # For the available docker images, see https://github.com/CODeRUS/docker-sailfishos-platform-sdk
+      RELEASE: 3.1.0.12
+      # Do not wait up to the default of 10 minutes for network timeouts in a workflow which runs ca. 10 minutes.
+      SEGMENT_DOWNLOAD_TIMEOUT_MINS: 2
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    # Caching Docker images is not ready yet, see 
+    # https://github.com/storeman-developers/harbour-storeman-installer/blob/devel/cache-docker-images_github-ci.md
+    #- name: Cache Docker images of the Sailfish-SDK
+    #  id: cache-sdk
+    #  uses: actions/cache@v3
+    #  with:
+    #    path: $GITHUB_WORKSPACE/…
+    #    key: cache
+
+    - name: Prepare
+      run: mkdir RPMS
+
+    - name: Build armv7hl on ${{ env.RELEASE }}
+      uses: coderus/github-sfos-build@master
+      with:
+        release: ${{ env.RELEASE }}
+        arch: armv7hl
+
+    - name: Build i486 on ${{ env.RELEASE }}
+      uses: coderus/github-sfos-build@master
+      with:
+        release: ${{ env.RELEASE }}
+        arch: i486
+
+    - name: Upload build results
+      uses: actions/upload-artifact@v3
+      with:
+        name: RPM-build-results_SFOS${{ env.RELEASE }}+
+        path: RPMS/
+
+
+  SDK-340_401:
+    runs-on: ubuntu-22.04
+    env:
+      # For the available docker images, see https://github.com/CODeRUS/docker-sailfishos-platform-sdk
+      RELEASE: 3.4.0.24
+      # Do not wait up to the default of 10 minutes for network timeouts in a workflow which runs ca. 10 minutes.
+      SEGMENT_DOWNLOAD_TIMEOUT_MINS: 2
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    # Caching Docker images is not ready yet, see 
+    # https://github.com/storeman-developers/harbour-storeman-installer/blob/devel/cache-docker-images_github-ci.md
+    #- name: Cache Docker images of the Sailfish-SDK
+    #  id: cache-sdk
+    #  uses: actions/cache@v3
+    #  with:
+    #    path: $GITHUB_WORKSPACE/…
+    #    key: cache
+
+    - name: Prepare
+      run: mkdir RPMS
+
+    - name: Build aarch64 on 4.0.1.45
+      uses: coderus/github-sfos-build@master
+      with:
+        release: 4.0.1.45
+        arch: aarch64
+
+    - name: Build armv7hl on ${{ env.RELEASE }}
+      uses: coderus/github-sfos-build@master
+      with:
+        release: ${{ env.RELEASE }}
+        arch: armv7hl
+
+    - name: Build i486 on ${{ env.RELEASE }}
+      uses: coderus/github-sfos-build@master
+      with:
+        release: ${{ env.RELEASE }}
+        arch: i486
+
+    - name: Upload build results
+      uses: actions/upload-artifact@v3
+      with:
+        name: RPM-build-results_SFOS${{ env.RELEASE }}+
+        path: RPMS/
+
+
+  SDK-440:
+    runs-on: ubuntu-22.04
+    env:
+      # For the available docker images, see https://github.com/CODeRUS/docker-sailfishos-platform-sdk
+      RELEASE: 4.4.0.68
+      # Do not wait up to the default of 10 minutes for network timeouts in a workflow which runs ca. 10 minutes.
+      SEGMENT_DOWNLOAD_TIMEOUT_MINS: 2
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    # Caching Docker images is not ready yet, see 
+    # https://github.com/storeman-developers/harbour-storeman-installer/blob/devel/cache-docker-images_github-ci.md
+    #- name: Cache Docker images of the Sailfish-SDK
+    #  id: cache-sdk
+    #  uses: actions/cache@v3
+    #  with:
+    #    path: $GITHUB_WORKSPACE/…
+    #    key: cache
+
+    - name: Prepare
+      run: mkdir RPMS
+
+    - name: Build aarch64 on ${{ env.RELEASE }}
+      uses: coderus/github-sfos-build@master
+      with:
+        release: ${{ env.RELEASE }}
+        arch: aarch64
+
+    - name: Build armv7hl on ${{ env.RELEASE }}
+      uses: coderus/github-sfos-build@master
+      with:
+        release: ${{ env.RELEASE }}
+        arch: armv7hl
+
+    - name: Build i486 on ${{ env.RELEASE }}
+      uses: coderus/github-sfos-build@master
+      with:
+        release: ${{ env.RELEASE }}
+        arch: i486
+
+    - name: Upload build results
+      uses: actions/upload-artifact@v3
+      with:
+        name: RPM-build-results_SFOS${{ env.RELEASE }}+
+        path: RPMS/
+
