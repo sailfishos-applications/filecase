@@ -106,7 +106,7 @@ Page {
             }
 
             Label {
-                text: colored + qsTr("You can support the original author of Filecase by donating:")
+                text: colored + qsTr("You can support the original author of FileCase by donating:")
                 font.pixelSize: Theme.fontSizeSmall
                 textFormat: Text.RichText
                 wrapMode: Text.WordWrap
