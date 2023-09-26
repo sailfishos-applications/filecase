@@ -9,7 +9,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="60"/>
         <source>Original author:</source>
-        <translation>Fertig</translation>
+        <translation>Ursprünglicher Autor:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="77"/>
