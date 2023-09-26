@@ -1321,7 +1321,7 @@
         <location filename="../qml/filecase.qml" line="140"/>
         <location filename="../qml/filecase.qml" line="149"/>
         <source>Queued</source>
-        <translation>Wartet</translation>
+        <translation>In Warteschlange</translation>
     </message>
     <message>
         <location filename="../qml/filecase.qml" line="140"/>
