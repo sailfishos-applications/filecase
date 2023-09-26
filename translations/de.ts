@@ -1,42 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="de">
 <context>
     <name>AboutPage</name>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="27"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Über</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="60"/>
-        <source>Main Developer:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AboutPage.qml" line="66"/>
-        <source>(C) 2015 Matias Perez (CepiPerez).</source>
-        <translation type="unfinished"></translation>
+        <source>Original author:</source>
+        <translation>Fertig</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="77"/>
-        <source>Contributeurs:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AboutPage.qml" line="83"/>
-        <source>David Llewellyn-Jones (llewelld), </source>
-        <translation type="unfinished"></translation>
+        <source>Contributors:</source>
+        <translation>Beigetragen haben:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="94"/>
-        <source>If your language is not available you can contribute here:</source>
-        <translation type="unfinished"></translation>
+        <source>If you want to create a new translation or improve an extant one:</source>
+        <translation>Wenn Du einen neue Übersetzung erstellen möchtest oder eine bestehende verbessern:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="110"/>
-        <source>You can contribute to keep this project alive making a small donation</source>
-        <translation type="unfinished"></translation>
+        <location filename="../qml/pages/AboutPage.qml" line="109"/>
+        <source>You can support the original author of Filecase by donating:</source>
+        <translation>Du kannst den ursprünglichen Autor von FileCase durch eine Spende unterstützen:</translation>
     </message>
 </context>
 <context>
@@ -72,7 +60,7 @@
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="104"/>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Port</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="116"/>
@@ -455,7 +443,7 @@
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="65"/>
         <source>Error getting info. Try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Fehler beim Abholen der Info. Versuche es später nochmals</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="79"/>
@@ -470,7 +458,7 @@
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="99"/>
         <source>View package files</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeige Dateien im Paket</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="109"/>
@@ -480,7 +468,7 @@
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="109"/>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Installieren</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="115"/>
@@ -851,7 +839,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="47"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Über</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="61"/>
@@ -1107,7 +1095,7 @@
     <message>
         <location filename="../qml/pages/TransfersPage.qml" line="20"/>
         <source>Clean completed transfers</source>
-        <translation type="unfinished"></translation>
+        <translation>Bereinige fertige Transfers</translation>
     </message>
     <message>
         <location filename="../qml/pages/TransfersPage.qml" line="29"/>
@@ -1333,13 +1321,13 @@
         <location filename="../qml/filecase.qml" line="140"/>
         <location filename="../qml/filecase.qml" line="149"/>
         <source>Queued</source>
-        <translation type="unfinished"></translation>
+        <translation>Wartet</translation>
     </message>
     <message>
         <location filename="../qml/filecase.qml" line="140"/>
         <location filename="../qml/filecase.qml" line="149"/>
         <source>Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Fertig</translation>
     </message>
 </context>
 </TS>
