@@ -1327,7 +1327,7 @@
         <location filename="../qml/filecase.qml" line="140"/>
         <location filename="../qml/filecase.qml" line="149"/>
         <source>Completed</source>
-        <translation>Fertig</translation>
+        <translation>Abgeschlossen</translation>
     </message>
 </context>
 </TS>
