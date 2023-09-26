@@ -12,14 +12,14 @@
 - Home folder is stored in settings file and can be changed
 - Removed dependency on quillmetadata-qt5 for rotation jpegs
 
-* Fri Nov 06 2015 Matias Perez <cepiperez@gmail.com> - 0.0.1-9
+* Fri Nov 06 2015 Matias Perez <cepiperez@gmail.com> - 0.1-9
 - Fixed notification banner orientation
 - Fixed removing cloud accounts
 
-* Sat Sep 26 2015 Matias Perez <cepiperez@gmail.com> - 0.0.1-8
+* Sat Sep 26 2015 Matias Perez <cepiperez@gmail.com> - 0.1-8
 - Fixed get correct sd card folder
 
-* Sat Sep 26 2015 Matias Perez <cepiperez@gmail.com> - 0.0.1-7
+* Sat Sep 26 2015 Matias Perez <cepiperez@gmail.com> - 0.1-7
 - Fixed get shared link for OneDrive and Google Drive
 - Fixed OneDrive transfers issue (auth error)
 - Fixed Dropbox upload folder
@@ -28,26 +28,29 @@
 - Added extract apk files
 - Updated info banner
 
-* Thu Aug 27 2015 Matias Perez <cepiperez@gmail.com> - 0.0.1-6
+* Thu Aug 27 2015 Matias Perez <cepiperez@gmail.com> - 0.1-6
 - Don't remove completed transfers from list
 - Added desktop files to text viewer/editor
 - Fixed missing text in file viewer/editor
 - Added missing icons for some filetypes
 - Sailfish 1.1.9.28 support
 
-* Thu Jul 16 2015 Matias Perez <cepiperez@gmail.com> - 0.0.1-5
+* Thu Jul 16 2015 Matias Perez <cepiperez@gmail.com> - 0.1-5
 - Added custom port to webdav
 - Fixed some issues
 
-* Sat Jul 04 2015 Matias Perez <cepiperez@gmail.com> - 0.0.1-4
+* Sat Jul 04 2015 Matias Perez <cepiperez@gmail.com> - 0.1-4
 - Fixed webdav service (owncloud based)
 - Fixed cut files/folders in clipboard
 
-* Fri Jul 03 2015 Matias Perez <cepiperez@gmail.com> - 0.0.1-3
+* Fri Jul 03 2015 Matias Perez <cepiperez@gmail.com> - 0.1-3
 - Fixed upload files to cloud services
 
-* Mon Jun 29 2015 Matias Perez <cepiperez@gmail.com> - 0.0.1-2
+* Mon Jun 29 2015 Matias Perez <cepiperez@gmail.com> - 0.1-2
 - Added swipe to go back
 - Added http support for webdav (not tested)
+
+* Wed Jun 24 2015 Matias Perez <cepiperez@gmail.com> - 0.1-1
+- Initial release
 
 # Changelog format: https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/thread/SF4VVE4NBEDQJDJZ4DJ6YW2DTGMWP23E/#6O6DFC6GDOLCU7QC3QJKJ3VCUGAOTD24
