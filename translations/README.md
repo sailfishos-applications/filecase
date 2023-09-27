@@ -10,7 +10,7 @@ If you do not want to use Atlassian's Transifex, alternatives are [Qt Linguist](
 
 ### Testing translations
 
-To compile a translation file for testing, use the `lrelease` command to convert the translation files (`.ts` files) into Qt message files (`.qm` files) , either from [within Qt Linguist](https://doc.qt.io/qtcreator/creator-editor-external.html) or directly [at the command line](https://doc.qt.io/qt-5/linguist-manager.html):
+To compile a translation file for testing, use the `lrelease` command to convert the translation files (`.ts` files) into Qt message files (`.qm` files), either from [within Qt Linguist](https://doc.qt.io/qtcreator/creator-editor-external.html) or directly [at the command line](https://doc.qt.io/qt-5/linguist-manager.html):
 ```
 lrelease filecase.ts
 ```
