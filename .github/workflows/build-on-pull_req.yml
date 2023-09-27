@@ -2,6 +2,9 @@ name: CI on PRs with SDK for 2.2.0 (i486)
 
 env:
   RELEASE: 2.2.0.29
+  ARCH: i486
+  # Do not wait up to the default of 10 minutes for network timeouts in a workflow which runs ca. 3 minutes.
+  SEGMENT_DOWNLOAD_TIMEOUT_MINS: 1
 
 on:
   pull_request:
@@ -27,9 +30,6 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-22.04
-    env:
-      # Do not wait up to the default of 10 minutes for network timeouts in a workflow which runs ca. 3 minutes.
-      SEGMENT_DOWNLOAD_TIMEOUT_MINS: 1
     steps:
 
     - name: Checkout
@@ -47,16 +47,16 @@ jobs:
     - name: Prepare
       run: mkdir RPMS
 
-    - name: Build i486
+    - name: Build ${{ env.ARCH }}
       uses: coderus/github-sfos-build@old-stable
       with:
         # Solely builds for i486 on 3.3.0, because of https://github.com/sailfishos-patches/patchmanager/pull/437#issuecomment-1615317003
         release: ${{ env.RELEASE }}
-        arch: i486
+        arch: ${{ env.ARCH }}
 
     - name: Upload build result
       uses: actions/upload-artifact@v3
       with:
-        name: RPM-build-results_devel-i486-SFOS2.2.0+
+        name: RPM-build-results_${{ GITHUB_BASE_REF }}-${{ env.ARCH }}-SFOS2.2.0+
         path: RPMS/
 
