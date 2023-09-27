@@ -1,4 +1,4 @@
-name: CI on PRs with SDK for 2.2.0 (i486)
+name: CI on PRs with SDK for 2.2.0 (${{ env.ARCH }})
 
 env:
   RELEASE: 2.2.0.29
