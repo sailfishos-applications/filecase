@@ -29,7 +29,7 @@ License:    MPL-2.0-no-copyleft-exception
 URL:        https://github.com/sailfishos-applications/%{name}
 # Altering the `Vendor:` field breaks the update path on SailfishOS, see
 # https://en.opensuse.org/SDB:Vendor_change_update#Disabling_Vendor_stickiness
-Vendor:     meego
+#Vendor:     meego
 # The "Source0:" line below requires that the value of %%{name} is also the
 # project name at GitHub and the value of `%%{release}/%%{version}` is also
 # the name of a correspondingly set Git tag.  For details and reasons, see
