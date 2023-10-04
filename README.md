@@ -31,11 +31,11 @@ If you want to translate FileCase to a language it does not support yet or impro
 | :---: | :---: | :---: | :---: | :---: |
 |       |       |       |       |       |
 | ![View files and directories](https://github.com/sailfishos-applications/filecase/raw/master/.xdata/screenshots/screenshot-001.jpg) | ![Select files and directories](https://github.com/sailfishos-applications/filecase/raw/master/.xdata/screenshots/screenshot-002.jpg) | ![View file properties with media preview](https://github.com/sailfishos-applications/filecase/raw/master/.xdata/screenshots/screenshot-003.jpg) | ![Storage locations](https://github.com/sailfishos-applications/filecase/raw/master/.xdata/screenshots/screenshot-004.jpg) | ![Cloud storage locations](https://github.com/sailfishos-applications/filecase/raw/master/.xdata/screenshots/screenshot-005.jpg) |
-| <sub>View files and directories</sub> | <sub>Select files and directories</sub>  | <sub>View file properties with media preview</sub> | <sub>Storage locations</sub> | <sub>Cloud storage locations</sub> |
+| <sub>View files and directories</sub> | <sub>Select files and directories</sub>  | <sub>View file properties,<br />with media preview</sub> | <sub>Storage locations</sub> | <sub>Cloud storage locations</sub> |
 |       |       |       |       |       |
 |       |       |       |       |       |
 | ![Settings page](https://github.com/sailfishos-applications/filecase/raw/master/.xdata/screenshots/screenshot-006.jpg) | ![Share page](https://github.com/sailfishos-applications/filecase/raw/master/.xdata/screenshots/screenshot-007.jpg) | ![Creating archive files](https://github.com/sailfishos-applications/filecase/raw/master/.xdata/screenshots/screenshot-008.jpg) | ![Extracting archive files](https://github.com/sailfishos-applications/filecase/raw/master/.xdata/screenshots/screenshot-009.jpg) | ![Transfers page](https://github.com/sailfishos-applications/filecase/raw/master/.xdata/screenshots/screenshot-010.jpg) |
-| <sub>Settings page</sub> | <sub>Share page</sub>  | <sub>Creating archive files</sub> | <sub>Extracting archive files</sub> | <sub>Transfers page</sub> |
+| <sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Settings&nbsp;page&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</sub> | <sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Share&nbsp;page&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</sub>  | <sub>&nbsp;Creating&nbsp;archive&nbsp;files&nbsp;</sub> | <sub>Extracting&nbsp;archive&nbsp;files</sub> | <sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transfers&nbsp;page&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</sub> |
 |       |       |       |       |       |
 
 ## History of FileCase
