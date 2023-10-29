@@ -11,8 +11,8 @@ Summary:    An advanced file-manager for SailfishOS
 # The <version> tag must adhere to semantic versioning: Among multiple other
 # reasons due to its use for `qmake5` in line 107.  See https://semver.org/
 Version:    0.4.2
-# The <release> tag *may* comprise one of {alpha,beta,rc,release} postfixed with
-# a natural number greater or equal to 1 (e.g., "beta3") and may additionally be
+# The <release> tag comprisees one of {alpha,beta,rc,release} postfixed with a
+# natural number greater or equal to 1 (e.g., "beta3") and may additionally be
 # postfixed with a plus character ("+"), the name of the packager and a release
 # number chosen by her (e.g., "rc2+jane4").  `{alpha|beta|rc|release}`
 # indicates the expected status of the software.  No other identifiers shall be
@@ -21,7 +21,7 @@ Version:    0.4.2
 # build at GitHub and OBS, when configured accordingly; mind the sorting
 # (`adud` < `alpha`).  For details and reasons, see
 # https://github.com/storeman-developers/harbour-storeman/wiki/Git-tag-format
-Release:    beta1
+Release:    rc1
 # The Group tag should comprise one of the groups listed here:
 # https://github.com/mer-tools/spectacle/blob/master/data/GROUPS
 Group:      Applications/File
@@ -29,12 +29,12 @@ License:    MPL-2.0-no-copyleft-exception
 URL:        https://github.com/sailfishos-applications/%{name}
 # Altering the `Vendor:` field breaks the update path on SailfishOS, see
 # https://en.opensuse.org/SDB:Vendor_change_update#Disabling_Vendor_stickiness
-Vendor:     meego
+#Vendor:     meego
 # The "Source0:" line below requires that the value of %%{name} is also the
-# project name at GitHub and the value of `%%{version}-%%{release}` is also
+# project name at GitHub and the value of `%%{release}/%%{version}` is also
 # the name of a correspondingly set Git tag.  For details and reasons, see
 # https://github.com/storeman-developers/harbour-storeman/wiki/Git-tag-format
-Source0:    %{url}/archive/%{version}-%{release}/%{name}-%{version}.tar.gz
+Source0:    %{url}/archive/%{release}/%{version}/%{name}-%{version}.tar.gz
 # Note that the rpmlintrc file MUST be named exactly so according to
 # https://en.opensuse.org/openSUSE:Packaging_checks#Building_Packages_in_spite_of_errors
 Source99:   %{name}.rpmlintrc

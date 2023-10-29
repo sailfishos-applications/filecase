@@ -47,20 +47,14 @@ jobs:
     - name: Prepare
       run: mkdir RPMS
 
-    - name: Build aarch64 on ${{ env.RELEASE }}
-      uses: coderus/github-sfos-build@master
-      with:
-        release: ${{ env.RELEASE }}
-        arch: aarch64
-
     - name: Build armv7hl on ${{ env.RELEASE }}
-      uses: coderus/github-sfos-build@master
+      uses: coderus/github-sfos-build@old-stable
       with:
         release: ${{ env.RELEASE }}
         arch: armv7hl
 
     - name: Build i486 on ${{ env.RELEASE }}
-      uses: coderus/github-sfos-build@master
+      uses: coderus/github-sfos-build@old-stable
       with:
         release: ${{ env.RELEASE }}
         arch: i486
@@ -97,13 +91,13 @@ jobs:
       run: mkdir RPMS
 
     - name: Build armv7hl on ${{ env.RELEASE }}
-      uses: coderus/github-sfos-build@master
+      uses: coderus/github-sfos-build@old-stable
       with:
         release: ${{ env.RELEASE }}
         arch: armv7hl
 
     - name: Build i486 on ${{ env.RELEASE }}
-      uses: coderus/github-sfos-build@master
+      uses: coderus/github-sfos-build@old-stable
       with:
         release: ${{ env.RELEASE }}
         arch: i486
@@ -140,19 +134,19 @@ jobs:
       run: mkdir RPMS
 
     - name: Build aarch64 on 4.0.1.45
-      uses: coderus/github-sfos-build@master
+      uses: coderus/github-sfos-build@old-stable
       with:
         release: 4.0.1.45
         arch: aarch64
 
     - name: Build armv7hl on ${{ env.RELEASE }}
-      uses: coderus/github-sfos-build@master
+      uses: coderus/github-sfos-build@old-stable
       with:
         release: ${{ env.RELEASE }}
         arch: armv7hl
 
     - name: Build i486 on ${{ env.RELEASE }}
-      uses: coderus/github-sfos-build@master
+      uses: coderus/github-sfos-build@old-stable
       with:
         release: ${{ env.RELEASE }}
         arch: i486
@@ -168,7 +162,7 @@ jobs:
     runs-on: ubuntu-22.04
     env:
       # For the available docker images, see https://github.com/CODeRUS/docker-sailfishos-platform-sdk
-      RELEASE: 4.4.0.68
+      RELEASE: 4.3.0.12
       # Do not wait up to the default of 10 minutes for network timeouts in a workflow which runs ca. 10 minutes.
       SEGMENT_DOWNLOAD_TIMEOUT_MINS: 2
     steps:
