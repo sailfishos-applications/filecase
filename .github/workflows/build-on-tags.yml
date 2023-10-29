@@ -162,7 +162,7 @@ jobs:
     runs-on: ubuntu-22.04
     env:
       # For the available docker images, see https://github.com/CODeRUS/docker-sailfishos-platform-sdk
-      RELEASE: 4.4.0.68
+      RELEASE: 4.3.0.12
       # Do not wait up to the default of 10 minutes for network timeouts in a workflow which runs ca. 10 minutes.
       SEGMENT_DOWNLOAD_TIMEOUT_MINS: 2
     steps:
