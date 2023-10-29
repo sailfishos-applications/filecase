@@ -21,7 +21,7 @@ Version:    0.4.2
 # build at GitHub and OBS, when configured accordingly; mind the sorting
 # (`adud` < `alpha`).  For details and reasons, see
 # https://github.com/storeman-developers/harbour-storeman/wiki/Git-tag-format
-Release:    beta1
+Release:    rc1
 # The Group tag should comprise one of the groups listed here:
 # https://github.com/mer-tools/spectacle/blob/master/data/GROUPS
 Group:      Applications/File
