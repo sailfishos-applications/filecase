@@ -52,4 +52,7 @@ In 2022 and 2023 [olf (Olf0)](https://github.com/Olf0) overhauled infrastructure
 #### Contributors
 - [David Llewellyn-Jones (flypig)](https://github.com/llewelld)
 - [olf (Olf0)](https://github.com/Olf0)
+<br />
+
+### License: [MPL 2.0](https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html)
 
