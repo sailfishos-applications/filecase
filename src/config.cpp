@@ -1,6 +1,7 @@
 #include "config.h"
 
 #include <QSettings>
+#include <QStandardPaths>
 
 QSettings sets("cepiperez", "fileboxplus");
 
@@ -29,5 +30,5 @@ void Config::removeConfig(QString data1)
 
 QString Config::getHome()
 {
-    return readConfig("PhoneMemoryFolder", "/home/defaultuser");
+    return QStandardPaths::standardLocations(QStandardPaths::HomeLocation).first();
 }
