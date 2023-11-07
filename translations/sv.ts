@@ -780,7 +780,7 @@
     <message>
         <location filename="../qml/pages/SearchPage.qml" line="105"/>
         <source>No files found</source>
-        <translation>Inga filer hittade</translation>
+        <translation>Inga filer hittades</translation>
     </message>
     <message>
         <location filename="../qml/pages/SearchPage.qml" line="105"/>
