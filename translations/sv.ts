@@ -889,7 +889,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="141"/>
         <source>Startup folder</source>
-        <translation>Startmapp</translation>
+        <translation>Startkatalog</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="149"/>
