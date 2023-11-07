@@ -242,7 +242,7 @@
     <message>
         <location filename="../qml/pages/Compressed.qml" line="99"/>
         <source>You need to install unrar to use this function</source>
-        <translation>Du måste installera &apos;unrar&apos; för att använda den här funktionen</translation>
+        <translation>Du måste installera &quot;unrar&quot; för att använda den här funktionen</translation>
     </message>
 </context>
 <context>
