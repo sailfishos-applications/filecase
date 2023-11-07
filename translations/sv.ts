@@ -752,7 +752,7 @@
     <message>
         <location filename="../src/search.cpp" line="293"/>
         <source>You can&apos;t share files outside home folder</source>
-        <translation>Du kan inte dela filer utanför nemo-mappen</translation>
+        <translation>Du kan inte dela filer utanför hemkatalogen</translation>
     </message>
     <message>
         <location filename="../src/search.cpp" line="413"/>
