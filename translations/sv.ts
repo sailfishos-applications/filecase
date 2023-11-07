@@ -1158,7 +1158,7 @@
     <message>
         <location filename="../qml/pages/UploadFiles.qml" line="183"/>
         <source>Last modified</source>
-        <translation>Senast ändrad</translation>
+        <translation>Ändrad</translation>
     </message>
 </context>
 <context>
