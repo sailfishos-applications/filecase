@@ -30,5 +30,7 @@ void Config::removeConfig(QString data1)
 
 QString Config::getHome()
 {
+    //return readConfig("PhoneMemoryFolder", "/home/defaultuser");
+    // Quick & dirty workaround, see issue #15 and PR #46:
     return QStandardPaths::standardLocations(QStandardPaths::HomeLocation).first();
 }
