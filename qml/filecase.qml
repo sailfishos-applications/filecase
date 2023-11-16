@@ -28,6 +28,7 @@ ApplicationWindow
 
 
     CoverPage { id: coverPage }
+    // Why was thie following line commented out when adapted in commit 7369833 of PR #1 ?
     //MainPage { id: mainPage; startFolder: "/"; nextFolder: config.readConfig("StartupFolder", config.getHome()) }
     Config { id: config }
     //Browser { id: browser }
