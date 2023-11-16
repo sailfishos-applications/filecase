@@ -11,7 +11,7 @@ Summary:    An advanced file-manager for SailfishOS
 # The <version> tag must adhere to semantic versioning: Among multiple other
 # reasons due to its use for `qmake5` in line 107.  See https://semver.org/
 Version:    0.4.3
-# The <release> tag comprisees one of {alpha,beta,rc,release} postfixed with a
+# The <release> tag comprises one of {alpha,beta,rc,release} postfixed with a
 # natural number greater or equal to 1 (e.g., "beta3") and may additionally be
 # postfixed with a plus character ("+"), the name of the packager and a release
 # number chosen by her (e.g., "rc2+jane4").  `{alpha|beta|rc|release}`
