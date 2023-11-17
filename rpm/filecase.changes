@@ -1,6 +1,6 @@
 * Thu Nov 16 2023 olf <Olf0@users.noreply.github.com> - 0.4.2
 - Update Swedish translation (PR #47) by @eson57
-- Introduce a quick & dirty workaround for issue #11 (PR #46) by @simonschmeisser
+- Introduce a quick & dirty workaround for issue #15 (PR #46) by @simonschmeisser
 - Minor documentation improvements by @Olf0
 
 * Sun Mar 06 2022 olf <Olf0@users.noreply.github.com> - 0.4.1
