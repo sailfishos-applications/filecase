@@ -18,7 +18,7 @@ Features:
 - Share files (to Android programs, Bluetooth etc.)
 - Supports Box, Dropbox, Google Drive, OneDrive and WebDAV cloud storage services
 
-<sup>Note that the ability to access cloud storage providers may be broken (this is [known for Dropbox](https://github.com/sailfishos-applications/filecase/issues/4)) due to API changes on their side; the same may apply to file sharing via Bluetooth on recent SailfishOS releases.</sup><br />
+<sup>Note that the ability to access cloud storage providers [may be broken](https://github.com/sailfishos-applications/filecase/issues/48) (this is [known for Dropbox](https://github.com/sailfishos-applications/filecase/issues/4)) due to API changes on their side; the same may apply to file sharing via Bluetooth on recent SailfishOS releases.</sup><br />
 Pull requests with fixes, improvements and enhancements are welcome!
 
 ## Translating FileCase (l10n / i18n)
