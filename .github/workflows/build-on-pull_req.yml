@@ -50,13 +50,14 @@ jobs:
     - name: Build ${{ env.ARCH }}
       uses: coderus/github-sfos-build@old-stable
       with:
-        # Solely builds for i486 on 2.2.0, because of https://github.com/sailfishos-patches/patchmanager/pull/437#issuecomment-1615317003
+        # Solely builds for i486 on 3.0.2, because of https://github.com/sailfishos-patches/patchmanager/pull/437#issuecomment-1615317003
+        # and https://github.com/sailfishos-applications/filecase/issues/45
         release: ${{ env.RELEASE }}
         arch: ${{ env.ARCH }}
 
     - name: Upload build result
       uses: actions/upload-artifact@v3
       with:
-        name: RPM-build-results_${{ github.base_ref }}-${{ env.ARCH }}-SFOS2.2.0+
+        name: RPM-build-results_${{ github.base_ref }}-${{ env.ARCH }}-SFOS${{ env.RELEASE }}+
         path: RPMS/
 
