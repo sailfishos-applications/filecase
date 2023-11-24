@@ -42,7 +42,7 @@ If you want to translate FileCase to a language it does not support yet or impro
 
 The original [FileCase for SailfishOS (2015 - 2016)](https://openrepos.net/content/cepiperez/filecase-0#content) started as a port of [FileCase for MeeGo-Harmattan (2014)](https://openrepos.net/content/cepiperez/filecase#content) (on the Nokia N9), which in turn is an overhauled [FileBox (2013)](https://openrepos.net/content/cepiperez/filebox#content).  All three applications were written by [Matias Perez (CepiPerez)](https://github.com/CepiPerez).  In 2021 Matias [released the source code of FileCase](https://github.com/sailfishos-applications/filecase/commit/d4294bbc5e854bb1a32481201f556ba453fbaef6) by creating this git repository at GitHub.
 
-In 2022 [David Llewellyn-Jones (flypig)](https://github.com/llewelld) cleaned up [the source code repository and adapted FileCase](https://github.com/sailfishos-applications/filecase/compare/0.1-9...0.2.1) to run on recent releases of SailfishOS.
+In 2021 [David Llewellyn-Jones (flypig)](https://github.com/llewelld) cleaned up [the source code repository and adapted FileCase](https://github.com/sailfishos-applications/filecase/compare/0.1-9...0.2.1) to run on recent releases of SailfishOS.
 
 In 2022 and 2023 [olf (Olf0)](https://github.com/Olf0) overhauled infrastructure aspects, such as this README, a [new OpenRepos page](https://openrepos.net/content/olf/filecase#content), the [Transifex integration](https://github.com/sailfishos-applications/filecase/pull/34), making the spec file suitable for [the Sailfish-OBS](https://build.sailfishos.org/) and [the SailfishOS:Chum community repository](https://build.sailfishos.org/project/show/sailfishos:chum) etc.
 
