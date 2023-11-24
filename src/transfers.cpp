@@ -280,13 +280,18 @@ void Transfers::transferFile(QStringList file)
         }
 
 
+
+
         QStringList uploadPath = settings.value(file.at(0)+"/upload_folder","/||/").toString().split("||");
 
+//       qDebug() << "TEST POINT 3: " << uploadPath;
+
         currentFile = QFileInfo(file.at(3)).fileName();
-        currentFile = uploadPath[1] + "/" + currentFile;
+        currentFile = uploadPath[0] + "/" + currentFile; //List only has one element, hench changing to first. This is due to a change in UploadFiles.qml
         currentFile = currentFile.replace("https:/","https://");
         currentFile = currentFile.replace("//","/");
         uploadFile = new QFile(file.at(3));
+
 
         if(!uploadFile->open(QFile::ReadOnly))
         {
@@ -298,6 +303,9 @@ void Transfers::transferFile(QStringList file)
         emit workingChanged(working);
 
         QByteArray myFile = uploadFile->readAll();
+
+        qDebug() << "TEST POINT 9";
+
 
         if (file.at(0).startsWith("OneDrive"))
         {
