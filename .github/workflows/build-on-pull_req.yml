@@ -1,7 +1,7 @@
 name: CI on PRs with SDK for 2.2.0 (i486)
 
 env:
-  RELEASE: 2.2.1.18
+  RELEASE: 3.0.0.8
   ARCH: i486
   # Do not wait up to the default of 10 minutes for network timeouts in a workflow which runs ca. 3 minutes.
   SEGMENT_DOWNLOAD_TIMEOUT_MINS: 1
