@@ -18,7 +18,7 @@ Features:
 - Share files (to Android programs, Bluetooth etc.)
 - Supports Box, Dropbox, Google Drive, OneDrive and WebDAV cloud storage services
 
-<sup>Note that the ability to access cloud storage providers may be broken (this is [known for Dropbox](https://github.com/sailfishos-applications/filecase/issues/4)) due to API changes on their side; the same may apply to file sharing via Bluetooth on recent SailfishOS releases.</sup><br />
+<sup>Note that the ability to access cloud storage providers [may be broken](https://github.com/sailfishos-applications/filecase/issues/48) (this is [known for Dropbox](https://github.com/sailfishos-applications/filecase/issues/4)) due to API changes on their side; the same may apply to file sharing via Bluetooth on recent SailfishOS releases.</sup><br />
 Pull requests with fixes, improvements and enhancements are welcome!
 
 ## Translating FileCase (l10n / i18n)
@@ -40,7 +40,7 @@ If you want to translate FileCase to a language it does not support yet or impro
 
 ## History of FileCase
 
-The original [FileCase for SailfishOS (2015 - 2016)](https://openrepos.net/content/cepiperez/filecase-0#content) started as a port of [FileCase for MeeGo-Harmattan (2014)](https://openrepos.net/content/cepiperez/filecase#content) (on the Nokia N9), which in turn is an overhauled [FileBox (2013)](https://openrepos.net/content/cepiperez/filebox#content).  All three appllications were written by [Matias Perez (CepiPerez)](https://github.com/CepiPerez).  In 2021 Matias [released the source code of FileCase](https://github.com/sailfishos-applications/filecase/commit/d4294bbc5e854bb1a32481201f556ba453fbaef6) by creating this git repository at GitHub.
+The original [FileCase for SailfishOS (2015 - 2016)](https://openrepos.net/content/cepiperez/filecase-0#content) started as a port of [FileCase for MeeGo-Harmattan (2014)](https://openrepos.net/content/cepiperez/filecase#content) (on the Nokia N9), which in turn is an overhauled [FileBox (2013)](https://openrepos.net/content/cepiperez/filebox#content).  All three applications were written by [Matias Perez (CepiPerez)](https://github.com/CepiPerez).  In 2021 Matias [released the source code of FileCase](https://github.com/sailfishos-applications/filecase/commit/d4294bbc5e854bb1a32481201f556ba453fbaef6) by creating this git repository at GitHub.
 
 In 2022 [David Llewellyn-Jones (flypig)](https://github.com/llewelld) cleaned up [the source code repository and adapted FileCase](https://github.com/sailfishos-applications/filecase/compare/0.1-9...0.2.1) to run on recent releases of SailfishOS.
 
