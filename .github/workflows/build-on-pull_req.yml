@@ -1,4 +1,4 @@
-name: CI on PRs with SDK for 2.2.0 (i486)
+name: CI on PRs with SDK for 3.0.0 (i486)
 
 env:
   RELEASE: 3.0.0.8
