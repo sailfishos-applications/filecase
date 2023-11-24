@@ -58,6 +58,6 @@ jobs:
     - name: Upload build result
       uses: actions/upload-artifact@v3
       with:
-        name: RPM-build-results_${{ github.ref_name }}-${{ env.ARCH }}-SFOS${{ env.RELEASE }}+
+        name: RPM-build-results_${{ github.base_ref }}-${{ env.ARCH }}-SFOS${{ env.RELEASE }}+
         path: RPMS/
 
