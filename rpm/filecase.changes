@@ -1,12 +1,23 @@
-* Fri Nov 24 2023 olf <amer@ma.tc> -  0.4.3-1
+* Sat Nov 25 2023 Logic-gate <amer@ma.tc> - 0.4.4
 - Fix QML rendering error in AddWebDavAccount
 - Fix Transfer View For Webdav Upload
 - Fix Webdav Upload
 
-* Thu Nov 16 2023 olf <Olf0@users.noreply.github.com> - 0.4.2
+* Fri Nov 24 2023 olf <Olf0@users.noreply.github.com> - 0.4.3
 - Update Swedish translation (PR #47) by @eson57
 - Introduce a quick & dirty workaround for issue #15 (PR #46) by @simonschmeisser
 - Minor documentation improvements by @Olf0
+- Fix for issue #54 (Building on SFOS-OBS fails) by @nephros (#55)
+- Set `Vendor:` to `meego` (#57)
+
+* Sun Oct 29 2023 olf <Olf0@users.noreply.github.com> - 0.4.2
+- Fully overhaul README
+- Create Translations-README
+- Add Transifex configuration
+- Add three issue templates
+- Implement and overhaul GitHub CI workflows
+- Trivially bail out of SailJail
+- Clean up and rectify some code changes made in 2022
 
 * Sun Mar 06 2022 olf <Olf0@users.noreply.github.com> - 0.4.1
 - Add checks for recent SD card paths: `/run/media/nemo` and `/run/media/defaultuser`
