@@ -76,6 +76,7 @@ void Utilities::removeFromBookmarks(QString folder)
 
 void Utilities::openFile(QString file)
 {
+    //This is no longer needed since we will be using Qt.openUrlExternally keeping it here untill final testing
     QProcess * process = new QProcess();
     process->start(QString("xdg-open \"%2\"").arg(file));
 
