@@ -9,7 +9,7 @@
 #include <QImage>
 #include <QSettings>
 #include <QDebug>
-
+#include <QProcess>
 #include <QLibrary>
 
 typedef QImage (*CreateThumbnailFunc)(const QString &fileName, const QSize &requestedSize, bool crop);
@@ -94,28 +94,31 @@ void ThumbGenerator::generate(QString filename)
         file.replace("#","%2523");
         file.replace(",","%2C");
         file.replace(" ","%20");
-        file = "file://"+file;
+        file = "file://" + file;
         md.addData(file.toUtf8());
-        QString tf = Config::getHome() + "/.thumbnails/whatsup/"+ QString(md.result().toHex().constData()) + ".jpeg";
+        QString tf = Config::getHome() + "/.thumbnails/whatsup/" + QString(md.result().toHex().constData()) + ".jpeg";
         thumb = tf;
 
-        if ( !QFileInfo(tf).exists() )
+        if (!QFileInfo(thumb).exists())
         {
-            //Utilities::logData("Generating video thumbnail for " + fileInfo.absoluteFilePath());
-            //VideoThumbnailer *thumbnailer = new VideoThumbnailer;
-            //QImage result = thumbnailer->createThumbnail(filename.remove("file://"), QSize(170,170), true);
-            QImage image;
+            QString command = "ffmpeg"; //used to replace  "/usr/lib/qt5/qml/org/nemomobile/thumbnailer/thumbnailers/libvideothumbnailer.so" solution
+            QStringList arguments;
+            arguments << "-i" << fileInfo.absoluteFilePath()
+                      << "-ss" << "00:00:01"                 // Arbitrary time can be anything (1 second here)
+                      << "-vframes" << "1"
+                      << "-q:v" << "2"                       // Quality factor. Lower is better. Higher gives lower bitrate. 2 is 1735 kb/s Check https://ffmpeg.org/ffmpeg-codecs.html#Options-22
+                      << thumb;
 
-            static CreateThumbnailFunc createThumbnail = (CreateThumbnailFunc)QLibrary::resolve(
-                        QLatin1String("/usr/lib/qt5/qml/org/nemomobile/thumbnailer/thumbnailers/libvideothumbnailer.so"), "createThumbnail");
+            QProcess process;
+            process.start(command, arguments);
+            process.waitForFinished();
 
-            if (createThumbnail) {
-                image = createThumbnail(filename, QSize(800,800), false);
+            if (process.exitCode() != 0) {
+                //Need to test what might go wrong..should add .close()
+                qDebug() << "ffmpeg ERROR: " << file;
             }
-
-            image.save( tf, "JPEG" );
         }
-        emit imgLoaded(tf);
+        emit imgLoaded(thumb);
     }
 
     imagesToProcess.removeAt(0);

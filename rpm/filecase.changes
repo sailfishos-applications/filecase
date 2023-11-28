@@ -1,3 +1,8 @@
+* Sat Nov 25 2023 Logic-gate <amer@ma.tc> - 0.4.4
+- Fix QML rendering error in AddWebDavAccount
+- Fix Transfer View For Webdav Upload
+- Fix Webdav Upload
+
 * Fri Nov 24 2023 olf <Olf0@users.noreply.github.com> - 0.4.3
 - Update Swedish translation (PR #47) by @eson57
 - Introduce a quick & dirty workaround for issue #15 (PR #46) by @simonschmeisser

@@ -1,8 +1,8 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import FileCase 1.0
-import org.nemomobile.thumbnailer 1.0
 import QtMultimedia 5.0
+import Nemo.Thumbnailer 1.0
 
 Page {
     id: infoPage
@@ -108,7 +108,7 @@ Page {
             MenuItem {
                 text: isPackage && !cloudFile? qsTr("Install") : qsTr("Open")
                 visible: !cloudFile && !isTextFile
-                onClicked: utilities.openFile(fileInfo.data.path + "/" + fileInfo.data.name)
+                onClicked: Qt.openUrlExternally(fileInfo.data.path + "/" + fileInfo.data.name)
             }
 
             MenuItem {

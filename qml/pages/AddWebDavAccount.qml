@@ -65,7 +65,6 @@ Page {
                 width: parent.width
                 //placeholderText: qsTr("Service name")
                 label: qsTr("Service name")
-                _labelItem.opacity: 1
                 enabled: !working
                 focus: true
                 EnterKey.enabled: name.text.length>0
@@ -78,7 +77,6 @@ Page {
                 placeholderText: "webdav.service.com"
                 inputMethodHints: Qt.ImhNoAutoUppercase
                 label: qsTr("Server")
-                _labelItem.opacity: 1
                 enabled: !working
                 EnterKey.enabled: host.text.length>0
                 EnterKey.onClicked: path.forceActiveFocus()
@@ -90,7 +88,6 @@ Page {
                 placeholderText: "/"
                 text: "/"
                 label: qsTr("Path")
-                _labelItem.opacity: 1
                 enabled: !working
                 EnterKey.enabled: path.text.length>0
                 EnterKey.onClicked: port.forceActiveFocus()
@@ -102,7 +99,6 @@ Page {
                 placeholderText: host.text.indexOf("http://")>-1? "80" : "443"
                 text: host.text.indexOf("http://")>-1? "80" : "443"
                 label: qsTr("Port")
-                _labelItem.opacity: 1
                 inputMethodHints: Qt.ImhDigitsOnly
                 enabled: !working
                 EnterKey.enabled: port.text.length>0
@@ -114,7 +110,6 @@ Page {
                 width: parent.width
                 //placeholderText: qsTr("User")
                 label: qsTr("User")
-                _labelItem.opacity: 1
                 inputMethodHints: Qt.ImhNoAutoUppercase
                 enabled: !working
                 EnterKey.enabled: user.text.length>0
@@ -125,8 +120,7 @@ Page {
                 id: pass
                 width: parent.width
                 //placeholderText: qsTr("Password")
-                label: qsTr("Password")
-                _labelItem.opacity: 1
+                label: qsTr("Password")  
                 enabled: !working
                 echoMode: TextInput.Password
                 inputMethodHints: Qt.ImhNoAutoUppercase
@@ -146,7 +140,7 @@ Page {
                 enabled: !working && name.text.length>0 && host.text.length>0 && path.text.length>0 && user.text.length>0 && pass.text.length>0
                 onClicked: {
                     working = true
-                    webdav.createAccount(name.text, host.text, path.text, user.text, pass.text)
+                    webdav.createAccount(name.text, host.text, path.text, user.text, pass.text, port.text)
                 }
             }
 

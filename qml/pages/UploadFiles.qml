@@ -2,7 +2,7 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import FileCase 1.0
 import QtMultimedia 5.0
-import Sailfish.TransferEngine 1.0
+import Sailfish.Share 1.0
 
 Page {
 
@@ -20,10 +20,15 @@ Page {
         pageStack.pop()
     }
 
-    SailfishTransferMethodsModel {
-        id: transferMethodsModel
-    //  filter: fileInfo.data.mime  // Debatable, if no filter is better, as it allows for all files
+
+    ShareAction {
+        id: shareAction
     }
+
+//    SailfishTransferMethodsModel {
+//        id: transferMethodsModel
+//    //  filter: fileInfo.data.mime  // Debatable, if no filter is better, as it allows for all files
+//    }
 
     ListModel {
         id: emptyModel
@@ -72,13 +77,16 @@ Page {
                 }
             }
 
+
+
             Repeater {
                 id: rootList
                 property url source: fileInfo.data.path + "/" + fileInfo.data.name
                 property variant content: ({})
                 //property alias filter: transferMethodsModel.filter
 
-                model: fileInfo.data.icon!==""? transferMethodsModel : emptyModel
+//              model: fileInfo.data.icon!==""? transferMethodsModel : emptyModel
+                model: emptyModel
 
                 objectName: "menuList"
                 //source: fileInfo.path + "/" + fileInfo.name
@@ -90,15 +98,8 @@ Page {
                     title: qsTrId(displayName)
                     description: userName
                     onClicked: {
-                        clearSelectionItems()
-                        pageStack.replace(shareUIPath, {
-                                           source: rootList.source,
-                                           content: rootList.content,
-                                           methodId: methodId,
-                                           displayName: displayName,
-                                           accountId: accountId,
-                                           accountName: userName
-                                       })
+                        shareAction.fileUrls = [rootList.source]
+                        shareAction.share()
 
                     }
 
