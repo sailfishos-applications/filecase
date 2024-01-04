@@ -85,7 +85,7 @@ Links:
   Homepage: https://openrepos.net/content/olf/filecase
   Help: %{url}/issues
   Bugtracker: %{url}/issues
-  Donation: https://openrepos.net/donate
+  Donation: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WTLJLQP2CSM7S
 %endif
 
 # Define (S)RPM compression sensibly, taking compatibility into account, see
