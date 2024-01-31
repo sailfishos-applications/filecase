@@ -12,7 +12,7 @@ Features:
 - View text files
 - Edit text files with a built-in, simple text editor
 - Create archives (`.zip`, `.tar`, `.tar.gz`, `.tar.bz2`)
-- View archive content (aforementioned formats, plus more, e.g., `.apk`) 
+- View archive content (aforementioned formats, plus more, e.g. `.apk`) 
 - Extraxt archives (aforementioned formats, `.apk` etc.)
 - Install packages (`.rpm`, `.apk`)
 - Share files (to Android programs, Bluetooth etc.)
