@@ -80,7 +80,7 @@ Page {
 
             Label {
                 color: Theme.secondaryColor
-                text: "(C) 2022 David Llewellyn-Jones (llewelld / flypig)" + "<br />" +
+                text: "(C) 2021 David Llewellyn-Jones (llewelld / flypig)" + "<br />" +
                       "(C) 2022-2023 olf (Olf0)"
                 font.pixelSize: Theme.fontSizeSmall
             }
