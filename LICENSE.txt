@@ -371,7 +371,7 @@ for such a notice.
 Additional, accurate notices of copyright ownership:
 - (C) 2015-2016 Matias Perez (CepiPerez) <cepiperez@gmail.com>
 - (C) 2021 David Llewellyn-Jones (llewelld / flypig) <david@flypig.co.uk>
-- (C) 2022-2023 olf (Olf0) <Olf0@users.noreply.github.com>
+- (C) 2022-2024 olf (Olf0) <Olf0@users.noreply.github.com>
 
 Exhibit B - "Incompatible With Secondary Licenses" Notice
 ---------------------------------------------------------
