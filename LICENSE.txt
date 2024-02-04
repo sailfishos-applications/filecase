@@ -368,7 +368,7 @@ file, then You may include the notice in a location (such as a LICENSE
 file in a relevant directory) where a recipient would be likely to look
 for such a notice.
 
-Additional, accurate notices of copyright ownership:
+Accurate notices of copyright ownership:
 - (C) 2015-2016 Matias Perez (CepiPerez) <cepiperez@gmail.com>
 - (C) 2021 David Llewellyn-Jones (llewelld / flypig) <david@flypig.co.uk>
 - (C) 2022-2024 olf (Olf0) <Olf0@users.noreply.github.com>
