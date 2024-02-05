@@ -65,8 +65,8 @@ int main(int argc, char *argv[])
 
     //window->rootContext()->setContextProperty("view", window.data());
     //window->rootContext()->setContextProperty("app", app.data());
-    window->engine()->addImportPath("/usr/share/filecase/qml");
     window->rootContext()->setContextProperty("appVersion", VERSION);
+    window->engine()->addImportPath("/usr/share/filecase/qml");
 
     qmlRegisterType<Config>("FileCase", 1, 0, "Config");
     qmlRegisterType<Utilities>("FileCase", 1, 0, "Utilities");
