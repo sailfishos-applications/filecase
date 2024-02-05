@@ -7,8 +7,6 @@ ApplicationWindow
 {
     id: appWindow
 
-    property string appVersion: "0.4.2"
-
     property string savedorientation: config.readConfig("Orientation", "auto")
 
     property int pagesOrientations: savedorientation==="auto"? (Orientation.Portrait | Orientation.Landscape) :
