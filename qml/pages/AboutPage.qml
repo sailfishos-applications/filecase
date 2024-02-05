@@ -33,7 +33,7 @@ Page {
                 spacing: Theme.paddingLarge
 
                 Image {
-                    source: "file://usr/share/icons/hicolor/86x86/apps/filecase.png"
+                    source: "file:///usr/share/icons/hicolor/86x86/apps/filecase.png"
                 }
 
                 Column {
