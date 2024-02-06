@@ -17,6 +17,7 @@ CONFIG += sailfishapp
 QT += core xml
 
 DEFINES += QWEBDAVITEM_EXTENDED_PROPERTIES DEBUG_WEBDAV
+DEFINES += VERSION=\\\"$${VERSION}\\\"
 
 SOURCES += src/filecase.cpp \
     src/browser.cpp \
