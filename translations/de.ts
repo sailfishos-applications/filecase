@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="de">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="de">
 <context>
     <name>AboutPage</name>
     <message>
@@ -1121,42 +1123,42 @@
 <context>
     <name>UploadFiles</name>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="44"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
         <source>Share</source>
         <translation>Teilen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="46"/>
         <source>Select service</source>
         <translation>Dienst auswählen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
         <source>Location</source>
         <translation>Lage</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
         <source>Target</source>
         <translation>Ziel</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="163"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="164"/>
         <source>Type</source>
         <translation>Typ</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="169"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="170"/>
         <source>Size</source>
         <translation>Größe</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="176"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="177"/>
         <source>Created</source>
         <translation>Erstellt</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="183"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="184"/>
         <source>Last modified</source>
         <translation>Zuletzt modifiziert</translation>
     </message>
@@ -1318,14 +1320,14 @@
 <context>
     <name>filecase</name>
     <message>
-        <location filename="../qml/filecase.qml" line="140"/>
-        <location filename="../qml/filecase.qml" line="149"/>
+        <location filename="../qml/filecase.qml" line="141"/>
+        <location filename="../qml/filecase.qml" line="150"/>
         <source>Queued</source>
         <translation>In Warteschlange</translation>
     </message>
     <message>
-        <location filename="../qml/filecase.qml" line="140"/>
-        <location filename="../qml/filecase.qml" line="149"/>
+        <location filename="../qml/filecase.qml" line="141"/>
+        <location filename="../qml/filecase.qml" line="150"/>
         <source>Completed</source>
         <translation>Abgeschlossen</translation>
     </message>

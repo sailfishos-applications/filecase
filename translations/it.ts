@@ -10,32 +10,22 @@
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="60"/>
-        <source>Main Developer:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AboutPage.qml" line="66"/>
-        <source>(C) 2015 Matias Perez (CepiPerez).</source>
+        <source>Original author:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="77"/>
-        <source>Contributeurs:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AboutPage.qml" line="83"/>
-        <source>David Llewellyn-Jones (llewelld), </source>
+        <source>Contributors:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="94"/>
-        <source>If your language is not available you can contribute here:</source>
+        <source>If you want to create a new translation or improve an extant one:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="110"/>
-        <source>You can contribute to keep this project alive making a small donation</source>
+        <location filename="../qml/pages/AboutPage.qml" line="109"/>
+        <source>You can support the original author of FileCase by donating:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1133,42 +1123,42 @@
 <context>
     <name>UploadFiles</name>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="44"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
         <source>Share</source>
         <translation>Condividi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="46"/>
         <source>Select service</source>
         <translation>Seleziona servizio</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
         <source>Location</source>
         <translation>Posizione</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
         <source>Target</source>
         <translation>Destinazione</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="163"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="164"/>
         <source>Type</source>
         <translation>Tipo</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="169"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="170"/>
         <source>Size</source>
         <translation>Dimensione</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="176"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="177"/>
         <source>Created</source>
         <translation>Creato il</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="183"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="184"/>
         <source>Last modified</source>
         <translation>Ultima modifica</translation>
     </message>
@@ -1330,14 +1320,14 @@
 <context>
     <name>filecase</name>
     <message>
-        <location filename="../qml/filecase.qml" line="140"/>
-        <location filename="../qml/filecase.qml" line="149"/>
+        <location filename="../qml/filecase.qml" line="141"/>
+        <location filename="../qml/filecase.qml" line="150"/>
         <source>Queued</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/filecase.qml" line="140"/>
-        <location filename="../qml/filecase.qml" line="149"/>
+        <location filename="../qml/filecase.qml" line="141"/>
+        <location filename="../qml/filecase.qml" line="150"/>
         <source>Completed</source>
         <translation type="unfinished"></translation>
     </message>

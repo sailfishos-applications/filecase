@@ -8,27 +8,19 @@
         <translation>Acerca</translation>
     </message>
     <message>
-        <source>If your language is not available you can contribute here:</source>
-        <translation>Si su idioma no está disponible puede contribuír aquí:</translation>
-    </message>
-    <message>
-        <source>You can contribute to keep this project alive making a small donation</source>
-        <translation>Usted puede contribuír para mantener este proyecto con una pequeña donación</translation>
-    </message>
-    <message>
-        <source>Main Developer:</source>
+        <source>Original author:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>(C) 2015 Matias Perez (CepiPerez).</source>
+        <source>Contributors:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Contributeurs:</source>
+        <source>If you want to create a new translation or improve an extant one:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>David Llewellyn-Jones (llewelld), </source>
+        <source>You can support the original author of FileCase by donating:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

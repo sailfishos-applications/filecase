@@ -12,6 +12,11 @@
 # The name of your application
 TARGET = filecase
 
+i18n_files.files = translations
+i18n_files.path = /usr/share/$$TARGET
+
+INSTALLS += i18n_files
+
 CONFIG += sailfishapp
 
 QT += core xml
