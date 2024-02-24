@@ -21,7 +21,7 @@ Version:    0.4.4
 # build at GitHub and OBS, when configured accordingly; mind the sorting
 # (`adud` < `alpha`).  For details and reasons, see
 # https://github.com/storeman-developers/harbour-storeman/wiki/Git-tag-format
-Release:    release1
+Release:    check2
 # The Group tag should comprise one of the groups listed here:
 # https://github.com/mer-tools/spectacle/blob/master/data/GROUPS
 Group:      Applications/File
@@ -44,6 +44,7 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Xml)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
+BuildRequires:  qt5-qttools-linguist
 BuildRequires:  desktop-file-utils
 
 # This description section includes metadata for SailfishOS:Chum, see
