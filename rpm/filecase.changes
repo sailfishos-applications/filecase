@@ -2,10 +2,10 @@
 - Foo
 
 * Fri Nov 24 2023 olf <Olf0@users.noreply.github.com> - 0.4.3
-- Update Swedish translation (PR #47) by @eson57
-- Introduce a quick & dirty workaround for issue #15 (PR #46) by @simonschmeisser
+- Update Swedish translation (#47) by @eson57
+- Introduce a quick & dirty workaround for issue #15 (#46) by @simonschmeisser
 - Minor documentation improvements by @Olf0
-- Fix for issue #54 (Building on SFOS-OBS fails) by @nephros (#55)
+- Fix for issue #54 "Building on SFOS-OBS fails" by @nephros (#55)
 - Set `Vendor:` to `meego` (#57)
 
 * Sun Oct 29 2023 olf <Olf0@users.noreply.github.com> - 0.4.2
