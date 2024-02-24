@@ -1,15 +1,16 @@
 # NOTICE:
 #
 # Application name defined in TARGET has a corresponding QML filename.
-# If name defined in TARGET is changed, the following needs to be done
-# to match new name:
+# If the name defined in TARGET is changed, the following must be done
+# to match the new name:
 #   - corresponding QML filename must be changed
 #   - desktop icon filename must be changed
 #   - desktop filename must be changed
 #   - icon definition filename in desktop file must be changed
 #   - translation filenames have to be changed
 
-# The name of your application
+# The name of your application, defaults to the name of the project file, see
+# https://doc.qt.io/qt-5/qmake-common-projects.html#building-an-application
 TARGET = filecase
 
 CONFIG += sailfishapp
@@ -122,6 +123,11 @@ TRANSLATIONS += translations/ca.ts \
                 translations/zh_HK.ts \
                 translations/zh_TW.ts
 
+i18n_files.files = translations
+i18n_files.path = /usr/share/$$TARGET
+
+INSTALLS += i18n_files
+
 HEADERS += \
     src/browser.h \
     src/config.h \
@@ -160,6 +166,6 @@ HEADERS += \
     src/boxthumbnailer.h
 
 icons.files = icons
-icons.path = /usr/share/filecase/
+icons.path = /usr/share/$$TARGET
 
 INSTALLS += icons
