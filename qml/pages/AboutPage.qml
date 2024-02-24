@@ -81,7 +81,8 @@ Page {
             Label {
                 color: Theme.secondaryColor
                 text: "(C) 2021 David Llewellyn-Jones (llewelld / flypig)" + "<br />" +
-                      "(C) 2022-2024 olf (Olf0)"
+                      "(C) 2022-2024 olf (Olf0)" + "<br />" +
+                      "(C) 2023 Simon Schmeisser (simonschmeisser)"
                 font.pixelSize: Theme.fontSizeSmall
             }
 
