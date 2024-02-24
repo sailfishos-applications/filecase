@@ -66,7 +66,7 @@ Categories:
  - Qt
  - TextEditor
  - Viewer
-DeveloperName: Matias Perez (CepiPerez), olf (Olf0), David L.-J. (llewelld / flypig)
+DeveloperName: CepiPerez, olf, flypig, simonschmeisser
 Custom:
   Repo: %{url}
 PackageIcon: %{url}/raw/master/icons/filecase3.png
