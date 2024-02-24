@@ -50,8 +50,9 @@ In 2022 and 2023 [olf (Olf0)](https://github.com/Olf0) overhauled infrastructure
 #### Original author
 [Matias Perez (CepiPerez)](https://github.com/CepiPerez)
 #### Contributors
-- [David Llewellyn-Jones (flypig)](https://github.com/llewelld)
+- [David Llewellyn-Jones (llewelld / flypig)](https://github.com/llewelld)
 - [olf (Olf0)](https://github.com/Olf0)
+- [Simon Schmeisser (simonschmeisser)](https://github.com/simonschmeisser)
 <br />
 
 ### License: [MPL 2.0](https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html)
