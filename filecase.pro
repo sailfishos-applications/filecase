@@ -123,11 +123,6 @@ TRANSLATIONS += translations/ca.ts \
                 translations/zh_HK.ts \
                 translations/zh_TW.ts
 
-i18n_files.files = translations
-i18n_files.path = /usr/share/$$TARGET
-
-INSTALLS += i18n_files
-
 HEADERS += \
     src/browser.h \
     src/config.h \
