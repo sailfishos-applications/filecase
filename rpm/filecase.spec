@@ -113,7 +113,7 @@ desktop-file-install --delete-original --dir %{buildroot}%{_datadir}/application
    %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 # Strip binaries on SDK versions for SailfishOS < v3.0.2.00,
-# see https://github.com/sailfishos/meego-rpm-config/blob/master/brp-strip
+# see https://github.com/sailfishos/meego-rpm-config/blob/master/brp-strip , brp-strip-shared, brp-strip-static-archive, brp-strip-comment-note
 # and `rpm --showrc` on SailfishOS and MeeGo: %{?buildroot:RPM_BUILD_ROOT="%{u2p:%{buildroot}} export RPM_BUILD_ROOT}
 %if %{defined sailfishos_version} && 0%{?sailfishos_version} < 30200
 # If using regular rootdir, do not strip anything:
@@ -122,8 +122,34 @@ then
   # Strip ELF binaries
   for f in $(find $RPM_BUILD_ROOT -type f \( -perm -0100 -o -perm -0010 -o -perm -0001 \) -exec file {} \; | \
     grep -v "^${RPM_BUILD_ROOT}/\?usr/lib/debug" | grep -v ' shared object,' | \
-    sed -n -e 's/^\(.*\):[ 	]*ELF.*, not stripped.*/\1/p')
-	 do strip -g "$f" || :
+    sed -n 's/^\(.*\):[ 	]*ELF.*, not stripped.*/\1/p')
+  do strip -g "$f" || :
+  done
+  # Strip ELF shared objects
+  # Please note we don't restrict our search to executable files because
+  # our libraries are not (should not be, at least) +x.
+  for f in $(find $RPM_BUILD_ROOT -type f -exec file {} \; | \
+    grep -v "^${RPM_BUILD_ROOT}/\?usr/lib/debug" | grep ' shared object,' | \
+    sed -n 's/^\(.*\):[ 	]*ELF.*, not stripped.*/\1/p')
+  do strip --strip-unneeded "$f" || :
+  done
+  # Strip static libraries
+  for f in $(find $RPM_BUILD_ROOT -type f -exec file {} \; | \
+    grep -v "^${RPM_BUILD_ROOT}/\?usr/lib/debug" | grep 'current ar archive' | \
+    sed -n 's/^\(.*\):[ 	]*current ar archive.*/\1/p')
+  do strip -g "$f" || :
+  done
+  # Strip .comment and .note sections (the latter only if it is not allocated)
+  # for already stripped elf files in the build root
+  for f in $(find $RPM_BUILD_ROOT -type f \( -perm -0100 -o -perm -0010 -o -perm -0001 \) -exec file {} \; | \
+    grep -v "^${RPM_BUILD_ROOT}/\?usr/lib/debug" | \
+    sed -n 's/^\(.*\):[ 	]*ELF.*, stripped.*/\1/p')
+  do
+    if $OBJDUMP -h $f | grep '^[ 	]*[0-9]*[ 	]*.note[ 	]' -A 1 | grep -Fq ALLOC
+    then note=""
+    else note="-R .note"
+    fi
+    strip -R .comment $note "$f" || :
   done
 fi
 %endif
