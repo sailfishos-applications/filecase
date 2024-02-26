@@ -12,7 +12,7 @@ Features:
 - View text files
 - Edit text files with a built-in, simple text editor
 - Create archives (`.zip`, `.tar`, `.tar.gz`, `.tar.bz2`)
-- View archive content (aforementioned formats, plus more, e.g., `.apk`) 
+- View archive content (aforementioned formats, plus more, e.g. `.apk`) 
 - Extraxt archives (aforementioned formats, `.apk` etc.)
 - Install packages (`.rpm`, `.apk`)
 - Share files (to Android programs, Bluetooth etc.)
@@ -44,14 +44,15 @@ The original [FileCase for SailfishOS (2015 - 2016)](https://openrepos.net/conte
 
 In 2021 [David Llewellyn-Jones (flypig)](https://github.com/llewelld) cleaned up [the source code repository and adapted FileCase](https://github.com/sailfishos-applications/filecase/compare/0.1-9...0.2.1) to run on recent releases of SailfishOS.
 
-In 2022 and 2023 [olf (Olf0)](https://github.com/Olf0) overhauled infrastructure aspects, such as this README, a [new OpenRepos page](https://openrepos.net/content/olf/filecase#content), the [Transifex integration](https://github.com/sailfishos-applications/filecase/pull/34), making the spec file suitable for [the Sailfish-OBS](https://build.sailfishos.org/) and [the SailfishOS:Chum community repository](https://build.sailfishos.org/project/show/sailfishos:chum) etc.
+In 2022 and 2023 [olf (Olf0)](https://github.com/Olf0) overhauled infrastructure aspects, such as this README, a [new OpenRepos page](https://openrepos.net/content/olf/filecase#content), a [Transifex integration](https://github.com/sailfishos-applications/filecase/pull/34), making the spec file suitable for [the Sailfish-OBS](https://build.sailfishos.org/) and [the SailfishOS:Chum community repository](https://build.sailfishos.org/project/show/sailfishos:chum) etc.
 
 ## Credits
 #### Original author
 [Matias Perez (CepiPerez)](https://github.com/CepiPerez)
 #### Contributors
-- [David Llewellyn-Jones (flypig)](https://github.com/llewelld)
+- [David Llewellyn-Jones (llewelld / flypig)](https://github.com/llewelld)
 - [olf (Olf0)](https://github.com/Olf0)
+- [Simon Schmeisser (simonschmeisser)](https://github.com/simonschmeisser)
 <br />
 
 ### License: [MPL 2.0](https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html)

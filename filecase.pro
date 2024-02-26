@@ -1,15 +1,16 @@
 # NOTICE:
 #
 # Application name defined in TARGET has a corresponding QML filename.
-# If name defined in TARGET is changed, the following needs to be done
-# to match new name:
-#   - corresponding QML filename must be changed
-#   - desktop icon filename must be changed
-#   - desktop filename must be changed
-#   - icon definition filename in desktop file must be changed
-#   - translation filenames have to be changed
+# If the name defined in TARGET is changed, the following must be done
+# to match the new name:
+#   - the corresponding QML filename must be adapted
+#   - the desktop icon filename must be adapted
+#   - the name of the `.desktop` file must be adapted
+#   - the icon definition filename in `.desktop` file must be adapted
+#   - the original translation strings `.ts` filename has to be adapted
 
-# The name of your application
+# The name of your application; should default to the name of the project file,
+# see https://doc.qt.io/qt-5/qmake-common-projects.html#building-an-application
 TARGET = filecase
 
 CONFIG += sailfishapp
@@ -17,6 +18,7 @@ CONFIG += sailfishapp
 QT += core xml
 
 DEFINES += QWEBDAVITEM_EXTENDED_PROPERTIES DEBUG_WEBDAV
+DEFINES += VERSION=\\\"$${VERSION}\\\"
 
 SOURCES += src/filecase.cpp \
     src/browser.cpp \
@@ -159,6 +161,6 @@ HEADERS += \
     src/boxthumbnailer.h
 
 icons.files = icons
-icons.path = /usr/share/filecase/
+icons.path = /usr/share/$$TARGET
 
 INSTALLS += icons

@@ -33,7 +33,7 @@ Page {
                 spacing: Theme.paddingLarge
 
                 Image {
-                    source: "file://usr/share/icons/hicolor/86x86/apps/filecase.png"
+                    source: "file:///usr/share/icons/hicolor/86x86/apps/filecase.png"
                 }
 
                 Column {
@@ -80,8 +80,9 @@ Page {
 
             Label {
                 color: Theme.secondaryColor
-                text: "(C) 2022 David Llewellyn-Jones (llewelld / flypig)" + "<br />" +
-                      "(C) 2022-2023 olf (Olf0)"
+                text: "(C) 2021 David Llewellyn-Jones (llewelld / flypig)" + "<br />" +
+                      "(C) 2022-2024 olf (Olf0)" + "<br />" +
+                      "(C) 2023 Simon Schmeisser (simonschmeisser)"
                 font.pixelSize: Theme.fontSizeSmall
             }
 

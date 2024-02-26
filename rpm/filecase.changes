@@ -1,11 +1,23 @@
+* Sat Feb 24 2024 olf <Olf0@users.noreply.github.com> - 0.4.4
+- Slightly enhance `About.qml` page (#65 etc.)
+- Setting `appVersion` for QML from `Version:` in spec-file (#66)
+- Fix issue #68: `TS`→`QM` files does not work on OBS (#74)
+
 * Fri Nov 24 2023 olf <Olf0@users.noreply.github.com> - 0.4.3
-- Fix for issue #54 "Building on SFOS-OBS fails" by @nephros (#55)
+- Update Swedish translation (#47) by @eson57
+- Introduce a quick & dirty workaround for issue #15 (#46) by @simonschmeisser
+- Minor documentation improvements by @Olf0
+- Fix: Building on SFOS-OBS fails (#55) by @nephros, closes issue #54
 - Set `Vendor:` to `meego` (#57)
 
-* Thu Nov 16 2023 olf <Olf0@users.noreply.github.com> - 0.4.2
-- Update Swedish translation (PR #47) by @eson57
-- Introduce a quick & dirty workaround for issue #15 (PR #46) by @simonschmeisser
-- Minor documentation improvements by @Olf0
+* Sun Oct 29 2023 olf <Olf0@users.noreply.github.com> - 0.4.2
+- Fully overhaul README
+- Create Translations-README
+- Add Transifex configuration
+- Add three issue templates
+- Implement and overhaul GitHub CI workflows
+- Trivially bail out of SailJail
+- Clean up and rectify some code changes made in 2022
 
 * Sun Mar 06 2022 olf <Olf0@users.noreply.github.com> - 0.4.1
 - Add checks for recent SD card paths: `/run/media/nemo` and `/run/media/defaultuser`

@@ -10,7 +10,7 @@ Name:       filecase
 Summary:    An advanced file-manager for SailfishOS
 # The <version> tag must adhere to semantic versioning: Among multiple other
 # reasons due to its use for `qmake5` in line 107.  See https://semver.org/
-Version:    0.4.3
+Version:    0.4.4
 # The <release> tag comprises one of {alpha,beta,rc,release} postfixed with a
 # natural number greater or equal to 1 (e.g., "beta3") and may additionally be
 # postfixed with a plus character ("+"), the name of the packager and a release
@@ -21,7 +21,7 @@ Version:    0.4.3
 # build at GitHub and OBS, when configured accordingly; mind the sorting
 # (`adud` < `alpha`).  For details and reasons, see
 # https://github.com/storeman-developers/harbour-storeman/wiki/Git-tag-format
-Release:    rc4
+Release:    release1
 # The Group tag should comprise one of the groups listed here:
 # https://github.com/mer-tools/spectacle/blob/master/data/GROUPS
 Group:      Applications/File
@@ -44,6 +44,7 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Xml)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
+BuildRequires:  qt5-qttools-linguist
 BuildRequires:  desktop-file-utils
 
 # This description section includes metadata for SailfishOS:Chum, see
@@ -66,7 +67,7 @@ Categories:
  - Qt
  - TextEditor
  - Viewer
-DeveloperName: Matias Perez (CepiPerez), olf (Olf0), David L.-J. (llewelld / flypig)
+DeveloperName: CepiPerez, olf, flypig, simonschmeisser
 Custom:
   Repo: %{url}
 PackageIcon: %{url}/raw/master/icons/filecase3.png
