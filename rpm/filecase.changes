@@ -1,4 +1,7 @@
-* Sat Feb 24 2024 olf <Olf0@users.noreply.github.com> - 0.4.4
+* Wed Feb 28 2024 olf <Olf0@users.noreply.github.com> - 0.4.5
+- 
+
+* Mon Feb 26 2024 olf <Olf0@users.noreply.github.com> - 0.4.4
 - Slightly enhance `About.qml` page (#65 etc.)
 - Setting `appVersion` for QML from `Version:` in spec-file (#66)
 - Fix issue #68: `TS`→`QM` files does not work on OBS (#74)
