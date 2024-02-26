@@ -142,7 +142,7 @@ then
   # Strip .comment and .note sections (the latter only if it is not allocated)
   # for already stripped elf files in the build root
   for f in $(find $RPM_BUILD_ROOT -type f \( -perm -0100 -o -perm -0010 -o -perm -0001 \) -exec file {} \; | \
-    grep -v "^${RPM_BUILD_ROOT}/\?usr/lib/debug"  | \
+    grep -v "^${RPM_BUILD_ROOT}/\?usr/lib/debug" | \
     sed -n 's/^\(.*\):[ 	]*ELF.*, stripped.*/\1/p')
   do
     if $OBJDUMP -h $f | grep '^[ 	]*[0-9]*[ 	]*.note[ 	]' -A 1 | grep -Fq ALLOC
