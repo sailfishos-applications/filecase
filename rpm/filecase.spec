@@ -46,6 +46,12 @@ BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  qt5-qttools-linguist
 BuildRequires:  desktop-file-utils
+# Required for stripping binaries on SDK versions for SailfishOS < v3.0.2.00
+%if %{defined sailfishos_version} && 0%{?sailfishos_version} < 30200
+BuildRequires:  binutils
+BuildRequires:  findutils
+BuildRequires:  sed
+%endif
 
 # This description section includes metadata for SailfishOS:Chum, see
 # https://github.com/sailfishos-chum/main/blob/main/Metadata.md
@@ -105,6 +111,22 @@ Links:
 %qmake5_install
 desktop-file-install --delete-original --dir %{buildroot}%{_datadir}/applications \
    %{buildroot}%{_datadir}/applications/%{name}.desktop
+
+# Strip binaries on SDK versions for SailfishOS < v3.0.2.00,
+# see https://github.com/sailfishos/meego-rpm-config/blob/master/brp-strip
+# and `rpm --showrc` on SailfishOS and MeeGo: %{?buildroot:RPM_BUILD_ROOT="%{u2p:%{buildroot}} export RPM_BUILD_ROOT}
+%if %{defined sailfishos_version} && 0%{?sailfishos_version} < 30200
+# If using regular rootdir, do not strip anything:
+if [ -n "$RPM_BUILD_ROOT" ] && [ "$RPM_BUILD_ROOT" != "/" ]
+then
+  # Strip ELF binaries
+  for f in $(find $RPM_BUILD_ROOT -type f \( -perm -0100 -o -perm -0010 -o -perm -0001 \) -exec file {} \; | \
+    grep -v "^${RPM_BUILD_ROOT}/\?usr/lib/debug" | grep -v ' shared object,' | \
+    sed -n -e 's/^\(.*\):[ 	]*ELF.*, not stripped.*/\1/p')
+	 do strip -g "$f" || :
+  done
+fi
+%endif
 
 %files
 %defattr(-,root,root,-)
