@@ -29,11 +29,11 @@ defaults:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # Caching Docker images is not ready yet, see 
     # https://github.com/storeman-developers/harbour-storeman-installer/blob/devel/cache-docker-images_github-ci.md
@@ -56,7 +56,7 @@ jobs:
         arch: ${{ env.ARCH }}
 
     - name: Upload build result
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: RPM-build-results_${{ github.base_ref }}-${{ env.ARCH }}-SFOS${{ env.RELEASE }}+
         path: RPMS/
