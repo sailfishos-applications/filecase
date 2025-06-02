@@ -24,7 +24,7 @@
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="109"/>
         <source>You can support the original author of FileCase by donating:</source>
-        <translation>Puoi supportare l&apos;autore di FileCase con una donazione:</translation>
+        <translation>Puoi supportare l&apos;autore originale di FileCase con una donazione:</translation>
     </message>
 </context>
 <context>
