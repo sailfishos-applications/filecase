@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg1"
    width="86"
@@ -9,12 +15,12 @@
    viewBox="0 0 85.999999 85.999999"
    sodipodi:docname="filecase.svg"
    xml:space="preserve"
-   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"><title
+     id="title295">FileCase's app icon</title><metadata
+     id="metadata257"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>FileCase's app icon</dc:title><cc:license
+           rdf:resource="https://spdx.org/licenses/MIT.html" /><dc:date>June 2025</dc:date><dc:creator><cc:Agent><dc:title>marbalf (MBF)</dc:title></cc:Agent></dc:creator><dc:rights><cc:Agent><dc:title>MIT License</dc:title></cc:Agent></dc:rights><dc:publisher><cc:Agent><dc:title>olf (Olf0)</dc:title></cc:Agent></dc:publisher><dc:source>https://codeberg.org/marbalf/Sailfish-icons/src/branch/main/other/general/filecase</dc:source><dc:subject><rdf:Bag><rdf:li>FileCase</rdf:li><rdf:li>icon</rdf:li></rdf:Bag></dc:subject><dc:description>Application icon of FileCase for SailfishOS</dc:description><dc:contributor><cc:Agent><dc:title>olf (Olf0)</dc:title></cc:Agent></dc:contributor></cc:Work></rdf:RDF></metadata><defs
      id="defs1"><linearGradient
        id="linearGradient6"
        inkscape:collect="always"><stop
@@ -64,25 +70,24 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
      inkscape:zoom="9.2663937"
-     inkscape:cx="50.451126"
-     inkscape:cy="37.447146"
-     inkscape:window-width="1916"
-     inkscape:window-height="1226"
+     inkscape:cx="34.371516"
+     inkscape:cy="42.950905"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg1" /><g
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1"
+     inkscape:document-rotation="0"
+     showgrid="false" /><g
      inkscape:groupmode="layer"
-     inkscape:label="Image"
+     inkscape:label="filecase_app-icon"
      id="g1"
      style="display:inline"><g
        id="g2"
        transform="matrix(1.0000117,0,0,1.0000117,-3.5087912e-6,-3.5087912e-6)"
-       style="display:inline;stroke-width:0.999988"><g
-         id="Layer_2"
-         display="inline"
-         style="stroke-width:0.999988">
-</g><g
+       style="display:inline;stroke-width:0.999988"
+       inkscape:label="folder_icon"><g
          id="Layer_1"
          style="display:inline;stroke-width:0.999988">
 	
@@ -106,7 +111,7 @@
    fill="url(#SVGID_1_)"
    d="m 84.277,0.3 c 0,0 -39.494,0 -41.277,0 C 19.417,0.3 0.3,19.417 0.3,43 c 0,1.783 0,41.277 0,41.277 0,0.786 0.637,1.423 1.423,1.423 h 47.444 35.109 c 0.786,0 1.423,-0.637 1.423,-1.423 V 49.168 1.723 C 85.7,0.937 85.063,0.3 84.277,0.3 Z"
    id="path2"
-   style="display:inline;fill:#686868;fill-opacity:1;stroke-width:0.999988" />
+   style="display:inline;fill:#686868;fill-opacity:1;stroke-width:1" />
 	<path
    opacity="0.8"
    fill="#f9f8d9"
