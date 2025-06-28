@@ -52,6 +52,7 @@ In 2022 and 2023 [olf (Olf0)](https://github.com/Olf0) overhauled infrastructure
 [Matias Perez (CepiPerez)](https://github.com/CepiPerez)
 #### Contributors
 - [David Llewellyn-Jones (llewelld / flypig)](https://github.com/llewelld)
+- [marbalf (MBF)](https://codeberg.org/marbalf)
 - [olf (Olf0)](https://github.com/Olf0)
 - [Simon Schmeisser (simonschmeisser)](https://github.com/simonschmeisser)
 <br />
