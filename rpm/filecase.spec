@@ -70,7 +70,7 @@ Categories:
 DeveloperName: CepiPerez, olf, flypig, simonschmeisser
 Custom:
   Repo: %{url}
-PackageIcon: %{url}/raw/master/icons/filecase3.png
+PackageIcon: %{url}/raw/master/.xdata/icons/filecase.svg
 Screenshots:
  - %{url}/raw/master/.xdata/screenshots/screenshot-001.jpg
  - %{url}/raw/master/.xdata/screenshots/screenshot-002.jpg
