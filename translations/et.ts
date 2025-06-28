@@ -17,12 +17,12 @@
         <translation>Kaasautorid:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="94"/>
+        <location filename="../qml/pages/AboutPage.qml" line="96"/>
         <source>If you want to create a new translation or improve an extant one:</source>
         <translation>Kui soovid lisada uut tõlget või olemasolevat kohendada:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="109"/>
+        <location filename="../qml/pages/AboutPage.qml" line="111"/>
         <source>You can support the original author of FileCase by donating:</source>
         <translation>Kui soovid algset autorit toetada, siis klõpsi siin:</translation>
     </message>
@@ -284,6 +284,44 @@
         <location filename="../qml/pages/Drive.qml" line="394"/>
         <source>Folder is empty</source>
         <translation>Kaust on tühi</translation>
+    </message>
+</context>
+<context>
+    <name>DriveSettings</name>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="46"/>
+        <source>Settings</source>
+        <translation>Seadistused</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="50"/>
+        <source>Account</source>
+        <translation>Kasutajakonto</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="93"/>
+        <source>Remove account</source>
+        <translation>Eemalda kasutajakonto</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="105"/>
+        <source>Storage</source>
+        <translation>Andmeruum</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="152"/>
+        <source>Transfers</source>
+        <translation>Ülekanded</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="157"/>
+        <source>Download folder</source>
+        <translation>Allalaadimiste kaust</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="166"/>
+        <source>Upload folder</source>
+        <translation>Üleslaadimiste kaust</translation>
     </message>
 </context>
 <context>
@@ -1121,42 +1159,42 @@
 <context>
     <name>UploadFiles</name>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="44"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
         <source>Share</source>
         <translation>Jaga</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="46"/>
         <source>Select service</source>
         <translation>Vali teenus</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
         <source>Location</source>
         <translation>Asukoht</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
         <source>Target</source>
         <translation>Viitab asukohale</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="163"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="164"/>
         <source>Type</source>
         <translation>Tüüp</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="169"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="170"/>
         <source>Size</source>
         <translation>Maht</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="176"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="177"/>
         <source>Created</source>
         <translation>Loodud</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="183"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="184"/>
         <source>Last modified</source>
         <translation>Viimati muudetud</translation>
     </message>
@@ -1318,14 +1356,14 @@
 <context>
     <name>filecase</name>
     <message>
-        <location filename="../qml/filecase.qml" line="140"/>
-        <location filename="../qml/filecase.qml" line="149"/>
+        <location filename="../qml/filecase.qml" line="139"/>
+        <location filename="../qml/filecase.qml" line="148"/>
         <source>Queued</source>
         <translation>Lisasime järjekorda</translation>
     </message>
     <message>
-        <location filename="../qml/filecase.qml" line="140"/>
-        <location filename="../qml/filecase.qml" line="149"/>
+        <location filename="../qml/filecase.qml" line="139"/>
+        <location filename="../qml/filecase.qml" line="148"/>
         <source>Completed</source>
         <translation>Valmis</translation>
     </message>
