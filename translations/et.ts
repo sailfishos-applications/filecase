@@ -40,7 +40,7 @@
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="58"/>
         <source>WebDAV account</source>
-        <translation>WebDAV&apos;i konto</translation>
+        <translation>WebDAV-i konto</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="67"/>
