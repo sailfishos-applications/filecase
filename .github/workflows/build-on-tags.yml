@@ -1,5 +1,9 @@
 name: CI on tags (aarch64,armv7hl,i486)
 
+permissions:
+  contents: read
+  actions: write
+
 on:
   push:
     tags:
