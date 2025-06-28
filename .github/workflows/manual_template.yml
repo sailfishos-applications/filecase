@@ -1,6 +1,9 @@
 # This is a basic workflow that is manually triggered
-
 name: Manual workflow
+
+permissions:
+  contents: read
+  actions: write
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
