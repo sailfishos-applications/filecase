@@ -67,7 +67,7 @@ Categories:
  - Qt
  - TextEditor
  - Viewer
-DeveloperName: CepiPerez, olf, flypig, simonschmeisser
+DeveloperName: CepiPerez, olf, flypig, simonschmeisser, marbalf
 Custom:
   Repo: %{url}
 PackageIcon: %{url}/raw/master/.xdata/icons/filecase.svg
