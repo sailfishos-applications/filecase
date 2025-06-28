@@ -1,5 +1,9 @@
 name: CI on tags (aarch64,armv7hl,i486)
 
+permissions:
+  contents: read
+  actions: write
+
 on:
   push:
     tags:
@@ -24,7 +28,7 @@ concurrency:
 
 jobs:
   SDK-220:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     env:
       # For the available docker images, see https://github.com/CODeRUS/docker-sailfishos-platform-sdk
       RELEASE: 2.2.0.29
@@ -33,7 +37,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # Caching Docker images is not ready yet, see 
     # https://github.com/storeman-developers/harbour-storeman-installer/blob/devel/cache-docker-images_github-ci.md
@@ -60,14 +64,14 @@ jobs:
         arch: i486
 
     - name: Upload build results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: RPM-build-results_SFOS${{ env.RELEASE }}+
         path: RPMS/
 
 
   SDK-302:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     env:
       # For the available docker images, see https://github.com/CODeRUS/docker-sailfishos-platform-sdk
       RELEASE: 3.0.2.8
@@ -76,7 +80,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # Caching Docker images is not ready yet, see 
     # https://github.com/storeman-developers/harbour-storeman-installer/blob/devel/cache-docker-images_github-ci.md
@@ -103,14 +107,14 @@ jobs:
         arch: i486
 
     - name: Upload build results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: RPM-build-results_SFOS${{ env.RELEASE }}+
         path: RPMS/
 
 
   SDK-320:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     env:
       # For the available docker images, see https://github.com/CODeRUS/docker-sailfishos-platform-sdk
       RELEASE: 3.2.0.12
@@ -119,7 +123,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # Caching Docker images is not ready yet, see 
     # https://github.com/storeman-developers/harbour-storeman-installer/blob/devel/cache-docker-images_github-ci.md
@@ -146,14 +150,14 @@ jobs:
         arch: i486
 
     - name: Upload build results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: RPM-build-results_SFOS${{ env.RELEASE }}+
         path: RPMS/
 
 
   SDK-340_401:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     env:
       # For the available docker images, see https://github.com/CODeRUS/docker-sailfishos-platform-sdk
       RELEASE: 3.4.0.24
@@ -162,7 +166,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # Caching Docker images is not ready yet, see 
     # https://github.com/storeman-developers/harbour-storeman-installer/blob/devel/cache-docker-images_github-ci.md
@@ -195,14 +199,14 @@ jobs:
         arch: i486
 
     - name: Upload build results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: RPM-build-results_SFOS${{ env.RELEASE }}+
         path: RPMS/
 
 
   SDK-430:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     env:
       # For the available docker images, see https://github.com/CODeRUS/docker-sailfishos-platform-sdk
       RELEASE: 4.3.0.12
@@ -211,7 +215,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # Caching Docker images is not ready yet, see 
     # https://github.com/storeman-developers/harbour-storeman-installer/blob/devel/cache-docker-images_github-ci.md
@@ -244,7 +248,7 @@ jobs:
         arch: i486
 
     - name: Upload build results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: RPM-build-results_SFOS${{ env.RELEASE }}+
         path: RPMS/

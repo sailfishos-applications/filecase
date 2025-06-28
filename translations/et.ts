@@ -1,30 +1,30 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="it">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="et">
 <context>
     <name>AboutPage</name>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="27"/>
         <source>About</source>
-        <translation>Info</translation>
+        <translation>Rakenduse teave</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="60"/>
         <source>Original author:</source>
-        <translation>Autore originale:</translation>
+        <translation>Algne autor:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="77"/>
         <source>Contributors:</source>
-        <translation>Contributori:</translation>
+        <translation>Kaasautorid:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="96"/>
         <source>If you want to create a new translation or improve an extant one:</source>
-        <translation>Se vuoi creare una nuova traduzione o migliorare una già esistente:</translation>
+        <translation>Kui soovid lisada uut tõlget või olemasolevat kohendada:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="111"/>
         <source>You can support the original author of FileCase by donating:</source>
-        <translation>Puoi supportare l&apos;autore originale di FileCase con una donazione:</translation>
+        <translation>Kui soovid algset autorit toetada, siis klõpsi siin:</translation>
     </message>
 </context>
 <context>
@@ -32,7 +32,7 @@
     <message>
         <location filename="../qml/pages/AddAccount.qml" line="36"/>
         <source>Add service</source>
-        <translation>Aggiungi servizio</translation>
+        <translation>Lisa teenus</translation>
     </message>
 </context>
 <context>
@@ -40,12 +40,12 @@
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="58"/>
         <source>WebDAV account</source>
-        <translation>Account WebDAV</translation>
+        <translation>WebDAV-i konto</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="67"/>
         <source>Service name</source>
-        <translation>Nome servizio</translation>
+        <translation>Teenuse nimi</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="80"/>
@@ -55,27 +55,27 @@
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="92"/>
         <source>Path</source>
-        <translation>Percorso:</translation>
+        <translation>Asukoht</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="104"/>
         <source>Port</source>
-        <translation>Porta</translation>
+        <translation>Port</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="116"/>
         <source>User</source>
-        <translation>Utente</translation>
+        <translation>Kasutajanimi</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="128"/>
         <source>Password</source>
-        <translation>Password</translation>
+        <translation>Salasõna</translation>
     </message>
     <message>
         <location filename="../qml/pages/AddWebDavAccount.qml" line="144"/>
         <source>Done</source>
-        <translation>Fatto</translation>
+        <translation>Valmis</translation>
     </message>
 </context>
 <context>
@@ -83,32 +83,32 @@
     <message>
         <location filename="../qml/pages/Box.qml" line="133"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/Box.qml" line="139"/>
         <source>New folder</source>
-        <translation>Nuova cartella</translation>
+        <translation>Uus kaust</translation>
     </message>
     <message>
         <location filename="../qml/pages/Box.qml" line="145"/>
         <source>Paste here</source>
-        <translation>Incolla qui</translation>
+        <translation>Aseta siia</translation>
     </message>
     <message>
         <location filename="../qml/pages/Box.qml" line="225"/>
         <source>Deleting</source>
-        <translation>Rimozione</translation>
+        <translation>Kustutame</translation>
     </message>
     <message>
         <location filename="../qml/pages/Box.qml" line="392"/>
         <source>Error accessing folder</source>
-        <translation>Errore di accesso alla cartella</translation>
+        <translation>Viga ligipääsul kaustale</translation>
     </message>
     <message>
         <location filename="../qml/pages/Box.qml" line="392"/>
         <source>Folder is empty</source>
-        <translation>La cartella è vuota</translation>
+        <translation>Kaust on tühi</translation>
     </message>
 </context>
 <context>
@@ -116,37 +116,37 @@
     <message>
         <location filename="../qml/pages/BoxSettings.qml" line="46"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/BoxSettings.qml" line="50"/>
         <source>Account</source>
-        <translation>Account</translation>
+        <translation>Kasutajakonto</translation>
     </message>
     <message>
         <location filename="../qml/pages/BoxSettings.qml" line="95"/>
         <source>Remove account</source>
-        <translation>Rimuovi account</translation>
+        <translation>Eemalda kasutajakonto</translation>
     </message>
     <message>
         <location filename="../qml/pages/BoxSettings.qml" line="107"/>
         <source>Storage</source>
-        <translation>Memoria</translation>
+        <translation>Andmeruum</translation>
     </message>
     <message>
         <location filename="../qml/pages/BoxSettings.qml" line="154"/>
         <source>Transfers</source>
-        <translation>Trasferimenti</translation>
+        <translation>Ülekanded</translation>
     </message>
     <message>
         <location filename="../qml/pages/BoxSettings.qml" line="159"/>
         <source>Download folder</source>
-        <translation>Cartella di scaricamento</translation>
+        <translation>Allalaadimiste kaust</translation>
     </message>
     <message>
         <location filename="../qml/pages/BoxSettings.qml" line="168"/>
         <source>Upload folder</source>
-        <translation>Cartella di caricamento</translation>
+        <translation>Üleslaadimiste kaust</translation>
     </message>
 </context>
 <context>
@@ -154,17 +154,17 @@
     <message>
         <location filename="../qml/pages/BoxUploadFolder.qml" line="27"/>
         <source>Done</source>
-        <translation>Fatto</translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../qml/pages/BoxUploadFolder.qml" line="28"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/BoxUploadFolder.qml" line="111"/>
         <source>Folder is empty</source>
-        <translation>La cartella è vuota</translation>
+        <translation>Kaust on tühi</translation>
     </message>
 </context>
 <context>
@@ -172,12 +172,12 @@
     <message>
         <location filename="../src/browser.cpp" line="638"/>
         <source>Delete process completed</source>
-        <translation>Processo di eliminazione completato</translation>
+        <translation>Kustutamine õnnestus</translation>
     </message>
     <message>
         <location filename="../src/browser.cpp" line="640"/>
         <source>There were errors deleting files!</source>
-        <translation>Errori durante l&apos;eliminazione dei file!</translation>
+        <translation>Failide kustutamisel tekkis viga!</translation>
     </message>
 </context>
 <context>
@@ -185,17 +185,17 @@
     <message>
         <location filename="../qml/pages/ClipboardPage.qml" line="25"/>
         <source>Clear clipboard</source>
-        <translation>Cancella appunti</translation>
+        <translation>Tühjenda lõikelaud</translation>
     </message>
     <message>
         <location filename="../qml/pages/ClipboardPage.qml" line="36"/>
         <source>Clipboard</source>
-        <translation>Appunti</translation>
+        <translation>Lõikelaud</translation>
     </message>
     <message>
         <location filename="../qml/pages/ClipboardPage.qml" line="71"/>
         <source>Clipboard is empty</source>
-        <translation>Nessun appunto salvato</translation>
+        <translation>Lõikelaud on tühi</translation>
     </message>
 </context>
 <context>
@@ -203,28 +203,28 @@
     <message>
         <location filename="../qml/pages/CompressDialog.qml" line="23"/>
         <source>Done</source>
-        <translation>Fatto</translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../qml/pages/CompressDialog.qml" line="24"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/CompressDialog.qml" line="41"/>
         <source>Compress files</source>
-        <translation>Comprimi i file</translation>
+        <translation>Paki failid kokku</translation>
     </message>
     <message>
         <location filename="../qml/pages/CompressDialog.qml" line="48"/>
         <location filename="../qml/pages/CompressDialog.qml" line="49"/>
         <source>File name</source>
-        <translation>Nome file</translation>
+        <translation>Faili nimi</translation>
     </message>
     <message>
         <location filename="../qml/pages/CompressDialog.qml" line="58"/>
         <source>Format</source>
-        <translation>Formato</translation>
+        <translation>Vorming</translation>
     </message>
 </context>
 <context>
@@ -232,17 +232,17 @@
     <message>
         <location filename="../qml/pages/Compressed.qml" line="47"/>
         <source>Extract files</source>
-        <translation>Estrai file</translation>
+        <translation>Paki failid lahti</translation>
     </message>
     <message>
         <location filename="../qml/pages/Compressed.qml" line="93"/>
         <source>No files</source>
-        <translation>Nessun file</translation>
+        <translation>Faile ei leidu</translation>
     </message>
     <message>
         <location filename="../qml/pages/Compressed.qml" line="99"/>
         <source>You need to install unrar to use this function</source>
-        <translation>Devi installare unrar per usare questa funzione</translation>
+        <translation>Selle funktsionaalsuse kasutamiseks palun paigalda unrar</translation>
     </message>
 </context>
 <context>
@@ -258,32 +258,32 @@
     <message>
         <location filename="../qml/pages/Drive.qml" line="133"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/Drive.qml" line="139"/>
         <source>New folder</source>
-        <translation>Nuova cartella</translation>
+        <translation>Uus kaust</translation>
     </message>
     <message>
         <location filename="../qml/pages/Drive.qml" line="145"/>
         <source>Paste here</source>
-        <translation>Incolla qui</translation>
+        <translation>Aseta siia</translation>
     </message>
     <message>
         <location filename="../qml/pages/Drive.qml" line="225"/>
         <source>Deleting</source>
-        <translation>Rimozione</translation>
+        <translation>Kustutame</translation>
     </message>
     <message>
         <location filename="../qml/pages/Drive.qml" line="394"/>
         <source>Error accessing folder</source>
-        <translation>Errore di accesso alla cartella</translation>
+        <translation>Viga ligipääsul kaustale</translation>
     </message>
     <message>
         <location filename="../qml/pages/Drive.qml" line="394"/>
         <source>Folder is empty</source>
-        <translation>La cartella è vuota</translation>
+        <translation>Kaust on tühi</translation>
     </message>
 </context>
 <context>
@@ -291,37 +291,37 @@
     <message>
         <location filename="../qml/pages/DriveSettings.qml" line="46"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/DriveSettings.qml" line="50"/>
         <source>Account</source>
-        <translation>Account</translation>
+        <translation>Kasutajakonto</translation>
     </message>
     <message>
         <location filename="../qml/pages/DriveSettings.qml" line="93"/>
         <source>Remove account</source>
-        <translation>Rimuovi account</translation>
+        <translation>Eemalda kasutajakonto</translation>
     </message>
     <message>
         <location filename="../qml/pages/DriveSettings.qml" line="105"/>
         <source>Storage</source>
-        <translation>Memoria</translation>
+        <translation>Andmeruum</translation>
     </message>
     <message>
         <location filename="../qml/pages/DriveSettings.qml" line="152"/>
         <source>Transfers</source>
-        <translation>Trasferimenti</translation>
+        <translation>Ülekanded</translation>
     </message>
     <message>
         <location filename="../qml/pages/DriveSettings.qml" line="157"/>
         <source>Download folder</source>
-        <translation>Cartella di scaricamento</translation>
+        <translation>Allalaadimiste kaust</translation>
     </message>
     <message>
         <location filename="../qml/pages/DriveSettings.qml" line="166"/>
         <source>Upload folder</source>
-        <translation>Cartella di caricamento</translation>
+        <translation>Üleslaadimiste kaust</translation>
     </message>
 </context>
 <context>
@@ -329,7 +329,7 @@
     <message>
         <location filename="../qml/pages/DriveTransfers.qml" line="25"/>
         <source>Transfers</source>
-        <translation>Trasferimenti</translation>
+        <translation>Ülekanded</translation>
     </message>
 </context>
 <context>
@@ -337,17 +337,17 @@
     <message>
         <location filename="../qml/pages/DriveUploadFolder.qml" line="27"/>
         <source>Done</source>
-        <translation>Fatto</translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../qml/pages/DriveUploadFolder.qml" line="28"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/DriveUploadFolder.qml" line="111"/>
         <source>Folder is empty</source>
-        <translation>La cartella è vuota</translation>
+        <translation>Kaust on tühi</translation>
     </message>
 </context>
 <context>
@@ -355,32 +355,32 @@
     <message>
         <location filename="../qml/pages/Dropbox.qml" line="136"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/Dropbox.qml" line="142"/>
         <source>New folder</source>
-        <translation>Nuova cartella</translation>
+        <translation>Uus kaust</translation>
     </message>
     <message>
         <location filename="../qml/pages/Dropbox.qml" line="148"/>
         <source>Paste here</source>
-        <translation>Incolla qui</translation>
+        <translation>Aseta siia</translation>
     </message>
     <message>
         <location filename="../qml/pages/Dropbox.qml" line="228"/>
         <source>Deleting</source>
-        <translation>Rimozione</translation>
+        <translation>Kustutame</translation>
     </message>
     <message>
         <location filename="../qml/pages/Dropbox.qml" line="386"/>
         <source>Error accessing folder</source>
-        <translation>Errore di accesso alla cartella</translation>
+        <translation>Viga ligipääsul kaustale</translation>
     </message>
     <message>
         <location filename="../qml/pages/Dropbox.qml" line="386"/>
         <source>Folder is empty</source>
-        <translation>La cartella è vuota</translation>
+        <translation>Kaust on tühi</translation>
     </message>
 </context>
 <context>
@@ -388,37 +388,37 @@
     <message>
         <location filename="../qml/pages/DropboxSettings.qml" line="46"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/DropboxSettings.qml" line="50"/>
         <source>Account</source>
-        <translation>Account</translation>
+        <translation>Kasutajakonto</translation>
     </message>
     <message>
         <location filename="../qml/pages/DropboxSettings.qml" line="93"/>
         <source>Remove account</source>
-        <translation>Rimuovi account</translation>
+        <translation>Eemalda kasutajakonto</translation>
     </message>
     <message>
         <location filename="../qml/pages/DropboxSettings.qml" line="106"/>
         <source>Storage</source>
-        <translation>Memoria</translation>
+        <translation>Andmeruum</translation>
     </message>
     <message>
         <location filename="../qml/pages/DropboxSettings.qml" line="153"/>
         <source>Transfers</source>
-        <translation>Trasferimenti</translation>
+        <translation>Ülekanded</translation>
     </message>
     <message>
         <location filename="../qml/pages/DropboxSettings.qml" line="158"/>
         <source>Download folder</source>
-        <translation>Cartella di scaricamento</translation>
+        <translation>Allalaadimiste kaust</translation>
     </message>
     <message>
         <location filename="../qml/pages/DropboxSettings.qml" line="167"/>
         <source>Upload folder</source>
-        <translation>Cartella di caricamento</translation>
+        <translation>Üleslaadimiste kaust</translation>
     </message>
 </context>
 <context>
@@ -426,7 +426,7 @@
     <message>
         <location filename="../qml/pages/DropboxTransfers.qml" line="25"/>
         <source>Transfers</source>
-        <translation>Trasferimenti</translation>
+        <translation>Ülekanded</translation>
     </message>
 </context>
 <context>
@@ -434,17 +434,17 @@
     <message>
         <location filename="../qml/pages/DropboxUploadFolder.qml" line="26"/>
         <source>Done</source>
-        <translation>Fatto</translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../qml/pages/DropboxUploadFolder.qml" line="27"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/DropboxUploadFolder.qml" line="110"/>
         <source>Folder is empty</source>
-        <translation>La cartella è vuota</translation>
+        <translation>Kaust on tühi</translation>
     </message>
 </context>
 <context>
@@ -452,28 +452,28 @@
     <message>
         <location filename="../qml/pages/ExtractDialog.qml" line="27"/>
         <source>Done</source>
-        <translation>Fatto</translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../qml/pages/ExtractDialog.qml" line="28"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/ExtractDialog.qml" line="45"/>
         <source>Extract files</source>
-        <translation>Estrai files</translation>
+        <translation>Paki failid lahti</translation>
     </message>
     <message>
         <location filename="../qml/pages/ExtractDialog.qml" line="52"/>
         <location filename="../qml/pages/ExtractDialog.qml" line="53"/>
         <source>Password (if required)</source>
-        <translation>Password (se richiesta)</translation>
+        <translation>Salasõna (kui on vaja)</translation>
     </message>
     <message>
         <location filename="../qml/pages/ExtractDialog.qml" line="63"/>
         <source>Destination</source>
-        <translation>Destinazione</translation>
+        <translation>Sihtkoht</translation>
     </message>
 </context>
 <context>
@@ -481,104 +481,104 @@
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="65"/>
         <source>Error getting info. Try again later</source>
-        <translation>Errore nel recuperare informazioni. Riprova più tardi</translation>
+        <translation>Viga andmete laadimisel. Palun proovi hiljem uuesti</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="79"/>
         <source>Rename</source>
-        <translation>Rinomina</translation>
+        <translation>Muuda nime</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="88"/>
         <source>Share</source>
-        <translation>Condividi</translation>
+        <translation>Jaga</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="99"/>
         <source>View package files</source>
-        <translation>Vedi file pacchetto</translation>
+        <translation>Vaata paigalduspaketi faile</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="109"/>
         <source>Open</source>
-        <translation>Apri</translation>
+        <translation>Ava</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="109"/>
         <source>Install</source>
-        <translation>Installa</translation>
+        <translation>Paigalda</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="115"/>
         <source>Edit</source>
-        <translation>Modifica</translation>
+        <translation>Muuda</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="121"/>
         <source>View</source>
-        <translation>Visualizza</translation>
+        <translation>Vaata</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="132"/>
         <source>Details</source>
-        <translation>Dettagli</translation>
+        <translation>Üksikasjad</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="196"/>
         <source>Location</source>
-        <translation>Posizione</translation>
+        <translation>Asukoht</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="196"/>
         <source>Target</source>
-        <translation>Destinazione</translation>
+        <translation>Viitab asukohale</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="203"/>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation>Tüüp</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="210"/>
         <source>Content size</source>
-        <translation>Dimensione contenuto</translation>
+        <translation>Sisu maht</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="210"/>
         <source>Size</source>
-        <translation>Dimensione</translation>
+        <translation>Maht</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="218"/>
         <source>Created</source>
-        <translation>Creato il</translation>
+        <translation>Loodud</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="225"/>
         <source>Last modified</source>
-        <translation>Ultima modifica</translation>
+        <translation>Viimati muudetud</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="238"/>
         <source>Public link</source>
-        <translation>Link pubblico</translation>
+        <translation>Avalik link</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="258"/>
         <source>Copy link</source>
-        <translation>Copia collegamento</translation>
+        <translation>Kopeeri link</translation>
     </message>
     <message>
         <location filename="../src/fileinfo.cpp" line="43"/>
         <location filename="../src/fileinfo.cpp" line="88"/>
         <location filename="../src/fileinfo.cpp" line="115"/>
         <source>(loading)</source>
-        <translation>(caricamento)</translation>
+        <translation>(laadime andmeid)</translation>
     </message>
     <message>
         <location filename="../src/fileinfo.cpp" line="86"/>
         <source>items</source>
-        <translation>elementi</translation>
+        <translation>kirjet</translation>
     </message>
 </context>
 <context>
@@ -586,87 +586,87 @@
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="27"/>
         <source>Phone memory</source>
-        <translation>Memoria telefono</translation>
+        <translation>Telefoni mälu</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="28"/>
         <source>SD Card</source>
-        <translation>Card SD</translation>
+        <translation>SD-kaart</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="32"/>
         <source>Documents</source>
-        <translation>Documenti</translation>
+        <translation>Dokumendid</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="33"/>
         <source>Downloads</source>
-        <translation>File scaricati</translation>
+        <translation>Allalaadimised</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="34"/>
         <source>Music</source>
-        <translation>Musica</translation>
+        <translation>Muusika</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="35"/>
         <source>Videos</source>
-        <translation>Video</translation>
+        <translation>Videod</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="36"/>
         <source>Pictures</source>
-        <translation>Immagini</translation>
+        <translation>Pildid</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="54"/>
         <source>Add service</source>
-        <translation>Aggiungi servizio</translation>
+        <translation>Lisa teenus</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="81"/>
         <source>Transfers</source>
-        <translation>Trasferimenti</translation>
+        <translation>Ülekanded</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="93"/>
         <source>No pending transfers</source>
-        <translation>Nessun trasferimento in coda</translation>
+        <translation>Käimasolevad ülekandeid pole</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="94"/>
         <source>1 pending transfer</source>
-        <translation>1 trasferimento in coda</translation>
+        <translation>1 käimasolev ülekanne</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="94"/>
         <source>%1 pending transfers</source>
-        <translation>%1 trasferimenti in coda</translation>
+        <translation>%1 käimasolevat ülekannet</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="113"/>
         <source>Device</source>
-        <translation>Dispositivo</translation>
+        <translation>Seade</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="160"/>
         <source>Places</source>
-        <translation>Luoghi</translation>
+        <translation>Asukohad</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="204"/>
         <source>Favorites</source>
-        <translation>Preferiti</translation>
+        <translation>Lemmikud</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="249"/>
         <source>Cloud services</source>
-        <translation>Servizi cloud</translation>
+        <translation>Pilveteenused</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="291"/>
         <source>WebDAV services</source>
-        <translation>Servizi WebDAV</translation>
+        <translation>WebDAV&apos;i teenused</translation>
     </message>
 </context>
 <context>
@@ -674,52 +674,52 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="196"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="200"/>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation>Otsing</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="207"/>
         <source>Clipboard</source>
-        <translation>Appunti</translation>
+        <translation>Lõikelaud</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="212"/>
         <source>New folder</source>
-        <translation>Nuova cartella</translation>
+        <translation>Uus kaust</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="216"/>
         <source>Paste here</source>
-        <translation>Incolla qui</translation>
+        <translation>Aseta siia</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="232"/>
         <source>No files selected</source>
-        <translation>Nessun file selezionato</translation>
+        <translation>Ühtegi faili pole valitud</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="233"/>
         <source>1 file selected</source>
-        <translation>1 file selezionato</translation>
+        <translation>1 valitud fail</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="234"/>
         <source>%1 files selected</source>
-        <translation>%1 file selezionati</translation>
+        <translation>%1 valitud faili</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="381"/>
         <source>Folder is empty</source>
-        <translation>La cartella è vuota</translation>
+        <translation>Kaust on tühi</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="547"/>
         <source>Removing</source>
-        <translation>Rimozione</translation>
+        <translation>Eemaldame</translation>
     </message>
 </context>
 <context>
@@ -727,23 +727,23 @@
     <message>
         <location filename="../qml/pages/NewFolder.qml" line="38"/>
         <source>Done</source>
-        <translation>Fatto</translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../qml/pages/NewFolder.qml" line="39"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/NewFolder.qml" line="59"/>
         <source>New Folder</source>
-        <translation>Nuova cartella</translation>
+        <translation>Uus kaust</translation>
     </message>
     <message>
         <location filename="../qml/pages/NewFolder.qml" line="67"/>
         <location filename="../qml/pages/NewFolder.qml" line="68"/>
         <source>New name</source>
-        <translation>Nuovo nome</translation>
+        <translation>Uus nimi</translation>
     </message>
 </context>
 <context>
@@ -751,28 +751,28 @@
     <message>
         <location filename="../qml/pages/RenameFile.qml" line="48"/>
         <source>Done</source>
-        <translation>Fatto</translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../qml/pages/RenameFile.qml" line="49"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/RenameFile.qml" line="55"/>
         <source>Rename</source>
-        <translation>Rinomina</translation>
+        <translation>Muuda nime</translation>
     </message>
     <message>
         <location filename="../qml/pages/RenameFile.qml" line="76"/>
         <source>Enter new name</source>
-        <translation>Inserisci nuovo nome</translation>
+        <translation>Sisesta uus nimi</translation>
     </message>
     <message>
         <location filename="../qml/pages/RenameFile.qml" line="82"/>
         <location filename="../qml/pages/RenameFile.qml" line="83"/>
         <source>New name</source>
-        <translation>Nuovo nome</translation>
+        <translation>Uus nimi</translation>
     </message>
 </context>
 <context>
@@ -780,27 +780,27 @@
     <message>
         <location filename="../src/search.cpp" line="280"/>
         <source>Delete process completed</source>
-        <translation>Processo di eliminazione completato</translation>
+        <translation>Kustutamine õnnestus</translation>
     </message>
     <message>
         <location filename="../src/search.cpp" line="282"/>
         <source>There were errors deleting files!</source>
-        <translation>Errori durante l&apos;eliminazione dei file!</translation>
+        <translation>Failide kustutamisel tekkis viga!</translation>
     </message>
     <message>
         <location filename="../src/search.cpp" line="293"/>
         <source>You can&apos;t share files outside home folder</source>
-        <translation>Non puoi condividere file fuori dalla cartella nemo</translation>
+        <translation>Sa ei saa jagada väljaspool kodukausta asuvaid faile</translation>
     </message>
     <message>
         <location filename="../src/search.cpp" line="413"/>
         <source>Search canceled</source>
-        <translation>Ricerca annullata</translation>
+        <translation>Otsing on katkestatud</translation>
     </message>
     <message>
         <location filename="../src/search.cpp" line="415"/>
         <source>Search completed</source>
-        <translation>Ricerca completata</translation>
+        <translation>Otsing on valmis</translation>
     </message>
 </context>
 <context>
@@ -808,27 +808,27 @@
     <message>
         <location filename="../qml/pages/SearchPage.qml" line="36"/>
         <source>Search</source>
-        <translation>Cerca</translation>
+        <translation>Otsing</translation>
     </message>
     <message>
         <location filename="../qml/pages/SearchPage.qml" line="43"/>
         <source>New search</source>
-        <translation>Nuova ricerca</translation>
+        <translation>Uus otsing</translation>
     </message>
     <message>
         <location filename="../qml/pages/SearchPage.qml" line="105"/>
         <source>No files found</source>
-        <translation>Nessun file trovato</translation>
+        <translation>Ühtegi faili ei leidunud</translation>
     </message>
     <message>
         <location filename="../qml/pages/SearchPage.qml" line="105"/>
         <source>Clipboard is empty</source>
-        <translation>Nessun appunto salvato</translation>
+        <translation>Lõikelaud on tühi</translation>
     </message>
     <message>
         <location filename="../qml/pages/SearchPage.qml" line="223"/>
         <source>Removing</source>
-        <translation>Rimozione</translation>
+        <translation>Eemaldame</translation>
     </message>
 </context>
 <context>
@@ -836,27 +836,27 @@
     <message>
         <location filename="../qml/pages/SelDownloadFolder.qml" line="58"/>
         <source>Done</source>
-        <translation>Fatto</translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../qml/pages/SelDownloadFolder.qml" line="59"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/SelDownloadFolder.qml" line="72"/>
         <source>SD Card</source>
-        <translation>Memoris SD</translation>
+        <translation>SD-kaart</translation>
     </message>
     <message>
         <location filename="../qml/pages/SelDownloadFolder.qml" line="72"/>
         <source>Phone memory</source>
-        <translation>Memoria telefono</translation>
+        <translation>Telefoni mälu</translation>
     </message>
     <message>
         <location filename="../qml/pages/SelDownloadFolder.qml" line="155"/>
         <source>Folder is empty</source>
-        <translation>La cartella è vuota</translation>
+        <translation>Kaust on tühi</translation>
     </message>
 </context>
 <context>
@@ -864,12 +864,12 @@
     <message>
         <location filename="../qml/pages/SelectLanguage.qml" line="34"/>
         <source>Done</source>
-        <translation>Fatto</translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../qml/pages/SelectLanguage.qml" line="35"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Katkesta</translation>
     </message>
 </context>
 <context>
@@ -877,142 +877,142 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="47"/>
         <source>About</source>
-        <translation>Info</translation>
+        <translation>Rakenduse teave</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="61"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="65"/>
         <source>General</source>
-        <translation>Generale</translation>
+        <translation>Üldist</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="70"/>
         <source>Language</source>
-        <translation>Lingua</translation>
+        <translation>Keel</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="81"/>
         <source>*Restart to apply the new language</source>
-        <translation>*Riavvia per applicare la nuova lingua</translation>
+        <translation>* Keele muutmise jõustamiseks käivita rakendus uuesti</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="92"/>
         <source>Orientation</source>
-        <translation>Orientamento</translation>
+        <translation>Paigutus</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="94"/>
         <source>Automatic</source>
-        <translation>Automatico</translation>
+        <translation>Automaatne</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="95"/>
         <source>Portrait</source>
-        <translation>Verticale</translation>
+        <translation>Püstvaade</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="96"/>
         <source>Landscape</source>
-        <translation>Orizzontale</translation>
+        <translation>Rõhtvaade</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="136"/>
         <source>File Manager</source>
-        <translation>Gestore File</translation>
+        <translation>Failihaldur</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="141"/>
         <source>Startup folder</source>
-        <translation>Cartella iniziale</translation>
+        <translation>Algkaust</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="149"/>
         <source>Show root filesystem</source>
-        <translation>Mostra root filesystem</translation>
+        <translation>Näita juurfailisüsteemi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="160"/>
         <source>Show hidden files</source>
-        <translation>Mostra file nascosti</translation>
+        <translation>Näita peidetud faile</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="169"/>
         <source>Show thumbnails</source>
-        <translation>Mostra anteprime</translation>
+        <translation>Näita pisipilte</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="178"/>
         <source>Date format</source>
-        <translation>Formato data</translation>
+        <translation>Kuupäeva vorming</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="180"/>
         <source>dd/mm/yyyy</source>
-        <translation>gg/mm/aaaa</translation>
+        <translation>pp/kk/aaaa</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="181"/>
         <source>mm/dd/yyyy</source>
-        <translation>mm/gg/aaaa</translation>
+        <translation>kk/pp/aaaa</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="198"/>
         <source>Sort items by</source>
-        <translation>Ordina elementi per</translation>
+        <translation>Kirjete sortimise alus</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="200"/>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation>Nimi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="201"/>
         <source>Size</source>
-        <translation>Dimensione</translation>
+        <translation>Maht</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="202"/>
         <source>Date</source>
-        <translation>Data</translation>
+        <translation>Kuupäev</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="213"/>
         <source>Sort order</source>
-        <translation>Ordinamento</translation>
+        <translation>Kirjete sortimise suund</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="215"/>
         <source>Ascending</source>
-        <translation>Crescente</translation>
+        <translation>Kasvavalt</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="216"/>
         <source>Descending</source>
-        <translation>Decrescente</translation>
+        <translation>Kahanevalt</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="227"/>
         <source>Show folders first</source>
-        <translation>Mostra prima le cartelle</translation>
+        <translation>Näita kaustu esimesena</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="236"/>
         <source>Clipboard</source>
-        <translation>Appunti</translation>
+        <translation>Lõikelaud</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="251"/>
         <source>Autoselect files to copy</source>
-        <translation>Autoseleziona file da copiare</translation>
+        <translation>Kopeerimiseks vali failid automaatselt</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="261"/>
         <source>Autoremove files after action</source>
-        <translation>Autoelimina i file dopo l&apos;azione</translation>
+        <translation>Eemalda failid peale toiminguid</translation>
     </message>
 </context>
 <context>
@@ -1020,32 +1020,32 @@
     <message>
         <location filename="../qml/pages/SkyDrive.qml" line="133"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkyDrive.qml" line="139"/>
         <source>New folder</source>
-        <translation>Nuova cartella</translation>
+        <translation>Uus kaust</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkyDrive.qml" line="145"/>
         <source>Paste here</source>
-        <translation>Incolla qui</translation>
+        <translation>Aseta siia</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkyDrive.qml" line="225"/>
         <source>Deleting</source>
-        <translation>Rimozione</translation>
+        <translation>Kustutame</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkyDrive.qml" line="392"/>
         <source>Error accessing folder</source>
-        <translation>Errore di accesso alla cartella</translation>
+        <translation>Viga ligipääsul kaustale</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkyDrive.qml" line="392"/>
         <source>Folder is empty</source>
-        <translation>La cartella è vuota</translation>
+        <translation>Kaust on tühi</translation>
     </message>
 </context>
 <context>
@@ -1053,37 +1053,37 @@
     <message>
         <location filename="../qml/pages/SkySettings.qml" line="46"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkySettings.qml" line="50"/>
         <source>Account</source>
-        <translation>Account</translation>
+        <translation>Kasutajakonto</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkySettings.qml" line="95"/>
         <source>Remove account</source>
-        <translation>Rimuovi account</translation>
+        <translation>Eemalda kasutajakonto</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkySettings.qml" line="107"/>
         <source>Storage</source>
-        <translation>Memoria</translation>
+        <translation>Andmeruum</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkySettings.qml" line="154"/>
         <source>Transfers</source>
-        <translation>Trasferimenti</translation>
+        <translation>Ülekanded</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkySettings.qml" line="159"/>
         <source>Download folder</source>
-        <translation>Cartella di scaricamento</translation>
+        <translation>Allalaadimiste kaust</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkySettings.qml" line="168"/>
         <source>Upload folder</source>
-        <translation>Cartella di caricamento</translation>
+        <translation>Üleslaadimiste kaust</translation>
     </message>
 </context>
 <context>
@@ -1091,7 +1091,7 @@
     <message>
         <location filename="../qml/pages/SkyTransfers.qml" line="25"/>
         <source>Transfers</source>
-        <translation>Trasferimenti</translation>
+        <translation>Ülekanded</translation>
     </message>
 </context>
 <context>
@@ -1099,17 +1099,17 @@
     <message>
         <location filename="../qml/pages/SkyUploadFolder.qml" line="27"/>
         <source>Done</source>
-        <translation>Fatto</translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkyUploadFolder.qml" line="28"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkyUploadFolder.qml" line="111"/>
         <source>Folder is empty</source>
-        <translation>La cartella è vuota</translation>
+        <translation>Kaust on tühi</translation>
     </message>
 </context>
 <context>
@@ -1117,7 +1117,7 @@
     <message>
         <location filename="../qml/pages/TextEditor.qml" line="35"/>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation>Salvesta</translation>
     </message>
 </context>
 <context>
@@ -1125,7 +1125,7 @@
     <message>
         <location filename="../qml/pages/TextViewer.qml" line="37"/>
         <source>Copy text</source>
-        <translation>Copia testo</translation>
+        <translation>Kopeeri tekst</translation>
     </message>
 </context>
 <context>
@@ -1133,27 +1133,27 @@
     <message>
         <location filename="../qml/pages/TransfersPage.qml" line="20"/>
         <source>Clean completed transfers</source>
-        <translation>Pulisci trasferimenti completati</translation>
+        <translation>Eemaldatoimunud ülekanded</translation>
     </message>
     <message>
         <location filename="../qml/pages/TransfersPage.qml" line="29"/>
         <source>Stop transfers</source>
-        <translation>Blocca trasferimenti</translation>
+        <translation>Peata ülekanded</translation>
     </message>
     <message>
         <location filename="../qml/pages/TransfersPage.qml" line="37"/>
         <source>Start transfers</source>
-        <translation>Inizi trasferimenti</translation>
+        <translation>Alusta ülekandeid</translation>
     </message>
     <message>
         <location filename="../qml/pages/TransfersPage.qml" line="49"/>
         <source>Transfers</source>
-        <translation>Trasferimenti</translation>
+        <translation>Ülekanded</translation>
     </message>
     <message>
         <location filename="../qml/pages/TransfersPage.qml" line="89"/>
         <source>No pending transfers</source>
-        <translation>Nessun trasferimento in coda</translation>
+        <translation>Ootel olevaid ülekandeid pole</translation>
     </message>
 </context>
 <context>
@@ -1161,42 +1161,42 @@
     <message>
         <location filename="../qml/pages/UploadFiles.qml" line="45"/>
         <source>Share</source>
-        <translation>Condividi</translation>
+        <translation>Jaga</translation>
     </message>
     <message>
         <location filename="../qml/pages/UploadFiles.qml" line="46"/>
         <source>Select service</source>
-        <translation>Seleziona servizio</translation>
+        <translation>Vali teenus</translation>
     </message>
     <message>
         <location filename="../qml/pages/UploadFiles.qml" line="157"/>
         <source>Location</source>
-        <translation>Posizione</translation>
+        <translation>Asukoht</translation>
     </message>
     <message>
         <location filename="../qml/pages/UploadFiles.qml" line="157"/>
         <source>Target</source>
-        <translation>Destinazione</translation>
+        <translation>Viitab asukohale</translation>
     </message>
     <message>
         <location filename="../qml/pages/UploadFiles.qml" line="164"/>
         <source>Type</source>
-        <translation>Tipo</translation>
+        <translation>Tüüp</translation>
     </message>
     <message>
         <location filename="../qml/pages/UploadFiles.qml" line="170"/>
         <source>Size</source>
-        <translation>Dimensione</translation>
+        <translation>Maht</translation>
     </message>
     <message>
         <location filename="../qml/pages/UploadFiles.qml" line="177"/>
         <source>Created</source>
-        <translation>Creato il</translation>
+        <translation>Loodud</translation>
     </message>
     <message>
         <location filename="../qml/pages/UploadFiles.qml" line="184"/>
         <source>Last modified</source>
-        <translation>Ultima modifica</translation>
+        <translation>Viimati muudetud</translation>
     </message>
 </context>
 <context>
@@ -1204,64 +1204,64 @@
     <message>
         <location filename="../src/utilities.cpp" line="358"/>
         <source>All transfers have been completed</source>
-        <translation>Tutti i trasferimenti sono stati completati</translation>
+        <translation>Kõik ülekanded on tehtud</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="378"/>
         <location filename="../src/utilities.cpp" line="556"/>
         <source>You don&apos;t have permissions to proceed</source>
-        <translation>Non hai i permessi per procedere</translation>
+        <translation>Sul pole jätkamiseks õigusi</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="445"/>
         <location filename="../src/utilities.cpp" line="469"/>
         <source>Extracting process canceled</source>
-        <translation>Processo di estrazione annullato</translation>
+        <translation>Lahtipakkimine on katkestatud</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="449"/>
         <source>Extraction error: incorrect password</source>
-        <translation>Errore di estrazione: password errata</translation>
+        <translation>Viga lahtipakkimisel: vale salasõna</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="451"/>
         <source>Extraction completed</source>
-        <translation>Estrazione completata</translation>
+        <translation>Lahtipakkimine lõppes</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="457"/>
         <source>Compressing process canceled</source>
-        <translation>Processo di compressione annullato</translation>
+        <translation>Kokkupakkimine on katkestatud</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="459"/>
         <source>Compression completed</source>
-        <translation>Compressione completata</translation>
+        <translation>Kokkupakkimine lõppes</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="577"/>
         <source>There&apos;s no enough space to proceed</source>
-        <translation>Non c&apos;è spazio sufficiente per procedere</translation>
+        <translation>Jätkamiseks pole piisavalt andmeruumi</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="586"/>
         <source>Cannot create symlinks in destination path</source>
-        <translation>Non posso creare link simbolici nel percorso di destinazione</translation>
+        <translation>Sümbolviite loomine sellesse sihtkohta ei õnnestu</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="655"/>
         <source>There were errors copying files!</source>
-        <translation>Errori durante la copia dei file!</translation>
+        <translation>Failide kopeerimisel tekkis vigu!</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="657"/>
         <source>Copying process is completed</source>
-        <translation>Processo di copia completato</translation>
+        <translation>Kopeerimine õnnestus</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="681"/>
         <source>Copying process canceled</source>
-        <translation>Processo di copia annullato</translation>
+        <translation>Kopeerimine on katkestatud</translation>
     </message>
 </context>
 <context>
@@ -1269,32 +1269,32 @@
     <message>
         <location filename="../qml/pages/WebDavPage.qml" line="104"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavPage.qml" line="110"/>
         <source>New folder</source>
-        <translation>Nuova cartella</translation>
+        <translation>Uus kaust</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavPage.qml" line="115"/>
         <source>Paste here</source>
-        <translation>Incolla qui</translation>
+        <translation>Aseta siia</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavPage.qml" line="194"/>
         <source>Deleting</source>
-        <translation>Rimozione</translation>
+        <translation>Kustutame</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavPage.qml" line="323"/>
         <source>Error accessing folder</source>
-        <translation>Errore di accesso alla cartella</translation>
+        <translation>Viga ligipääsul kaustale</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavPage.qml" line="323"/>
         <source>Folder is empty</source>
-        <translation>La cartella è vuota</translation>
+        <translation>Kaust on tühi</translation>
     </message>
 </context>
 <context>
@@ -1302,37 +1302,37 @@
     <message>
         <location filename="../qml/pages/WebDavSettings.qml" line="46"/>
         <source>Settings</source>
-        <translation>Impostazioni</translation>
+        <translation>Seadistused</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavSettings.qml" line="50"/>
         <source>Account</source>
-        <translation>Account</translation>
+        <translation>Kasutajakonto</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavSettings.qml" line="95"/>
         <source>Remove account</source>
-        <translation>Rimuovi account</translation>
+        <translation>Eemalda kasutajakonto</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavSettings.qml" line="106"/>
         <source>Storage</source>
-        <translation>Memoria</translation>
+        <translation>Andmeruum</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavSettings.qml" line="155"/>
         <source>Transfers</source>
-        <translation>Trasferimenti</translation>
+        <translation>Ülekanded</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavSettings.qml" line="160"/>
         <source>Download folder</source>
-        <translation>Cartella di scaricamento</translation>
+        <translation>Allalaadimiste kaust</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavSettings.qml" line="169"/>
         <source>Upload folder</source>
-        <translation>Cartella di caricamento</translation>
+        <translation>Üleslaadimiste kaust</translation>
     </message>
 </context>
 <context>
@@ -1340,17 +1340,17 @@
     <message>
         <location filename="../qml/pages/WebDavUploadFolder.qml" line="29"/>
         <source>Done</source>
-        <translation>Fatto</translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavUploadFolder.qml" line="30"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavUploadFolder.qml" line="113"/>
         <source>Folder is empty</source>
-        <translation>La cartella è vuota</translation>
+        <translation>Kaust on tühi</translation>
     </message>
 </context>
 <context>
@@ -1359,13 +1359,13 @@
         <location filename="../qml/filecase.qml" line="139"/>
         <location filename="../qml/filecase.qml" line="148"/>
         <source>Queued</source>
-        <translation>Accodati</translation>
+        <translation>Lisasime järjekorda</translation>
     </message>
     <message>
         <location filename="../qml/filecase.qml" line="139"/>
         <location filename="../qml/filecase.qml" line="148"/>
         <source>Completed</source>
-        <translation>Completati</translation>
+        <translation>Valmis</translation>
     </message>
 </context>
 </TS>
