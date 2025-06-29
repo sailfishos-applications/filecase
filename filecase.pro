@@ -21,8 +21,7 @@ DEFINES += QWEBDAVITEM_EXTENDED_PROPERTIES DEBUG_WEBDAV
 DEFINES += VERSION=\\\"$${VERSION}\\\"
 
 SOURCES += \
-    src/boxclient.cpp \
-    src/boxthumbnailer.cpp \
+    src/filecase.cpp \
     src/browser.cpp \
     src/clipboard.cpp \
     src/compressedfiles.cpp \
@@ -40,7 +39,6 @@ SOURCES += \
     src/dropbox/util.cpp \
     src/dropboxclient.cpp \
     src/dropboxthumbnailer.cpp \
-    src/filecase.cpp \
     src/filedeleter.cpp \
     src/fileinfo.cpp \
     src/loader.cpp \
@@ -51,6 +49,8 @@ SOURCES += \
     src/qwebdavlib/qwebdavdirparser.cpp \
     src/qwebdavlib/qwebdavitem.cpp \
     src/search.cpp \
+#    src/boxclient.cpp \
+#    src/boxthumbnailer.cpp \
     src/skyclient.cpp \
     src/skythumbnailer.cpp \
     src/thumbgenerator.cpp \
@@ -61,14 +61,19 @@ SOURCES += \
 
 OTHER_FILES += \
     rpm/filecase.spec \
-    rpm/filecase.changes \
     rpm/filecase.rpmlintrc \
+    rpm/filecase.changes \
     translations/*.ts \
     filecase.desktop \
     qml/filecase.qml \
-    qml/pages/AboutPage.qml \
-    qml/pages/AddAccount.qml \
-    qml/pages/AddWebDavAccount.qml \
+    qml/pages/MainPage.qml \
+    qml/pages/CoverPage.qml \
+    qml/pages/MyHeader.qml \
+    qml/pages/Settings.qml \
+    qml/pages/FileInfo.qml \
+    qml/pages/ValueItem.qml \
+    qml/pages/RenameFile.qml \
+    qml/pages/ClipboardPage.qml \
     qml/pages/Banner.qml \
     qml/pages/Box.qml \
     qml/pages/BoxSettings.qml \
@@ -111,7 +116,13 @@ OTHER_FILES += \
     qml/pages/ValueItem.qml \
     qml/pages/WebDavPage.qml \
     qml/pages/WebDavSettings.qml \
-    qml/pages/WebDavUploadFolder.qml
+    qml/pages/WebDavUploadFolder.qml \
+    qml/pages/AddWebDavAccount.qml \
+    qml/pages/AddAccount.qml \
+    qml/pages/TextViewer.qml \
+    qml/pages/TextEditor.qml \
+    qml/pages/AboutPage.qml
+
 
 # to disable building translations every time,
 # comment out the following CONFIG line
@@ -176,3 +187,4 @@ icons.files = icons
 icons.path = /usr/share/$$TARGET
 
 INSTALLS += icons
+
