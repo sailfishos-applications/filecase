@@ -90,15 +90,18 @@ OTHER_FILES += \
     qml/pages/Drive.qml \
     qml/pages/DriveSettings.qml \
     qml/pages/DriveUploadFolder.qml \
+    qml/pages/DriveTransfers.qml \
     qml/pages/TransfersDelegate.qml \
     qml/pages/SelDownloadFolder.qml \
     qml/pages/UploadFiles.qml \
     qml/pages/Dropbox.qml \
     qml/pages/DropboxSettings.qml \
     qml/pages/DropboxUploadFolder.qml \
+    qml/pages/DropboxTransfers.qml \
     qml/pages/SkyDrive.qml \
     qml/pages/SkySettings.qml \
     qml/pages/SkyUploadFolder.qml \
+    qml/pages/SkyTransfers.qml \
     qml/pages/TransfersPage.qml \
     qml/pages/ButtonHeader.qml \
     qml/pages/Compressed.qml \
