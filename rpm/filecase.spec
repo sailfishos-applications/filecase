@@ -70,7 +70,7 @@ Categories:
 DeveloperName: CepiPerez, olf, flypig, simonschmeisser, marbalf
 Custom:
   Repo: %{url}
-PackageIcon: %{url}/raw/master/.xdata/icons/filecase.svg
+PackageIcon: %{url}/raw/master/.xdata/icons/%{name}.svg
 Screenshots:
  - %{url}/raw/master/.xdata/screenshots/screenshot-001.jpg
  - %{url}/raw/master/.xdata/screenshots/screenshot-002.jpg
@@ -83,7 +83,7 @@ Screenshots:
  - %{url}/raw/master/.xdata/screenshots/screenshot-009.jpg
  - %{url}/raw/master/.xdata/screenshots/screenshot-010.jpg
 Links:
-  Homepage: https://openrepos.net/content/olf/filecase
+  Homepage: https://openrepos.net/content/olf/%{name}
   Help: %{url}/issues
   Bugtracker: %{url}/issues
   Donation: https://openrepos.net/donate
