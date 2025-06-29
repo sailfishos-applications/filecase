@@ -205,6 +205,9 @@ jobs:
         path: RPMS/
 
 
+  # The second-last entry shall use the oldest Sailfish-SDK Docker image, which
+  # generates binaries "known to run on the latest SailfishOS release", i.e.
+  # currently: Binaries build for SailfishOS 4.3.0 are known to run on 5.0.0.
   SDK-430:
     runs-on: ubuntu-24.04
     env:
@@ -254,10 +257,7 @@ jobs:
         path: RPMS/
 
 
-  # The last entry should always point to the latest available Sailfish-SDK Docker image; 
-  # the second-last entry to the oldest Sailfish-SDK Docker image, which generates binaries
-  # "known to run on the latest SailfishOS release", i.e. currently: Binaries build for
-  # SailfishOS 4.3.0 are known to run on 5.0.0.
+  # The last entry shall use the latest available Sailfish-SDK Docker image.
   SDK-500:
     runs-on: ubuntu-24.04
     env:
