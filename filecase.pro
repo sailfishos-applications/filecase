@@ -20,6 +20,8 @@ QT += core xml
 DEFINES += QWEBDAVITEM_EXTENDED_PROPERTIES DEBUG_WEBDAV
 DEFINES += VERSION=\\\"$${VERSION}\\\"
 
+
+# SOURCE FILES
 SOURCES += \
     src/filecase.cpp \
     src/browser.cpp \
@@ -57,6 +59,12 @@ SOURCES += \
     src/boxclient.cpp \
     src/boxthumbnailer.cpp
 
+# These two files exist, but are missing here: Why?
+#    src/dropbox/qt-json/json.cpp
+#    src/megacli.cpp
+
+
+# OTHER FILES
 OTHER_FILES += \
     rpm/filecase.spec \
     rpm/filecase.rpmlintrc \
@@ -108,8 +116,16 @@ OTHER_FILES += \
     qml/pages/TextEditor.qml \
     qml/pages/AboutPage.qml
 
-# to disable building translations every time,
-# comment out the following CONFIG line
+# These three files exist, but are missing here: Why?
+#    qml/pages/DriveTransfers.qml
+#    qml/pages/DropboxTransfers.qml
+#    qml/pages/SkyTransfers.qml
+# One may try inserting each of them at the very end of the corresponding [Drive|Dropbox|Sky] block, above.
+
+
+# TRANSLATIONS
+# To disable building translations every time,
+# comment out the following CONFIG line:
 CONFIG += sailfishapp_i18n
 TRANSLATIONS += \
     translations/ca.ts \
@@ -121,13 +137,17 @@ TRANSLATIONS += \
     translations/fr.ts \
     translations/it.ts \
     translations/nl.ts \
-    ### translations/pl.ts \ ###
     translations/ru.ts \
     translations/sv.ts \
     translations/zh.ts \
     translations/zh_HK.ts \
     translations/zh_TW.ts
+    
+# To be added when the Polish translation is submitted at Transifex:
+#    translations/pl.ts \
 
+
+# HEADER FILES
 HEADERS += \
     src/browser.h \
     src/config.h \
@@ -165,6 +185,12 @@ HEADERS += \
     src/boxclient.h \
     src/boxthumbnailer.h
 
+# These are the two extant header files which correspond to the two aforementioned, equally undeclared `.cpp` files.
+# src/dropbox/qt-json/json.h
+# src/megacli.h
+
+
+# ICONS
 icons.files = icons
 icons.path = /usr/share/$$TARGET
 
