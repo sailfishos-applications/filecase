@@ -20,7 +20,8 @@ QT += core xml
 DEFINES += QWEBDAVITEM_EXTENDED_PROPERTIES DEBUG_WEBDAV
 DEFINES += VERSION=\\\"$${VERSION}\\\"
 
-SOURCES += src/filecase.cpp \
+SOURCES += \
+    src/filecase.cpp \
     src/browser.cpp \
     src/config.cpp \
     src/qtfilecopier.cpp \
@@ -56,11 +57,13 @@ SOURCES += src/filecase.cpp \
     src/boxclient.cpp \
     src/boxthumbnailer.cpp
 
-OTHER_FILES += qml/filecase.qml \
+OTHER_FILES += \
     rpm/filecase.spec \
-    rpm/filecase.yaml \
+    rpm/filecase.rpmlintrc \
+    rpm/filecase.changes \
     translations/*.ts \
     filecase.desktop \
+    qml/filecase.qml \
     qml/pages/MainPage.qml \
     qml/pages/CoverPage.qml \
     qml/pages/MyHeader.qml \
@@ -101,27 +104,29 @@ OTHER_FILES += qml/filecase.qml \
     qml/pages/Box.qml \
     qml/pages/BoxSettings.qml \
     qml/pages/BoxUploadFolder.qml \
-    rpm/filecase.changes \
     qml/pages/TextViewer.qml \
     qml/pages/TextEditor.qml \
     qml/pages/AboutPage.qml
 
-# to disable building translations every time, comment out the
-# following CONFIG line
+# to disable building translations every time,
+# comment out the following CONFIG line
 CONFIG += sailfishapp_i18n
-TRANSLATIONS += translations/ca.ts \
-                translations/de.ts \
-                translations/es.ts \
-                translations/fa.ts \
-                translations/fi.ts \
-                translations/fr.ts \
-                translations/it.ts \
-                translations/nl.ts \
-                translations/ru.ts \
-                translations/sv.ts \
-                translations/zh.ts \
-                translations/zh_HK.ts \
-                translations/zh_TW.ts
+TRANSLATIONS += \
+    translations/ca.ts \
+    translations/de.ts \
+    translations/es.ts \
+    translations/et.ts \
+    translations/fa.ts \
+    translations/fi.ts \
+    translations/fr.ts \
+    translations/it.ts \
+    translations/nl.ts \
+    ### translations/pl.ts \ ###
+    translations/ru.ts \
+    translations/sv.ts \
+    translations/zh.ts \
+    translations/zh_HK.ts \
+    translations/zh_TW.ts
 
 HEADERS += \
     src/browser.h \
@@ -164,3 +169,4 @@ icons.files = icons
 icons.path = /usr/share/$$TARGET
 
 INSTALLS += icons
+
