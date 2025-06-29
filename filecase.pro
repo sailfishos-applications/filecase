@@ -57,7 +57,10 @@ SOURCES += \
     src/qwebdavlib/qwebdavitem.cpp \
     src/transfers.cpp \
     src/boxclient.cpp \
-    src/boxthumbnailer.cpp
+    src/boxthumbnailer.cpp \
+    src/dropbox/qt-json/json.cpp \
+    src/megacli.cpp
+
 
 # These two files exist, but are missing here: Why?
 #    src/dropbox/qt-json/json.cpp
@@ -183,7 +186,10 @@ HEADERS += \
     src/qwebdavlib/qwebdavitem.h \
     src/transfers.h \
     src/boxclient.h \
-    src/boxthumbnailer.h
+    src/boxthumbnailer.h \
+    src/dropbox/qt-json/json.h \
+    src/megacli.h
+
 
 # These are the two extant header files which correspond to the two aforementioned, equally undeclared `.cpp` files.
 # src/dropbox/qt-json/json.h
