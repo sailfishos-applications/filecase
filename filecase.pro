@@ -58,7 +58,6 @@ SOURCES += \
     src/transfers.cpp \
     src/boxclient.cpp \
     src/boxthumbnailer.cpp \
-    src/dropbox/qt-json/json.cpp \
     src/megacli.cpp
 
 
@@ -187,7 +186,6 @@ HEADERS += \
     src/transfers.h \
     src/boxclient.h \
     src/boxthumbnailer.h \
-    src/dropbox/qt-json/json.h \
     src/megacli.h
 
 
