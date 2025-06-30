@@ -59,9 +59,9 @@ SOURCES += \
     src/boxclient.cpp \
     src/boxthumbnailer.cpp
 
-# These two files exist, but are missing here: Why?
-#    src/dropbox/qt-json/json.cpp
-#    src/megacli.cpp
+# These two files exist, but are missing here:
+# - For `src/dropbox/qt-json/json.cpp` see issue #111.
+# - For `src/megacli.cpp` see issue #112.
 
 
 # OTHER FILES
@@ -120,7 +120,7 @@ OTHER_FILES += \
 #    qml/pages/DriveTransfers.qml
 #    qml/pages/DropboxTransfers.qml
 #    qml/pages/SkyTransfers.qml
-# One may try inserting each of them at the very end of the corresponding [Drive|Dropbox|Sky] block, above.
+# This question is tracked in issue #113.
 
 
 # TRANSLATIONS
@@ -185,9 +185,10 @@ HEADERS += \
     src/boxclient.h \
     src/boxthumbnailer.h
 
-# These are the two extant header files which correspond to the two aforementioned, equally undeclared `.cpp` files.
-# src/dropbox/qt-json/json.h
-# src/megacli.h
+# These are the two extant header files which correspond to
+# the two aforementioned, equally undeclared `.cpp` files:
+# - For `src/dropbox/qt-json/json.h` see issue #111.
+# - For `src/megacli.h` see issue #112.
 
 
 # ICONS
