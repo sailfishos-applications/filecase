@@ -1,7 +1,7 @@
 * Sun Jun 29 2025 olf <Olf0@users.noreply.github.com> - 0.4.5
-- Add Estonian translation (#82, #96, #97) by tlend (Priit Jõerüüt)
+- Add Estonian translation (#82, #96, #97) by tlend@transifex (Priit Jõerüüt)
 - Revive Italian translation (#89, #94) by @legacychimera247
-- Add new SVG app icon (#90, #91, #98), originally by marbalf
+- Add new SVG app icon (#90, #91, #98), originally by marbalf@noreply.codeberg.org
 
 * Mon Feb 26 2024 olf <Olf0@users.noreply.github.com> - 0.4.4
 - Slightly enhance `About.qml` page (#65 etc.)
