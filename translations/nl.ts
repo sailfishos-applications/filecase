@@ -1,42 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="nl">
 <context>
     <name>AboutPage</name>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="27"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Over</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="60"/>
-        <source>Main Developer:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AboutPage.qml" line="66"/>
-        <source>(C) 2015 Matias Perez (CepiPerez).</source>
-        <translation type="unfinished"></translation>
+        <source>Original author:</source>
+        <translation>Oorspronkelijke auteur:</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="77"/>
-        <source>Contributeurs:</source>
-        <translation type="unfinished"></translation>
+        <source>Contributors:</source>
+        <translation>Bijdragers:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="83"/>
-        <source>David Llewellyn-Jones (llewelld), </source>
-        <translation type="unfinished"></translation>
+        <location filename="../qml/pages/AboutPage.qml" line="96"/>
+        <source>If you want to create a new translation or improve an extant one:</source>
+        <translation>Als je een nieuwe vertaling wilt bijdragen, of een bestaande wilt verbeteren:</translation>
     </message>
     <message>
-        <location filename="../qml/pages/AboutPage.qml" line="94"/>
-        <source>If your language is not available you can contribute here:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/AboutPage.qml" line="110"/>
-        <source>You can contribute to keep this project alive making a small donation</source>
-        <translation type="unfinished"></translation>
+        <location filename="../qml/pages/AboutPage.qml" line="111"/>
+        <source>You can support the original author of FileCase by donating:</source>
+        <translation>Je kunt de oorspronkelijke auteur van FileCase steunen met een donatie:</translation>
     </message>
 </context>
 <context>
@@ -110,7 +98,7 @@
     <message>
         <location filename="../qml/pages/Box.qml" line="225"/>
         <source>Deleting</source>
-        <translation>Bezig met verwijderen</translation>
+        <translation>Wordt verwijderd</translation>
     </message>
     <message>
         <location filename="../qml/pages/Box.qml" line="392"/>
@@ -254,7 +242,7 @@
     <message>
         <location filename="../qml/pages/Compressed.qml" line="99"/>
         <source>You need to install unrar to use this function</source>
-        <translation>U moet unrar installeren om deze functie te kunnen gebruiken</translation>
+        <translation>Je moet unrar installeren om deze functie te kunnen gebruiken</translation>
     </message>
 </context>
 <context>
@@ -285,7 +273,7 @@
     <message>
         <location filename="../qml/pages/Drive.qml" line="225"/>
         <source>Deleting</source>
-        <translation>Bezig met verwijderen</translation>
+        <translation>Wordt verwijderd</translation>
     </message>
     <message>
         <location filename="../qml/pages/Drive.qml" line="394"/>
@@ -296,6 +284,44 @@
         <location filename="../qml/pages/Drive.qml" line="394"/>
         <source>Folder is empty</source>
         <translation>De map is leeg</translation>
+    </message>
+</context>
+<context>
+    <name>DriveSettings</name>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="46"/>
+        <source>Settings</source>
+        <translation>Instellingen</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="50"/>
+        <source>Account</source>
+        <translation>Account</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="93"/>
+        <source>Remove account</source>
+        <translation>Account verwijderen</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="105"/>
+        <source>Storage</source>
+        <translation>Bestandsopslag</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="152"/>
+        <source>Transfers</source>
+        <translation>Bestandsoverdrachten</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="157"/>
+        <source>Download folder</source>
+        <translation>Downloadmap</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DriveSettings.qml" line="166"/>
+        <source>Upload folder</source>
+        <translation>Uploadmap</translation>
     </message>
 </context>
 <context>
@@ -344,7 +370,7 @@
     <message>
         <location filename="../qml/pages/Dropbox.qml" line="228"/>
         <source>Deleting</source>
-        <translation>Bezig met verwijderen</translation>
+        <translation>Wordt verwijderd</translation>
     </message>
     <message>
         <location filename="../qml/pages/Dropbox.qml" line="386"/>
@@ -455,7 +481,7 @@
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="65"/>
         <source>Error getting info. Try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>Fout bij het ophalen van de info. Probeer het later opnieuw</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="79"/>
@@ -470,7 +496,7 @@
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="99"/>
         <source>View package files</source>
-        <translation type="unfinished"></translation>
+        <translation>Pakketbestanden bekijken</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="109"/>
@@ -480,7 +506,7 @@
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="109"/>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Installeren</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="115"/>
@@ -535,19 +561,19 @@
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="238"/>
         <source>Public link</source>
-        <translation>Openbare link</translation>
+        <translation>Openbare koppeling</translation>
     </message>
     <message>
         <location filename="../qml/pages/FileInfo.qml" line="258"/>
         <source>Copy link</source>
-        <translation>Link kopiëren</translation>
+        <translation>Koppeling kopiëren</translation>
     </message>
     <message>
         <location filename="../src/fileinfo.cpp" line="43"/>
         <location filename="../src/fileinfo.cpp" line="88"/>
         <location filename="../src/fileinfo.cpp" line="115"/>
         <source>(loading)</source>
-        <translation>(bezig met laden)</translation>
+        <translation>(wordt geladen)</translation>
     </message>
     <message>
         <location filename="../src/fileinfo.cpp" line="86"/>
@@ -585,7 +611,7 @@
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="35"/>
         <source>Videos</source>
-        <translation>Video&apos;s</translation>
+        <translation>Video’s</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="36"/>
@@ -693,7 +719,7 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="547"/>
         <source>Removing</source>
-        <translation>Bezig met verwijderen</translation>
+        <translation>Wordt verwijderd</translation>
     </message>
 </context>
 <context>
@@ -764,7 +790,7 @@
     <message>
         <location filename="../src/search.cpp" line="293"/>
         <source>You can&apos;t share files outside home folder</source>
-        <translation>U kunt geen bestanden delen die zich buiten de nemo-map bevinden</translation>
+        <translation>Je kunt geen bestanden delen die zich buiten de persoonlijke map bevinden</translation>
     </message>
     <message>
         <location filename="../src/search.cpp" line="413"/>
@@ -802,7 +828,7 @@
     <message>
         <location filename="../qml/pages/SearchPage.qml" line="223"/>
         <source>Removing</source>
-        <translation>Bezig met verwijderen</translation>
+        <translation>Wordt verwijderd</translation>
     </message>
 </context>
 <context>
@@ -851,7 +877,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="47"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Over</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="61"/>
@@ -1004,12 +1030,12 @@
     <message>
         <location filename="../qml/pages/SkyDrive.qml" line="145"/>
         <source>Paste here</source>
-        <translation>Hier plakke</translation>
+        <translation>Hier plakken</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkyDrive.qml" line="225"/>
         <source>Deleting</source>
-        <translation>Bezig met verwijderen</translation>
+        <translation>Wordt verwijderd</translation>
     </message>
     <message>
         <location filename="../qml/pages/SkyDrive.qml" line="392"/>
@@ -1107,7 +1133,7 @@
     <message>
         <location filename="../qml/pages/TransfersPage.qml" line="20"/>
         <source>Clean completed transfers</source>
-        <translation type="unfinished"></translation>
+        <translation>Voltooide overdrachten wissen</translation>
     </message>
     <message>
         <location filename="../qml/pages/TransfersPage.qml" line="29"/>
@@ -1133,42 +1159,42 @@
 <context>
     <name>UploadFiles</name>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="44"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
         <source>Share</source>
         <translation>Delen</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="45"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="46"/>
         <source>Select service</source>
         <translation>Dienst selecteren</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
         <source>Location</source>
         <translation>Locatie</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="156"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="157"/>
         <source>Target</source>
         <translation>Doel</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="163"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="164"/>
         <source>Type</source>
         <translation>Type</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="169"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="170"/>
         <source>Size</source>
         <translation>Grootte</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="176"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="177"/>
         <source>Created</source>
         <translation>Gecreëerd</translation>
     </message>
     <message>
-        <location filename="../qml/pages/UploadFiles.qml" line="183"/>
+        <location filename="../qml/pages/UploadFiles.qml" line="184"/>
         <source>Last modified</source>
         <translation>Laatst bewerkt</translation>
     </message>
@@ -1184,7 +1210,7 @@
         <location filename="../src/utilities.cpp" line="378"/>
         <location filename="../src/utilities.cpp" line="556"/>
         <source>You don&apos;t have permissions to proceed</source>
-        <translation>U beschikt niet over de juiste rechten om door te gaan</translation>
+        <translation>Je beschikt niet over de juiste rechten om door te gaan</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="445"/>
@@ -1253,12 +1279,12 @@
     <message>
         <location filename="../qml/pages/WebDavPage.qml" line="115"/>
         <source>Paste here</source>
-        <translation>Hier plakke</translation>
+        <translation>Hier plakken</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavPage.qml" line="194"/>
         <source>Deleting</source>
-        <translation>Bezig met verwijderen</translation>
+        <translation>Wordt verwijderd</translation>
     </message>
     <message>
         <location filename="../qml/pages/WebDavPage.qml" line="323"/>
@@ -1330,16 +1356,16 @@
 <context>
     <name>filecase</name>
     <message>
-        <location filename="../qml/filecase.qml" line="140"/>
-        <location filename="../qml/filecase.qml" line="149"/>
+        <location filename="../qml/filecase.qml" line="139"/>
+        <location filename="../qml/filecase.qml" line="148"/>
         <source>Queued</source>
-        <translation type="unfinished"></translation>
+        <translation>In wachtrij</translation>
     </message>
     <message>
-        <location filename="../qml/filecase.qml" line="140"/>
-        <location filename="../qml/filecase.qml" line="149"/>
+        <location filename="../qml/filecase.qml" line="139"/>
+        <location filename="../qml/filecase.qml" line="148"/>
         <source>Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Voltooid</translation>
     </message>
 </context>
 </TS>
