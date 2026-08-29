@@ -370,7 +370,7 @@
     <message>
         <location filename="../qml/pages/Dropbox.qml" line="228"/>
         <source>Deleting</source>
-        <translation>Bezig met verwijderen</translation>
+        <translation>Wordt verwijderd</translation>
     </message>
     <message>
         <location filename="../qml/pages/Dropbox.qml" line="386"/>
