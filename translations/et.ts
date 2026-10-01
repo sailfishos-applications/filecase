@@ -573,7 +573,7 @@
         <location filename="../src/fileinfo.cpp" line="88"/>
         <location filename="../src/fileinfo.cpp" line="115"/>
         <source>(loading)</source>
-        <translation>(laadime andmeid)</translation>
+        <translation>(laadin andmeid)</translation>
     </message>
     <message>
         <location filename="../src/fileinfo.cpp" line="86"/>
