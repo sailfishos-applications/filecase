@@ -1204,7 +1204,7 @@
     <message>
         <location filename="../src/utilities.cpp" line="358"/>
         <source>All transfers have been completed</source>
-        <translation>Kõik ülekanded on tehtud</translation>
+        <translation>Kõik ülekanded/failiedastused on lõpetatud</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="378"/>
