@@ -800,7 +800,7 @@
     <message>
         <location filename="../src/search.cpp" line="415"/>
         <source>Search completed</source>
-        <translation>Otsing on valmis</translation>
+        <translation>Otsing on lõppenud</translation>
     </message>
 </context>
 <context>
@@ -962,7 +962,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="198"/>
         <source>Sort items by</source>
-        <translation>Kirjete sortimise alus</translation>
+        <translation>Kirjete järjestuse alus</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="200"/>
@@ -982,17 +982,17 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="213"/>
         <source>Sort order</source>
-        <translation>Kirjete sortimise suund</translation>
+        <translation>Kirjete järjestuse suund</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="215"/>
         <source>Ascending</source>
-        <translation>Kasvavalt</translation>
+        <translation>Kasvav</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="216"/>
         <source>Descending</source>
-        <translation>Kahanevalt</translation>
+        <translation>Kahanev</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="227"/>
