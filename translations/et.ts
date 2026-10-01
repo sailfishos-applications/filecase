@@ -219,7 +219,7 @@
         <location filename="../qml/pages/CompressDialog.qml" line="48"/>
         <location filename="../qml/pages/CompressDialog.qml" line="49"/>
         <source>File name</source>
-        <translation>Faili nimi</translation>
+        <translation>Failinimi</translation>
     </message>
     <message>
         <location filename="../qml/pages/CompressDialog.qml" line="58"/>
@@ -573,7 +573,7 @@
         <location filename="../src/fileinfo.cpp" line="88"/>
         <location filename="../src/fileinfo.cpp" line="115"/>
         <source>(loading)</source>
-        <translation>(laadime andmeid)</translation>
+        <translation>(laadin andmeid)</translation>
     </message>
     <message>
         <location filename="../src/fileinfo.cpp" line="86"/>
@@ -631,17 +631,17 @@
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="93"/>
         <source>No pending transfers</source>
-        <translation>Käimasolevad ülekandeid pole</translation>
+        <translation>Ootel ülekandeid/failiedastusi pole</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="94"/>
         <source>1 pending transfer</source>
-        <translation>1 käimasolev ülekanne</translation>
+        <translation>1 käimasolev ülekanne/failiedastus</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="94"/>
         <source>%1 pending transfers</source>
-        <translation>%1 käimasolevat ülekannet</translation>
+        <translation>%1 käimasolevat ülekannet/failiedastust</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="113"/>
@@ -666,7 +666,7 @@
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="291"/>
         <source>WebDAV services</source>
-        <translation>WebDAV&apos;i teenused</translation>
+        <translation>WebDAV-i teenused</translation>
     </message>
 </context>
 <context>
@@ -800,7 +800,7 @@
     <message>
         <location filename="../src/search.cpp" line="415"/>
         <source>Search completed</source>
-        <translation>Otsing on valmis</translation>
+        <translation>Otsing on lõppenud</translation>
     </message>
 </context>
 <context>
@@ -962,7 +962,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="198"/>
         <source>Sort items by</source>
-        <translation>Kirjete sortimise alus</translation>
+        <translation>Kirjete järjestuse alus</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="200"/>
@@ -982,17 +982,17 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="213"/>
         <source>Sort order</source>
-        <translation>Kirjete sortimise suund</translation>
+        <translation>Kirjete järjestuse suund</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="215"/>
         <source>Ascending</source>
-        <translation>Kasvavalt</translation>
+        <translation>Kasvav</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="216"/>
         <source>Descending</source>
-        <translation>Kahanevalt</translation>
+        <translation>Kahanev</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="227"/>
@@ -1204,7 +1204,7 @@
     <message>
         <location filename="../src/utilities.cpp" line="358"/>
         <source>All transfers have been completed</source>
-        <translation>Kõik ülekanded on tehtud</translation>
+        <translation>Kõik ülekanded/failiedastused on lõpetatud</translation>
     </message>
     <message>
         <location filename="../src/utilities.cpp" line="378"/>
