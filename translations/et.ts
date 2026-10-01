@@ -219,7 +219,7 @@
         <location filename="../qml/pages/CompressDialog.qml" line="48"/>
         <location filename="../qml/pages/CompressDialog.qml" line="49"/>
         <source>File name</source>
-        <translation>Faili nimi</translation>
+        <translation>Failinimi</translation>
     </message>
     <message>
         <location filename="../qml/pages/CompressDialog.qml" line="58"/>
