@@ -631,17 +631,17 @@
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="93"/>
         <source>No pending transfers</source>
-        <translation>Käimasolevad ülekandeid pole</translation>
+        <translation>Ootel ülekandeid/failiedastusi pole</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="94"/>
         <source>1 pending transfer</source>
-        <translation>1 käimasolev ülekanne</translation>
+        <translation>1 käimasolev ülekanne/failiedastus</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="94"/>
         <source>%1 pending transfers</source>
-        <translation>%1 käimasolevat ülekannet</translation>
+        <translation>%1 käimasolevat ülekannet/failiedastust</translation>
     </message>
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="113"/>
@@ -666,7 +666,7 @@
     <message>
         <location filename="../qml/pages/FoldersPanel.qml" line="291"/>
         <source>WebDAV services</source>
-        <translation>WebDAV&apos;i teenused</translation>
+        <translation>WebDAV-i teenused</translation>
     </message>
 </context>
 <context>
